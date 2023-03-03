@@ -7,6 +7,8 @@ After this first concept we will have a better idea of which direction to take b
 
 ## System Diagram
 
+![System Diagram](./docs/system_diagram.jpg)
+
 ## Team Members/Work Breakdown
 
 Trevor McDonald: For sprint 1 I will complete the bring-up of the matrix voice array and helping to integrate this with the raspberry pi running Rhasspy. Initially we will start by using the on-board hot word detection and transferring the wav file over serial, and I will also look into options of programming the on-board ESP32 to convert the audio to text and transfer over the internet to a server. 
