@@ -17,5 +17,5 @@ Brett Sullivan: For sprint 1, I will install [Rhasspy](https://rhasspy.readthedo
 
 Johnny Cao: For sprint 1, I will install [Home Assistant](https://www.home-assistant.io/) locally on my laptop and attempt to link up with Brett to get Home Assistant communicating with the Rhasspy instance that he will be working on getting set up. Rhasspy will be sending events to Home Assistant over a common MQTT broker. I will be responsible for also writing the automations needed to control the downstream devices from the events received through Rhasspy.
 
-
+Iris Wang: For sprint 1 I will explore running FreeRTOS on the Matrix Voice ESP32. From my very initial research it looks like ESP-IDF is built on FreeRTOS and is the officially supported method of ESP32 development, but I will need to look into it if this is the correct path to go down or if some other FreeRTOS solution is needed for the project. Regardless of the outcome, initial steps include setting up an initial main function and spawning one task to ensure that it's working, then eventually integrating this with the actual software used to capture and send voice commands.
 
