@@ -1,11 +1,14 @@
 version: "3.9"
+
 services:
   mqtt:
     build: ./mqtt
     ports:
       - "1883:1883"
     volumes:
-      - ./mqtt-data:/mosquitto
+      - ./mqtt-data/config:/mosquitto/config
+      - ./mqtt-data/data:/mosquitto/data
+      - ./mqtt-data/log:/mosquitto/log
   hass:
     build: ./hass
     ports:
