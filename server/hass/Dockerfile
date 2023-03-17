@@ -3,5 +3,3 @@
 
 FROM homeassistant/home-assistant
 
-VOLUME hass-data
-

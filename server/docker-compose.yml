@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  mqtt:
+    build: ./mqtt
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mqtt-data:/mosquitto
+  hass:
+    build: ./hass
+    ports:
+      - "8123:8123"
+    volumes:
+      - ./hass-data/config:/config
+

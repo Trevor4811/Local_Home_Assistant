@@ -3,9 +3,6 @@
 This directory contains the files used to bootstrap Home
 Assistant on a device running Docker.
 
-Run the `bootstrap.sh` script to create a Docker image and
-a Docker container at `localhost:8123`.
-
 ## API Key
 
 In order for Rhasspy to send events to Home Assistant, it
