@@ -1,0 +1,11 @@
+{
+    "microphone": {
+        "arecord": {
+            "device": "hw:CARD=MATRIXIOSOUND,DEV=0"
+        },
+        "system": "arecord"
+    },
+    "wake": {
+        "system": "porcupine"
+    }
+}
