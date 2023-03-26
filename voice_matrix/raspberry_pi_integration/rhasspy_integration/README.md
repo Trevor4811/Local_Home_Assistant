@@ -14,6 +14,8 @@ We were successful in installing the docker image for Rhasppy onto the raspberry
 ## Install
 To install this system follow these [instructions](https://www.hackster.io/matrix-labs/rhasspy-voice-assistant-on-matrix-voice-and-matrix-creator-97f92e)
 
+The custom configurations can be seen in the [profile file](./profile.json)
+
 ## Next Steps
 1. This configuration still needs to be linked to home assistant to allow the system to enact changes.
 1. More functions should also be added to the intent recognition system.
