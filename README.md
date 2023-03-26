@@ -1,9 +1,11 @@
 # voice-home-automation
 
 ## Description
-Our initial concept is to develop a smart home voice control system that is local to protect the privacy of individuals in their home. Our first concept is to use the Matrix Voice that contains an ESP32 for hot word detection and transfer this audio data to a raspberry pi running Rhasspy. The raspberry pi will then locally detect the words and send home assistant commands to control a smart home. 
+Our initial concept is to develop a smart home voice assistant system that is local to protect the privacy of individuals in their home. Our first concept is to use the Matrix Voice microphone array that will transfer audio data to a raspberry pi running Rhasspy. The raspberry pi will then detect a set hot word to initiate a command, convert the audio following the hot word to text, and detect the intent of the instruction from the text. The raspberry pi will then send commands to the local home assistant server for device control. This smart home voice control is privacy focused by keeping all of the audio local, not storing any of it, and only sending the necessary commands for system control. Also, commands that relate only to the control of local network devices like smart outlets never have their data transferred beyond the local wifi network.
 
-After this first concept we will have a better idea of which direction to take but one option may be to use the Matrix Voice's ESP32 to convert the audio to text and send the text over the wifi to a server. This server would then handle command parsing and smart home control. 
+Other products like [Amazon Echo's](https://www.amazon.com/gp/help/customer/display.html?nodeId=GVP69FUJ48X9DK8V), state that they have hot word detection but then transfer the actual audio to Amazon Servers for analysis and smart home control. This opens the door for data collection and breaches of privacy as the systems are not open-source either.
+
+After this first concept we will have a better idea of which direction to take of optimizing the system. We potentially do not need a raspberry pi and instead could use the on-board Matrix Voice's ESP32 to convert the audio to text and send the text over the wifi to a server. This server would then handle command parsing and smart home control. We may also add more smart home devices and add custom voice control commands for specific devices. We may also explore various options within the pipeline from audio to smart home control to reduce the latency as much as possible, to make the system more responsive.
 
 ## System Diagram
 
