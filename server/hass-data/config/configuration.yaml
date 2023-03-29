@@ -16,14 +16,15 @@ scene: !include scenes.yaml
 
 api:
 
-intent:
+snips:
+
 intent_script:
   ChangeLightState:  # Intent type
     action:
-      - service: mqtt.publish
-        data:
-          payload_template: '{"sessionId": "{{_intent.sessionId}}", "text" : "ok, {{name}} has been turned {{state}}"}'
-          topic: hermes/dialogueManager/endSession
+      # - service: mqtt.publish
+      #   data:
+      #     payload_template: '{"sessionId": "{{_intent.sessionId}}", "text" : "ok, {{name}} has been turned {{state}}"}'
+      #     topic: hermes/dialogueManager/endSession
       - service_template: light.turn_{{state}}
         data:
           entity_id: light.{{name.replace(' ', '_')}}
