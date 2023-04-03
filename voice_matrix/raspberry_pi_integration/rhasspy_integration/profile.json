@@ -1,11 +1,34 @@
 {
+    "dialogue": {
+        "system": "rhasspy"
+    },
+    "intent": {
+        "system": "fsticuffs"
+    },
     "microphone": {
         "arecord": {
             "device": "hw:CARD=MATRIXIOSOUND,DEV=0"
         },
         "system": "arecord"
     },
+    "mqtt": {
+        "enabled": "true",
+        "host": "192.168.0.0"
+    },
+    "sounds": {
+        "system": "aplay"
+    },
+    "speech_to_text": {
+        "system": "kaldi"
+    },
+    "text_to_speech": {
+        "system": "nanotts"
+    },
     "wake": {
+        "porcupine": {
+            "keyword_path": "porcupine_raspberry-pi.ppn",
+            "sensitivity": "0.8"
+        },
         "system": "porcupine"
     }
 }
