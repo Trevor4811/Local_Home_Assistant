@@ -1,0 +1,34 @@
+{
+    "dialogue": {
+        "system": "rhasspy"
+    },
+    "handle": {
+        "system": "hass"
+    },
+    "home_assistant": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjZjQ5ZWRjODcxZWU0ZGJkYWJkM2ZhNmIxMjhkZjZhOCIsImlhdCI6MTY3OTYwNTI5MiwiZXhwIjoxOTk0OTY1MjkyfQ.GszgkhvAKmSdWaAS6lWNqxlpmcPzP5VzwSASpj6p03s",
+        "url": "host.docker.internal"
+    },
+    "intent": {
+        "system": "fsticuffs"
+    },
+    "microphone": {
+        "system": "hermes"
+    },
+    "mqtt": {
+        "enabled": "true",
+        "host": "host.docker.internal"
+    },
+    "sounds": {
+        "system": "hermes"
+    },
+    "speech_to_text": {
+        "system": "kaldi"
+    },
+    "text_to_speech": {
+        "system": "nanotts"
+    },
+    "wake": {
+        "system": "porcupine"
+    }
+}

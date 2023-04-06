@@ -5,10 +5,8 @@ the applications needed for home automation.
 
 ## Architecture
 
-The server consists of an MQTT server and the Home Assistant
-instance running in their own Docker containers. This allows
-Rhasspy to pass on voice commands to Home Assistant, which
-then communicates with a variety of devices.
+The server consists of an MQTT server, Home Assistant
+server, and Rhasspy server.
 
 ## Usage
 
