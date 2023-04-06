@@ -1,0 +1,17 @@
+- id: '1680818984534'
+  alias: ChangeLightState
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_ChangeLightState
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: hermes/dialogueManager/endSession
+      payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
+        text" : "ok"}'
+  - service_template: light.turn_{{trigger.event.data.state}}
+    data:
+      entity_id: light.{{trigger.event.data.name.replace(' ', '_')}}
+  mode: single

@@ -1,13 +1,14 @@
 {
     "dialogue": {
-        "system": "rhasspy"
+        "system": "hermes"
     },
     "handle": {
         "system": "hass"
     },
     "home_assistant": {
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjZjQ5ZWRjODcxZWU0ZGJkYWJkM2ZhNmIxMjhkZjZhOCIsImlhdCI6MTY3OTYwNTI5MiwiZXhwIjoxOTk0OTY1MjkyfQ.GszgkhvAKmSdWaAS6lWNqxlpmcPzP5VzwSASpj6p03s",
-        "url": "host.docker.internal"
+        "handle_type": "event",
+        "url": "http://host.docker.internal:8123"
     },
     "intent": {
         "system": "fsticuffs"
