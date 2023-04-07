@@ -15,4 +15,15 @@ services:
       - "8123:8123"
     volumes:
       - ./hass-data/config:/config
+  rhasspy:
+    build: ./rhasspy
+    restart: unless-stopped
+    ports:
+        - "12101:12101"
+    volumes:
+        - ./rhasspy-data/profiles:/profiles
+        - /etc/localtime:/etc/localtime:ro
+    # devices:
+    #     - /dev/snd:/dev/snd
+    command: --user-profiles /profiles --profile en
 
