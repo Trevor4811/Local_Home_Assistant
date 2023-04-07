@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.johnny",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "johnny",
+          "user_id": "4b25b92e70d340a5ba7601bdfdb600eb",
+          "friendly_name": "Johnny"
+        },
+        "last_changed": "2023-04-06T22:48:12.673867+00:00",
+        "last_updated": "2023-04-06T22:48:19.050633+00:00",
+        "context": {
+          "id": "01GXCC39VAET66WEXPVA3RFAXQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-06T23:03:57.673494+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.changelightstate",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-06T22:51:35.234719+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1680818984534",
+          "friendly_name": "ChangeLightState"
+        },
+        "last_changed": "2023-04-06T22:48:17.033533+00:00",
+        "last_updated": "2023-04-06T22:51:35.376289+00:00",
+        "context": {
+          "id": "01GXCC99E1DZA6YWQ7MVZ488RB",
+          "parent_id": "01GXCC99DWBM2DM34KYQ6D8ZTY",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-06T23:03:57.673494+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.wled_restart",
+        "state": "unavailable",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "WLED Restart"
+        },
+        "last_changed": "2023-04-06T22:55:20.442474+00:00",
+        "last_updated": "2023-04-06T22:55:20.442474+00:00",
+        "context": {
+          "id": "01GXCCG5BTNVRKM4AWY2G8YTNH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-06T23:03:57.673494+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.wled_firmware",
+        "state": "unavailable",
+        "attributes": {
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/wled/icon.png",
+          "friendly_name": "WLED Firmware",
+          "supported_features": 3
+        },
+        "last_changed": "2023-04-06T22:55:20.442620+00:00",
+        "last_updated": "2023-04-06T22:55:20.442620+00:00",
+        "context": {
+          "id": "01GXCCG5BTMQN0F97AZSZCYPMX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-06T23:03:57.673494+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "timer.30_minutes",
+        "state": "idle",
+        "attributes": {
+          "duration": "0:30:00",
+          "editable": true,
+          "friendly_name": "30 minutes"
+        },
+        "last_changed": "2023-04-06T22:48:16.788767+00:00",
+        "last_updated": "2023-04-06T22:48:16.788767+00:00",
+        "context": {
+          "id": "01GXCC37MM396TRBP3CPFQXKQS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-06T22:56:20.308108+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_datetime.time_of_day",
+        "state": "00:00:00",
+        "attributes": {
+          "has_date": false,
+          "has_time": true,
+          "editable": true,
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "timestamp": 0,
+          "friendly_name": "LED On Time"
+        },
+        "last_changed": "2023-04-06T22:48:17.075473+00:00",
+        "last_updated": "2023-04-06T22:48:17.075473+00:00",
+        "context": {
+          "id": "01GXCC37XKVFETSJRXC57PFKS3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-06T22:56:23.757768+00:00"
+    }
+  ]
+}

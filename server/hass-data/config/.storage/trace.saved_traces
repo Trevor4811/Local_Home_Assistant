@@ -1,0 +1,1214 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "trace.saved_traces",
+  "data": {
+    "automation.1680818984534": [
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "12b2f1b491b9dc4cf7c0982d37038c31",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:48:28.184979+00:00",
+            "finish": "2023-04-06T22:48:28.337861+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-06T22:48:28.185088+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.changelightstate",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-06T22:28:50.074942+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680818984534",
+                      "friendly_name": "ChangeLightState"
+                    },
+                    "last_changed": "2023-04-06T22:48:17.033533+00:00",
+                    "last_updated": "2023-04-06T22:48:17.033533+00:00",
+                    "context": {
+                      "id": "01GXCC37W9X5W28FWDTY3QJFVN",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_ChangeLightState",
+                      "data": {
+                        "state": "on",
+                        "state_raw_value": "on",
+                        "name": "wled",
+                        "name_raw_value": "wled",
+                        "_text": "turn on the wled",
+                        "_raw_text": "turn on the wled",
+                        "_intent": {
+                          "input": "turn on the wled",
+                          "intent": {
+                            "intentName": "ChangeLightState",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "d8ce4387-b9e9-4bcb-a2f1-e634b638c743",
+                          "slots": [
+                            {
+                              "entity": "state",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "on"
+                              },
+                              "slotName": "state",
+                              "rawValue": "on",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 5,
+                                "end": 7,
+                                "rawStart": 5,
+                                "rawEnd": 7
+                              }
+                            },
+                            {
+                              "entity": "name",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "wled"
+                              },
+                              "slotName": "name",
+                              "rawValue": "wled",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 12,
+                                "end": 16,
+                                "rawStart": 12,
+                                "rawEnd": 16
+                              }
+                            }
+                          ],
+                          "sessionId": "d8ce4387-b9e9-4bcb-a2f1-e634b638c743",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 11,
+                                "time": null
+                              },
+                              {
+                                "value": "wled",
+                                "confidence": 1.0,
+                                "rangeStart": 12,
+                                "rangeEnd": 16,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn on the wled",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-06T22:48:28.180084+00:00",
+                      "context": {
+                        "id": "01GXCC3JRMRNGRVEP58RRXHFQN",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_ChangeLightState'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-06T22:48:28.189657+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXCC3JRR8RA53JKQG3CR98NS",
+                    "parent_id": "01GXCC3JRMRNGRVEP58RRXHFQN",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"d8ce4387-b9e9-4bcb-a2f1-e634b638c743\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-06T22:48:28.196406+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {
+                      "entity_id": "light.wled"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680818984534",
+            "alias": "ChangeLightState",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_ChangeLightState"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              },
+              {
+                "service_template": "light.turn_{{trigger.event.data.state}}",
+                "data": {
+                  "entity_id": "light.{{trigger.event.data.name.replace(' ', '_')}}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXCC3JRR8RA53JKQG3CR98NS",
+            "parent_id": "01GXCC3JRMRNGRVEP58RRXHFQN",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "12b2f1b491b9dc4cf7c0982d37038c31",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:48:28.184979+00:00",
+            "finish": "2023-04-06T22:48:28.337861+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "91e7a294f1dd536543044face2dbaf42",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:50:51.712177+00:00",
+            "finish": "2023-04-06T22:50:51.718578+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-06T22:50:51.712348+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.changelightstate",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-06T22:48:28.185327+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680818984534",
+                      "friendly_name": "ChangeLightState"
+                    },
+                    "last_changed": "2023-04-06T22:48:17.033533+00:00",
+                    "last_updated": "2023-04-06T22:48:28.337468+00:00",
+                    "context": {
+                      "id": "01GXCC3JRR8RA53JKQG3CR98NS",
+                      "parent_id": "01GXCC3JRMRNGRVEP58RRXHFQN",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_ChangeLightState",
+                      "data": {
+                        "state": "off",
+                        "state_raw_value": "off",
+                        "name": "wled",
+                        "name_raw_value": "wled",
+                        "_text": "turn off the wled",
+                        "_raw_text": "turn off the wled",
+                        "_intent": {
+                          "input": "turn off the wled",
+                          "intent": {
+                            "intentName": "ChangeLightState",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "d719d1f4-2c9e-41bc-84ce-4fa5affbf971",
+                          "slots": [
+                            {
+                              "entity": "state",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "off"
+                              },
+                              "slotName": "state",
+                              "rawValue": "off",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 5,
+                                "end": 8,
+                                "rawStart": 5,
+                                "rawEnd": 8
+                              }
+                            },
+                            {
+                              "entity": "name",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "wled"
+                              },
+                              "slotName": "name",
+                              "rawValue": "wled",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 13,
+                                "end": 17,
+                                "rawStart": 13,
+                                "rawEnd": 17
+                              }
+                            }
+                          ],
+                          "sessionId": "d719d1f4-2c9e-41bc-84ce-4fa5affbf971",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "off",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 8,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 9,
+                                "rangeEnd": 12,
+                                "time": null
+                              },
+                              {
+                                "value": "wled",
+                                "confidence": 1.0,
+                                "rangeStart": 13,
+                                "rangeEnd": 17,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn off the wled",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-06T22:50:51.707974+00:00",
+                      "context": {
+                        "id": "01GXCC7YXV93X3CFAY8WHVYEGM",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_ChangeLightState'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-06T22:50:51.713726+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXCC7YY0ZN39B1WABBGRRHRQ",
+                    "parent_id": "01GXCC7YXV93X3CFAY8WHVYEGM",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"d719d1f4-2c9e-41bc-84ce-4fa5affbf971\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-06T22:50:51.716980+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_off",
+                    "service_data": {
+                      "entity_id": "light.wled"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680818984534",
+            "alias": "ChangeLightState",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_ChangeLightState"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              },
+              {
+                "service_template": "light.turn_{{trigger.event.data.state}}",
+                "data": {
+                  "entity_id": "light.{{trigger.event.data.name.replace(' ', '_')}}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXCC7YY0ZN39B1WABBGRRHRQ",
+            "parent_id": "01GXCC7YXV93X3CFAY8WHVYEGM",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "91e7a294f1dd536543044face2dbaf42",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:50:51.712177+00:00",
+            "finish": "2023-04-06T22:50:51.718578+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "5e1d113a4b322107b25b376ff0b4050f",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:51:07.533827+00:00",
+            "finish": "2023-04-06T22:51:07.539655+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-06T22:51:07.533917+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.changelightstate",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-06T22:50:51.712560+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680818984534",
+                      "friendly_name": "ChangeLightState"
+                    },
+                    "last_changed": "2023-04-06T22:48:17.033533+00:00",
+                    "last_updated": "2023-04-06T22:50:51.718038+00:00",
+                    "context": {
+                      "id": "01GXCC7YY0ZN39B1WABBGRRHRQ",
+                      "parent_id": "01GXCC7YXV93X3CFAY8WHVYEGM",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_ChangeLightState",
+                      "data": {
+                        "state": "off",
+                        "state_raw_value": "off",
+                        "name": "wled",
+                        "name_raw_value": "wled",
+                        "_text": "turn off the wled",
+                        "_raw_text": "turn off the wled",
+                        "_intent": {
+                          "input": "turn off the wled",
+                          "intent": {
+                            "intentName": "ChangeLightState",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "761282e6-600b-4884-8b5d-db4c432923d2",
+                          "slots": [
+                            {
+                              "entity": "state",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "off"
+                              },
+                              "slotName": "state",
+                              "rawValue": "off",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 5,
+                                "end": 8,
+                                "rawStart": 5,
+                                "rawEnd": 8
+                              }
+                            },
+                            {
+                              "entity": "name",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "wled"
+                              },
+                              "slotName": "name",
+                              "rawValue": "wled",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 13,
+                                "end": 17,
+                                "rawStart": 13,
+                                "rawEnd": 17
+                              }
+                            }
+                          ],
+                          "sessionId": "761282e6-600b-4884-8b5d-db4c432923d2",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "off",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 8,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 9,
+                                "rangeEnd": 12,
+                                "time": null
+                              },
+                              {
+                                "value": "wled",
+                                "confidence": 1.0,
+                                "rangeStart": 13,
+                                "rangeEnd": 17,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn off the wled",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-06T22:51:07.526520+00:00",
+                      "context": {
+                        "id": "01GXCC8EC6Q6BMTGVJ3RN9WK0A",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_ChangeLightState'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-06T22:51:07.534800+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXCC8ECD4HWHCSEM0ST99VJG",
+                    "parent_id": "01GXCC8EC6Q6BMTGVJ3RN9WK0A",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"761282e6-600b-4884-8b5d-db4c432923d2\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-06T22:51:07.537848+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_off",
+                    "service_data": {
+                      "entity_id": "light.wled"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680818984534",
+            "alias": "ChangeLightState",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_ChangeLightState"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              },
+              {
+                "service_template": "light.turn_{{trigger.event.data.state}}",
+                "data": {
+                  "entity_id": "light.{{trigger.event.data.name.replace(' ', '_')}}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXCC8ECD4HWHCSEM0ST99VJG",
+            "parent_id": "01GXCC8EC6Q6BMTGVJ3RN9WK0A",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "5e1d113a4b322107b25b376ff0b4050f",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:51:07.533827+00:00",
+            "finish": "2023-04-06T22:51:07.539655+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "f522057cca291393d0ce553116d54f4a",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:51:30.824830+00:00",
+            "finish": "2023-04-06T22:51:31.092243+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-06T22:51:30.824907+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.changelightstate",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-06T22:51:07.534115+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680818984534",
+                      "friendly_name": "ChangeLightState"
+                    },
+                    "last_changed": "2023-04-06T22:48:17.033533+00:00",
+                    "last_updated": "2023-04-06T22:51:07.538719+00:00",
+                    "context": {
+                      "id": "01GXCC8ECD4HWHCSEM0ST99VJG",
+                      "parent_id": "01GXCC8EC6Q6BMTGVJ3RN9WK0A",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_ChangeLightState",
+                      "data": {
+                        "state": "on",
+                        "state_raw_value": "on",
+                        "name": "wled",
+                        "name_raw_value": "wled",
+                        "_text": "turn on the wled",
+                        "_raw_text": "turn on the wled",
+                        "_intent": {
+                          "input": "turn on the wled",
+                          "intent": {
+                            "intentName": "ChangeLightState",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "c11965d2-1a5b-4067-98ce-ce70d158c0e6",
+                          "slots": [
+                            {
+                              "entity": "state",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "on"
+                              },
+                              "slotName": "state",
+                              "rawValue": "on",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 5,
+                                "end": 7,
+                                "rawStart": 5,
+                                "rawEnd": 7
+                              }
+                            },
+                            {
+                              "entity": "name",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "wled"
+                              },
+                              "slotName": "name",
+                              "rawValue": "wled",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 12,
+                                "end": 16,
+                                "rawStart": 12,
+                                "rawEnd": 16
+                              }
+                            }
+                          ],
+                          "sessionId": "c11965d2-1a5b-4067-98ce-ce70d158c0e6",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 11,
+                                "time": null
+                              },
+                              {
+                                "value": "wled",
+                                "confidence": 1.0,
+                                "rangeStart": 12,
+                                "rangeEnd": 16,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn on the wled",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-06T22:51:30.823762+00:00",
+                      "context": {
+                        "id": "01GXCC95476DJRVR4H988X7ZCP",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_ChangeLightState'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-06T22:51:30.830051+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXCC9548YS3X2K6CGFNQX6CS",
+                    "parent_id": "01GXCC95476DJRVR4H988X7ZCP",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"c11965d2-1a5b-4067-98ce-ce70d158c0e6\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-06T22:51:30.834857+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {
+                      "entity_id": "light.wled"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680818984534",
+            "alias": "ChangeLightState",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_ChangeLightState"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              },
+              {
+                "service_template": "light.turn_{{trigger.event.data.state}}",
+                "data": {
+                  "entity_id": "light.{{trigger.event.data.name.replace(' ', '_')}}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXCC9548YS3X2K6CGFNQX6CS",
+            "parent_id": "01GXCC95476DJRVR4H988X7ZCP",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "f522057cca291393d0ce553116d54f4a",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:51:30.824830+00:00",
+            "finish": "2023-04-06T22:51:31.092243+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "d543e039435985b2519ce6d19e1d6212",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:51:35.233730+00:00",
+            "finish": "2023-04-06T22:51:35.377003+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-06T22:51:35.234028+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.changelightstate",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-06T22:51:30.825072+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680818984534",
+                      "friendly_name": "ChangeLightState"
+                    },
+                    "last_changed": "2023-04-06T22:48:17.033533+00:00",
+                    "last_updated": "2023-04-06T22:51:31.091077+00:00",
+                    "context": {
+                      "id": "01GXCC9548YS3X2K6CGFNQX6CS",
+                      "parent_id": "01GXCC95476DJRVR4H988X7ZCP",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_ChangeLightState",
+                      "data": {
+                        "state": "off",
+                        "state_raw_value": "off",
+                        "name": "wled",
+                        "name_raw_value": "wled",
+                        "_text": "turn off the wled",
+                        "_raw_text": "turn off the wled",
+                        "_intent": {
+                          "input": "turn off the wled",
+                          "intent": {
+                            "intentName": "ChangeLightState",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "f1efb554-8b5c-4e33-8d3b-ec980b76f43c",
+                          "slots": [
+                            {
+                              "entity": "state",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "off"
+                              },
+                              "slotName": "state",
+                              "rawValue": "off",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 5,
+                                "end": 8,
+                                "rawStart": 5,
+                                "rawEnd": 8
+                              }
+                            },
+                            {
+                              "entity": "name",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "wled"
+                              },
+                              "slotName": "name",
+                              "rawValue": "wled",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 13,
+                                "end": 17,
+                                "rawStart": 13,
+                                "rawEnd": 17
+                              }
+                            }
+                          ],
+                          "sessionId": "f1efb554-8b5c-4e33-8d3b-ec980b76f43c",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "off",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 8,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 9,
+                                "rangeEnd": 12,
+                                "time": null
+                              },
+                              {
+                                "value": "wled",
+                                "confidence": 1.0,
+                                "rangeStart": 13,
+                                "rangeEnd": 17,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn off the wled",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-06T22:51:35.228472+00:00",
+                      "context": {
+                        "id": "01GXCC99DWBM2DM34KYQ6D8ZTY",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_ChangeLightState'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-06T22:51:35.237224+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXCC99E1DZA6YWQ7MVZ488RB",
+                    "parent_id": "01GXCC99DWBM2DM34KYQ6D8ZTY",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"f1efb554-8b5c-4e33-8d3b-ec980b76f43c\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-06T22:51:35.241024+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_off",
+                    "service_data": {
+                      "entity_id": "light.wled"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680818984534",
+            "alias": "ChangeLightState",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_ChangeLightState"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              },
+              {
+                "service_template": "light.turn_{{trigger.event.data.state}}",
+                "data": {
+                  "entity_id": "light.{{trigger.event.data.name.replace(' ', '_')}}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXCC99E1DZA6YWQ7MVZ488RB",
+            "parent_id": "01GXCC99DWBM2DM34KYQ6D8ZTY",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "d543e039435985b2519ce6d19e1d6212",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-06T22:51:35.233730+00:00",
+            "finish": "2023-04-06T22:51:35.377003+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'"
+        }
+      }
+    ]
+  }
+}
