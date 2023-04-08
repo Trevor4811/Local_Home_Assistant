@@ -15,3 +15,29 @@
     data:
       entity_id: light.{{trigger.event.data.name.replace(' ', '_')}}
   mode: single
+- id: '1680916818783'
+  alias: Pause
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_PauseMusic
+  condition: []
+  action:
+  - service: media_player.media_pause
+    data: {}
+    target:
+      entity_id: media_player.spotify
+  mode: single
+- id: '1680917001630'
+  alias: PlayMusic
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_PlayMusic
+  condition: []
+  action:
+  - service: media_player.media_play
+    data: {}
+    target:
+      entity_id: media_player.spotify
+  mode: single

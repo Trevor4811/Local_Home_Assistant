@@ -13,16 +13,16 @@
           "user_id": "4b25b92e70d340a5ba7601bdfdb600eb",
           "friendly_name": "Johnny"
         },
-        "last_changed": "2023-04-06T22:48:12.673867+00:00",
-        "last_updated": "2023-04-06T22:48:19.050633+00:00",
+        "last_changed": "2023-04-08T01:33:29.013777+00:00",
+        "last_updated": "2023-04-08T01:33:56.200082+00:00",
         "context": {
-          "id": "01GXCC39VAET66WEXPVA3RFAXQ",
+          "id": "01GXF7Z938YFGRB8CSF1Y5RV5A",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-06T23:03:57.673494+00:00"
+      "last_seen": "2023-04-08T01:33:56.201791+00:00"
     },
     {
       "state": {
@@ -35,16 +35,60 @@
           "id": "1680818984534",
           "friendly_name": "ChangeLightState"
         },
-        "last_changed": "2023-04-06T22:48:17.033533+00:00",
-        "last_updated": "2023-04-06T22:51:35.376289+00:00",
+        "last_changed": "2023-04-08T01:33:29.945206+00:00",
+        "last_updated": "2023-04-08T01:33:29.945206+00:00",
         "context": {
-          "id": "01GXCC99E1DZA6YWQ7MVZ488RB",
-          "parent_id": "01GXCC99DWBM2DM34KYQ6D8ZTY",
+          "id": "01GXF7YFESA6N20A5A3GZ0WK57",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-06T23:03:57.673494+00:00"
+      "last_seen": "2023-04-08T01:33:56.201791+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.pause",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-08T01:27:41.296472+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1680916818783",
+          "friendly_name": "PauseMusic"
+        },
+        "last_changed": "2023-04-08T01:33:29.945317+00:00",
+        "last_updated": "2023-04-08T01:33:29.945317+00:00",
+        "context": {
+          "id": "01GXF7YFESJAW1SESXZRHG7YH7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-08T01:33:56.201791+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.playmusic",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-08T01:27:44.431382+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1680917001630",
+          "friendly_name": "PlayMusic"
+        },
+        "last_changed": "2023-04-08T01:33:29.945401+00:00",
+        "last_updated": "2023-04-08T01:33:29.945401+00:00",
+        "context": {
+          "id": "01GXF7YFESEWMFDVG5TKYEFD51",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-08T01:33:56.201791+00:00"
     },
     {
       "state": {
@@ -130,6 +174,28 @@
       },
       "extra_data": null,
       "last_seen": "2023-04-06T22:56:23.757768+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.automation",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-08T01:18:43.974609+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1680916532466",
+          "friendly_name": "automation"
+        },
+        "last_changed": "2023-04-08T01:15:47.298495+00:00",
+        "last_updated": "2023-04-08T01:18:44.179905+00:00",
+        "context": {
+          "id": "01GXF73E86EVGDAZJHW8421GBK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-08T01:19:07.383869+00:00"
     }
   ]
 }

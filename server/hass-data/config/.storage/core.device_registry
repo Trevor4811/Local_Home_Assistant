@@ -32,6 +32,54 @@
         "name": "WLED",
         "sw_version": "0.13.3",
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "57fd4957487c1f2d5ee598ad86c3467a"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "e44415a0b55e389aa2ac836ef38735ad",
+        "identifiers": [
+          [
+            "sun",
+            "57fd4957487c1f2d5ee598ad86c3467a"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Sun",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom",
+        "config_entries": [
+          "6085f369f85855135a02a3eb0af69d31"
+        ],
+        "configuration_url": "https://open.spotify.com",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "baf8c63e13a060bde74d0e42a7b3a2be",
+        "identifiers": [
+          [
+            "spotify",
+            "iristhegreat88"
+          ]
+        ],
+        "manufacturer": "Spotify AB",
+        "model": "Spotify premium",
+        "name_by_user": null,
+        "name": "Spotify Iris",
+        "sw_version": null,
+        "via_device_id": null
       }
     ],
     "deleted_devices": []

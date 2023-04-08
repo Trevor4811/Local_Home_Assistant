@@ -1,1 +1,85 @@
-2023-04-06 22:46:19.612 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Error requesting homeassistant_alerts data: Cannot connect to host alerts.home-assistant.io:443 ssl:default [Name does not resolve]
+2023-04-08 01:31:53.726 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2023-04-08 01:31:56.967 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry Iris for spotify
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 383, in async_setup
+    result = await component.async_setup_entry(hass, self)
+  File "/usr/src/homeassistant/homeassistant/components/spotify/__init__.py", line 74, in async_setup_entry
+    implementation = await async_get_config_entry_implementation(hass, entry)
+  File "/usr/src/homeassistant/homeassistant/helpers/config_entry_oauth2_flow.py", line 401, in async_get_config_entry_implementation
+    raise ValueError("Implementation not available")
+ValueError: Implementation not available
+2023-04-08 01:32:19.416 WARNING (MainThread) [homeassistant.config_entries] Config entry 'WLED' for wled integration not ready yet: Invalid response from API: Timeout occurred while connecting to WLED device at 192.168.15.102; Retrying in background
+2023-04-08 01:32:19.433 WARNING (Recorder) [homeassistant.components.recorder.migration] Database is about to upgrade from schema version: 35 to: 41
+2023-04-08 01:32:19.445 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding columns context_id_bin, context_user_id_bin, context_parent_id_bin to table states. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.465 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding columns context_id_bin, context_user_id_bin, context_parent_id_bin to table events. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.482 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding index `ix_events_context_id_bin` to table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.532 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding index `ix_states_context_id_bin` to table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.549 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 36 done
+2023-04-08 01:32:19.550 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding columns event_type_id to table events. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.554 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_event_type_time_fired_ts` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.616 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding index `ix_events_event_type_id_time_fired_ts` to table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.650 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 37 done
+2023-04-08 01:32:19.651 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding columns metadata_id to table states. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.657 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding index `ix_states_metadata_id_last_updated_ts` to table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.672 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 38 done
+2023-04-08 01:32:19.672 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_event_type_time_fired_ts` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.681 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_event_type` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.689 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_event_type_time_fired` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.696 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_time_fired` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.704 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_context_user_id` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.711 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_context_parent_id` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.721 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_entity_id_last_updated` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.730 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_last_updated` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.740 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_entity_id` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.751 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_context_user_id` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.769 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_context_parent_id` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.783 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_created_domain` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.793 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_entity_id_created` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.805 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `states__state_changes` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.816 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `states__significant_changes` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.828 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_entity_id_created` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.847 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_statistics_statistic_id_start` from table `statistics`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.855 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_statistics_short_term_statistic_id_start` from table `statistics_short_term`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.866 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 39 done
+2023-04-08 01:32:19.866 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_event_type_id` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.884 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_metadata_id` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.898 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_statistics_metadata_id` from table `statistics`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.905 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_statistics_short_term_metadata_id` from table `statistics_short_term`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.920 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 40 done
+2023-04-08 01:32:19.921 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding index `ix_event_types_event_type` to table `event_types`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.921 WARNING (Recorder) [homeassistant.components.recorder.migration] Index ix_event_types_event_type already exists on event_types, continuing
+2023-04-08 01:32:19.921 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding index `ix_states_meta_entity_id` to table `states_meta`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:19.922 WARNING (Recorder) [homeassistant.components.recorder.migration] Index ix_states_meta_entity_id already exists on states_meta, continuing
+2023-04-08 01:32:19.927 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 41 done
+2023-04-08 01:32:21.958 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_context_id` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:22.309 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_states_entity_id_last_updated_ts` from table `states`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:32:22.850 WARNING (Recorder) [homeassistant.components.recorder.migration] Dropping index `ix_events_context_id` from table `events`. Note: this can take several minutes on large databases and slow computers. Please be patient!
+2023-04-08 01:33:14.229 WARNING (Thread-2 (_thread_main)) [homeassistant.components.mqtt.client] Disconnected from MQTT server host.docker.internal:1883 (7)
+2023-04-08 01:33:16.271 WARNING (MainThread) [homeassistant.core] Task <Task pending name='call_later 10.341773' coro=<ConfigEntry.async_setup.<locals>.setup_again() running at /usr/src/homeassistant/homeassistant/config_entries.py:453> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[set.remove()]> was still running after stage 2 shutdown; Integrations should cancel non-critical tasks when receiving the stop event to prevent delaying shutdown
+2023-04-08 01:33:16.273 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry WLED for wled
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 383, in async_setup
+    result = await component.async_setup_entry(hass, self)
+  File "/usr/src/homeassistant/homeassistant/components/wled/__init__.py", line 26, in async_setup_entry
+    await coordinator.async_config_entry_first_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 215, in async_config_entry_first_refresh
+    await self._async_refresh(
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 250, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/wled/coordinator.py", line 103, in _async_update_data
+    device = await self.wled.update(full_update=not self.last_update_success)
+  File "/usr/local/lib/python3.10/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/wled/wled.py", line 256, in update
+    if not (data := await self.request("/json")):
+  File "/usr/local/lib/python3.10/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/wled/wled.py", line 188, in request
+    response = await self.session.request(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/streams.py", line 616, in read
+    await self._waiter
+asyncio.exceptions.CancelledError

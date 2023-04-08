@@ -1209,6 +1209,1889 @@
           "trigger": "event 'rhasspy_ChangeLightState'"
         }
       }
+    ],
+    "automation.1680916532466": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "1f63ea9630c4be4bd90784e531b1a04e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:17:02.391293+00:00",
+            "finish": "2023-04-08T01:17:02.572117+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916532466",
+          "trigger": "event 'rhasspy_PlayMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:17:02.391353+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680916532466",
+                      "friendly_name": "automation"
+                    },
+                    "last_changed": "2023-04-08T01:15:47.298495+00:00",
+                    "last_updated": "2023-04-08T01:15:47.298495+00:00",
+                    "context": {
+                      "id": "01GXF6Y1Q28QQJTA70KTW4JG39",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PlayMusic",
+                      "data": {
+                        "_text": "play music",
+                        "_raw_text": "play music",
+                        "_intent": {
+                          "input": "play music",
+                          "intent": {
+                            "intentName": "PlayMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "1eff72da-5249-4158-a118-874aa422859c",
+                          "slots": [],
+                          "sessionId": "1eff72da-5249-4158-a118-874aa422859c",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "play",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 10,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "play music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:17:02.389755+00:00",
+                      "context": {
+                        "id": "01GXF70B1NENG03CA3W1D58P6Y",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PlayMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:17:02.392216+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF70B1QFR3DCEZMEA9SYE5X",
+                    "parent_id": "01GXF70B1NENG03CA3W1D58P6Y",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "play_media",
+                    "service_data": {
+                      "media_content_id": "",
+                      "media_content_type": "",
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680916532466",
+            "alias": "automation",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PlayMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.play_media",
+                "target": {
+                  "entity_id": "media_player.spotify"
+                },
+                "data": {
+                  "media_content_id": "",
+                  "media_content_type": ""
+                },
+                "metadata": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF70B1QFR3DCEZMEA9SYE5X",
+            "parent_id": "01GXF70B1NENG03CA3W1D58P6Y",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "1f63ea9630c4be4bd90784e531b1a04e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:17:02.391293+00:00",
+            "finish": "2023-04-08T01:17:02.572117+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916532466",
+          "trigger": "event 'rhasspy_PlayMusic'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "1c4355ec696906247c0fc76f28a78665",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:17:15.934228+00:00",
+            "finish": "2023-04-08T01:17:16.026921+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916532466",
+          "trigger": "event 'rhasspy_PlayMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:17:15.934279+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-08T01:17:02.391564+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680916532466",
+                      "friendly_name": "automation"
+                    },
+                    "last_changed": "2023-04-08T01:15:47.298495+00:00",
+                    "last_updated": "2023-04-08T01:17:02.566914+00:00",
+                    "context": {
+                      "id": "01GXF70B1QFR3DCEZMEA9SYE5X",
+                      "parent_id": "01GXF70B1NENG03CA3W1D58P6Y",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PlayMusic",
+                      "data": {
+                        "_text": "play music",
+                        "_raw_text": "play music",
+                        "_intent": {
+                          "input": "play music",
+                          "intent": {
+                            "intentName": "PlayMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "54e20bd2-c7ea-494e-84fa-a120da9503a3",
+                          "slots": [],
+                          "sessionId": "54e20bd2-c7ea-494e-84fa-a120da9503a3",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "play",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 10,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "play music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:17:15.933004+00:00",
+                      "context": {
+                        "id": "01GXF70R8WCXV8P961E8W3JCZC",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PlayMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:17:15.934826+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF70R8YEZHK5A35KB65XTE1",
+                    "parent_id": "01GXF70R8WCXV8P961E8W3JCZC",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "play_media",
+                    "service_data": {
+                      "media_content_id": "",
+                      "media_content_type": "",
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680916532466",
+            "alias": "automation",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PlayMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.play_media",
+                "target": {
+                  "entity_id": "media_player.spotify"
+                },
+                "data": {
+                  "media_content_id": "",
+                  "media_content_type": ""
+                },
+                "metadata": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF70R8YEZHK5A35KB65XTE1",
+            "parent_id": "01GXF70R8WCXV8P961E8W3JCZC",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "1c4355ec696906247c0fc76f28a78665",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:17:15.934228+00:00",
+            "finish": "2023-04-08T01:17:16.026921+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916532466",
+          "trigger": "event 'rhasspy_PlayMusic'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "7868fbadcec68cf785d580e1bdab057a",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:17:58.660711+00:00",
+            "finish": "2023-04-08T01:17:58.846913+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916532466",
+          "trigger": "event 'rhasspy_PlayMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:17:58.660794+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-08T01:17:15.934393+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680916532466",
+                      "friendly_name": "automation"
+                    },
+                    "last_changed": "2023-04-08T01:15:47.298495+00:00",
+                    "last_updated": "2023-04-08T01:17:16.026346+00:00",
+                    "context": {
+                      "id": "01GXF70R8YEZHK5A35KB65XTE1",
+                      "parent_id": "01GXF70R8WCXV8P961E8W3JCZC",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PlayMusic",
+                      "data": {
+                        "_text": "play music",
+                        "_raw_text": "play music",
+                        "_intent": {
+                          "input": "play music",
+                          "intent": {
+                            "intentName": "PlayMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "480e24be-e3e4-4957-ae51-3470f553ab8e",
+                          "slots": [],
+                          "sessionId": "480e24be-e3e4-4957-ae51-3470f553ab8e",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "play",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 10,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "play music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:17:58.659503+00:00",
+                      "context": {
+                        "id": "01GXF72203DKA7CH1TXAGY02JS",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PlayMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:17:58.661432+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF722047AHZSSG3GDD6YH3Q",
+                    "parent_id": "01GXF72203DKA7CH1TXAGY02JS",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "play_media",
+                    "service_data": {
+                      "media_content_id": "",
+                      "media_content_type": "",
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680916532466",
+            "alias": "automation",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PlayMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.play_media",
+                "target": {
+                  "entity_id": "media_player.spotify"
+                },
+                "data": {
+                  "media_content_id": "",
+                  "media_content_type": ""
+                },
+                "metadata": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF722047AHZSSG3GDD6YH3Q",
+            "parent_id": "01GXF72203DKA7CH1TXAGY02JS",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "7868fbadcec68cf785d580e1bdab057a",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:17:58.660711+00:00",
+            "finish": "2023-04-08T01:17:58.846913+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916532466",
+          "trigger": "event 'rhasspy_PlayMusic'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "3a38e6f1c917b216b5b05e53c9960587",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:18:43.974419+00:00",
+            "finish": "2023-04-08T01:18:44.180633+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916532466",
+          "trigger": "event 'rhasspy_PlayMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:18:43.974489+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-08T01:17:58.660918+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680916532466",
+                      "friendly_name": "automation"
+                    },
+                    "last_changed": "2023-04-08T01:15:47.298495+00:00",
+                    "last_updated": "2023-04-08T01:17:58.846136+00:00",
+                    "context": {
+                      "id": "01GXF722047AHZSSG3GDD6YH3Q",
+                      "parent_id": "01GXF72203DKA7CH1TXAGY02JS",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PlayMusic",
+                      "data": {
+                        "_text": "play music",
+                        "_raw_text": "play music",
+                        "_intent": {
+                          "input": "play music",
+                          "intent": {
+                            "intentName": "PlayMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "3f162b44-62b9-4ceb-aa62-09615a9fd82b",
+                          "slots": [],
+                          "sessionId": "3f162b44-62b9-4ceb-aa62-09615a9fd82b",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "play",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 10,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "play music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:18:43.973195+00:00",
+                      "context": {
+                        "id": "01GXF73E85195NHCMVTQ2QCA0M",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PlayMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:18:43.975050+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF73E86EVGDAZJHW8421GBK",
+                    "parent_id": "01GXF73E85195NHCMVTQ2QCA0M",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "play_media",
+                    "service_data": {
+                      "media_content_id": "",
+                      "media_content_type": "",
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680916532466",
+            "alias": "automation",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PlayMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.play_media",
+                "target": {
+                  "entity_id": "media_player.spotify"
+                },
+                "data": {
+                  "media_content_id": "",
+                  "media_content_type": ""
+                },
+                "metadata": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF73E86EVGDAZJHW8421GBK",
+            "parent_id": "01GXF73E85195NHCMVTQ2QCA0M",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "3a38e6f1c917b216b5b05e53c9960587",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:18:43.974419+00:00",
+            "finish": "2023-04-08T01:18:44.180633+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916532466",
+          "trigger": "event 'rhasspy_PlayMusic'"
+        }
+      }
+    ],
+    "automation.1680916818783": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "e8af4d7f3468a0dd56d3050877c8ac2c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:20:59.546094+00:00",
+            "finish": "2023-04-08T01:21:00.084962+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916818783",
+          "trigger": "event 'rhasspy_PauseMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:20:59.546132+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.pause",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680916818783",
+                      "friendly_name": "Pause"
+                    },
+                    "last_changed": "2023-04-08T01:20:23.176327+00:00",
+                    "last_updated": "2023-04-08T01:20:23.176327+00:00",
+                    "context": {
+                      "id": "01GXF76F48H5KE2NXRDAPHC3HH",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PauseMusic",
+                      "data": {
+                        "_text": "pause music",
+                        "_raw_text": "pause music",
+                        "_intent": {
+                          "input": "pause music",
+                          "intent": {
+                            "intentName": "PauseMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "eef3a9ef-b3d2-411c-a437-66f66915648e",
+                          "slots": [],
+                          "sessionId": "eef3a9ef-b3d2-411c-a437-66f66915648e",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "pause",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 5,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 6,
+                                "rangeEnd": 11,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "pause music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:20:59.544899+00:00",
+                      "context": {
+                        "id": "01GXF77JMR042WZZDCQZVBPHXV",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PauseMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:20:59.546628+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF77JMTP1ET9PM4N1PFHA00",
+                    "parent_id": "01GXF77JMR042WZZDCQZVBPHXV",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "media_pause",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680916818783",
+            "alias": "Pause",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PauseMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.media_pause",
+                "data": {},
+                "target": {
+                  "entity_id": "media_player.spotify"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF77JMTP1ET9PM4N1PFHA00",
+            "parent_id": "01GXF77JMR042WZZDCQZVBPHXV",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "e8af4d7f3468a0dd56d3050877c8ac2c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:20:59.546094+00:00",
+            "finish": "2023-04-08T01:21:00.084962+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916818783",
+          "trigger": "event 'rhasspy_PauseMusic'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "33f698eebeda13e8353bef1a2cb04be6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:23:55.066197+00:00",
+            "finish": "2023-04-08T01:23:55.599417+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916818783",
+          "trigger": "event 'rhasspy_PauseMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:23:55.066292+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.pause",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-08T01:20:59.546226+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680916818783",
+                      "friendly_name": "PauseMusic"
+                    },
+                    "last_changed": "2023-04-08T01:20:23.176327+00:00",
+                    "last_updated": "2023-04-08T01:23:49.643772+00:00",
+                    "context": {
+                      "id": "01GXF7CRRBAKXDJRX7VD11D6NS",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PauseMusic",
+                      "data": {
+                        "_text": "pause music",
+                        "_raw_text": "pause music",
+                        "_intent": {
+                          "input": "pause music",
+                          "intent": {
+                            "intentName": "PauseMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "36aea7a3-3e20-4076-b280-b55183c80ec1",
+                          "slots": [],
+                          "sessionId": "36aea7a3-3e20-4076-b280-b55183c80ec1",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "pause",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 5,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 6,
+                                "rangeEnd": 11,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "pause music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:23:55.064758+00:00",
+                      "context": {
+                        "id": "01GXF7CY1R3ENQW67X0TD4Q1TY",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PauseMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:23:55.066938+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF7CY1TVYTSXGPYRZX677C2",
+                    "parent_id": "01GXF7CY1R3ENQW67X0TD4Q1TY",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "media_pause",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680916818783",
+            "alias": "Pause",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PauseMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.media_pause",
+                "data": {},
+                "target": {
+                  "entity_id": "media_player.spotify"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF7CY1TVYTSXGPYRZX677C2",
+            "parent_id": "01GXF7CY1R3ENQW67X0TD4Q1TY",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "33f698eebeda13e8353bef1a2cb04be6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:23:55.066197+00:00",
+            "finish": "2023-04-08T01:23:55.599417+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916818783",
+          "trigger": "event 'rhasspy_PauseMusic'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "a56b18a405973141a355e844c118ac27",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:24:02.700244+00:00",
+            "finish": "2023-04-08T01:24:03.312759+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916818783",
+          "trigger": "event 'rhasspy_PauseMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:24:02.700315+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.pause",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-08T01:23:55.066411+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680916818783",
+                      "friendly_name": "PauseMusic"
+                    },
+                    "last_changed": "2023-04-08T01:20:23.176327+00:00",
+                    "last_updated": "2023-04-08T01:23:55.598049+00:00",
+                    "context": {
+                      "id": "01GXF7CY1TVYTSXGPYRZX677C2",
+                      "parent_id": "01GXF7CY1R3ENQW67X0TD4Q1TY",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PauseMusic",
+                      "data": {
+                        "_text": "pause music",
+                        "_raw_text": "pause music",
+                        "_intent": {
+                          "input": "pause music",
+                          "intent": {
+                            "intentName": "PauseMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "65491b3e-42dc-4278-8b79-25fcc6de7921",
+                          "slots": [],
+                          "sessionId": "65491b3e-42dc-4278-8b79-25fcc6de7921",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "pause",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 5,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 6,
+                                "rangeEnd": 11,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "pause music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:24:02.698923+00:00",
+                      "context": {
+                        "id": "01GXF7D5GA7KGSX3RY5T84MT4Y",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PauseMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:24:02.701928+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF7D5GC21EAJN6CBNR4XVQS",
+                    "parent_id": "01GXF7D5GA7KGSX3RY5T84MT4Y",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "media_pause",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680916818783",
+            "alias": "Pause",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PauseMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.media_pause",
+                "data": {},
+                "target": {
+                  "entity_id": "media_player.spotify"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF7D5GC21EAJN6CBNR4XVQS",
+            "parent_id": "01GXF7D5GA7KGSX3RY5T84MT4Y",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "a56b18a405973141a355e844c118ac27",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:24:02.700244+00:00",
+            "finish": "2023-04-08T01:24:03.312759+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916818783",
+          "trigger": "event 'rhasspy_PauseMusic'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "bfa3f2f24ed36013deea3948b1dbda28",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:27:41.296279+00:00",
+            "finish": "2023-04-08T01:27:41.810458+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916818783",
+          "trigger": "event 'rhasspy_PauseMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:27:41.296360+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.pause",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-08T01:24:02.700433+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680916818783",
+                      "friendly_name": "PauseMusic"
+                    },
+                    "last_changed": "2023-04-08T01:20:23.176327+00:00",
+                    "last_updated": "2023-04-08T01:24:03.310720+00:00",
+                    "context": {
+                      "id": "01GXF7D5GC21EAJN6CBNR4XVQS",
+                      "parent_id": "01GXF7D5GA7KGSX3RY5T84MT4Y",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PauseMusic",
+                      "data": {
+                        "_text": "pause music",
+                        "_raw_text": "pause music",
+                        "_intent": {
+                          "input": "pause music",
+                          "intent": {
+                            "intentName": "PauseMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "f57a9f6f-0445-4ccb-8988-f70339af8756",
+                          "slots": [],
+                          "sessionId": "f57a9f6f-0445-4ccb-8988-f70339af8756",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "pause",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 5,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 6,
+                                "rangeEnd": 11,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "pause music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:27:41.294676+00:00",
+                      "context": {
+                        "id": "01GXF7KTZEEZT9Z6B3N8YDZ20V",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PauseMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:27:41.297401+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF7KTZG19XJPYH62YQ0C1VY",
+                    "parent_id": "01GXF7KTZEEZT9Z6B3N8YDZ20V",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "media_pause",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680916818783",
+            "alias": "Pause",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PauseMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.media_pause",
+                "data": {},
+                "target": {
+                  "entity_id": "media_player.spotify"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF7KTZG19XJPYH62YQ0C1VY",
+            "parent_id": "01GXF7KTZEEZT9Z6B3N8YDZ20V",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "bfa3f2f24ed36013deea3948b1dbda28",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:27:41.296279+00:00",
+            "finish": "2023-04-08T01:27:41.810458+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680916818783",
+          "trigger": "event 'rhasspy_PauseMusic'"
+        }
+      }
+    ],
+    "automation.1680917001630": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "98abc14a8cf0b0fbaeb1c2dd9270d030",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:23:58.340858+00:00",
+            "finish": "2023-04-08T01:23:58.987705+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680917001630",
+          "trigger": "event 'rhasspy_PlayMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:23:58.340913+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.playmusic",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680917001630",
+                      "friendly_name": "PlayMusic"
+                    },
+                    "last_changed": "2023-04-08T01:23:26.753024+00:00",
+                    "last_updated": "2023-04-08T01:23:26.753024+00:00",
+                    "context": {
+                      "id": "01GXF7C2D14PHR95BA9NDG9JVX",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PlayMusic",
+                      "data": {
+                        "_text": "play music",
+                        "_raw_text": "play music",
+                        "_intent": {
+                          "input": "play music",
+                          "intent": {
+                            "intentName": "PlayMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "36e8a192-f976-492d-a2c5-e7f2b70cfc12",
+                          "slots": [],
+                          "sessionId": "36e8a192-f976-492d-a2c5-e7f2b70cfc12",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "play",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 10,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "play music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:23:58.338758+00:00",
+                      "context": {
+                        "id": "01GXF7D182M8045GWSNH1218H6",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PlayMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:23:58.343013+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF7D184XXWT7SD724637D50",
+                    "parent_id": "01GXF7D182M8045GWSNH1218H6",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "media_play",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680917001630",
+            "alias": "PlayMusic",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PlayMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.media_play",
+                "data": {},
+                "target": {
+                  "entity_id": "media_player.spotify"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF7D184XXWT7SD724637D50",
+            "parent_id": "01GXF7D182M8045GWSNH1218H6",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "98abc14a8cf0b0fbaeb1c2dd9270d030",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:23:58.340858+00:00",
+            "finish": "2023-04-08T01:23:58.987705+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680917001630",
+          "trigger": "event 'rhasspy_PlayMusic'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "2f373debfbee3df0689766cfa5b7fdfb",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:24:06.340208+00:00",
+            "finish": "2023-04-08T01:24:07.067978+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680917001630",
+          "trigger": "event 'rhasspy_PlayMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:24:06.340292+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.playmusic",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-08T01:23:58.341023+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680917001630",
+                      "friendly_name": "PlayMusic"
+                    },
+                    "last_changed": "2023-04-08T01:23:26.753024+00:00",
+                    "last_updated": "2023-04-08T01:23:58.986372+00:00",
+                    "context": {
+                      "id": "01GXF7D184XXWT7SD724637D50",
+                      "parent_id": "01GXF7D182M8045GWSNH1218H6",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PlayMusic",
+                      "data": {
+                        "_text": "play music",
+                        "_raw_text": "play music",
+                        "_intent": {
+                          "input": "play music",
+                          "intent": {
+                            "intentName": "PlayMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "d19bc087-7f8e-46e3-9181-8c1945e45aee",
+                          "slots": [],
+                          "sessionId": "d19bc087-7f8e-46e3-9181-8c1945e45aee",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "play",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 10,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "play music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:24:06.338625+00:00",
+                      "context": {
+                        "id": "01GXF7D922W93Z635JV87GSP4M",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PlayMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:24:06.341102+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF7D924TJTQCCT7JY23G0PS",
+                    "parent_id": "01GXF7D922W93Z635JV87GSP4M",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "media_play",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680917001630",
+            "alias": "PlayMusic",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PlayMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.media_play",
+                "data": {},
+                "target": {
+                  "entity_id": "media_player.spotify"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF7D924TJTQCCT7JY23G0PS",
+            "parent_id": "01GXF7D922W93Z635JV87GSP4M",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "2f373debfbee3df0689766cfa5b7fdfb",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:24:06.340208+00:00",
+            "finish": "2023-04-08T01:24:07.067978+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680917001630",
+          "trigger": "event 'rhasspy_PlayMusic'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "50e374946f317e68588462ed6dac30e5",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:27:44.431113+00:00",
+            "finish": "2023-04-08T01:27:45.104494+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680917001630",
+          "trigger": "event 'rhasspy_PlayMusic'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-08T01:27:44.431256+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.playmusic",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-08T01:24:06.340484+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680917001630",
+                      "friendly_name": "PlayMusic"
+                    },
+                    "last_changed": "2023-04-08T01:23:26.753024+00:00",
+                    "last_updated": "2023-04-08T01:24:07.066875+00:00",
+                    "context": {
+                      "id": "01GXF7D924TJTQCCT7JY23G0PS",
+                      "parent_id": "01GXF7D922W93Z635JV87GSP4M",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_PlayMusic",
+                      "data": {
+                        "_text": "play music",
+                        "_raw_text": "play music",
+                        "_intent": {
+                          "input": "play music",
+                          "intent": {
+                            "intentName": "PlayMusic",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "4930d051-c15a-403c-b5f6-599949841189",
+                          "slots": [],
+                          "sessionId": "4930d051-c15a-403c-b5f6-599949841189",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "play",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "music",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 10,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "play music",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-08T01:27:44.429524+00:00",
+                      "context": {
+                        "id": "01GXF7KY1DCJ2D86B3N21EE5QJ",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_PlayMusic'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-08T01:27:44.432766+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXF7KY1F28SBZN6193176MM5",
+                    "parent_id": "01GXF7KY1DCJ2D86B3N21EE5QJ",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "media_player",
+                    "service": "media_play",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "media_player.spotify"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680917001630",
+            "alias": "PlayMusic",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_PlayMusic"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "media_player.media_play",
+                "data": {},
+                "target": {
+                  "entity_id": "media_player.spotify"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXF7KY1F28SBZN6193176MM5",
+            "parent_id": "01GXF7KY1DCJ2D86B3N21EE5QJ",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "50e374946f317e68588462ed6dac30e5",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-08T01:27:44.431113+00:00",
+            "finish": "2023-04-08T01:27:45.104494+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680917001630",
+          "trigger": "event 'rhasspy_PlayMusic'"
+        }
+      }
     ]
   }
 }
