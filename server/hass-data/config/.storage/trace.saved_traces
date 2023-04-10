@@ -3,6 +3,770 @@
   "minor_version": 1,
   "key": "trace.saved_traces",
   "data": {
+    "automation.1681092141423": [
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "4fcac4560158c76871c6525adef529be",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:21:08.706852+00:00",
+            "finish": "2023-04-10T02:21:08.715600+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092141423",
+          "trigger": "event 'rhasspy_LightOnWhen'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-10T02:21:08.707055+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonwhen",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092141423",
+                      "friendly_name": "LightOnWhen"
+                    },
+                    "last_changed": "2023-04-10T02:18:27.204530+00:00",
+                    "last_updated": "2023-04-10T02:18:27.204530+00:00",
+                    "context": {
+                      "id": "01GXMFA7G4C12WT8E7R51EZFHZ",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnWhen",
+                      "data": {
+                        "hours": "1",
+                        "hours_raw_value": "one",
+                        "_text": "turn on the lights in 1 hour",
+                        "_raw_text": "turn on the lights in 1 hour",
+                        "_intent": {
+                          "input": "turn on the lights in 1 hour",
+                          "intent": {
+                            "intentName": "LightOnWhen",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "0563c0ac-f53a-4ee9-bb94-9d1469d949c9",
+                          "slots": [
+                            {
+                              "entity": "hours",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "1"
+                              },
+                              "slotName": "hours",
+                              "rawValue": "one",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 22,
+                                "end": 23,
+                                "rawStart": 22,
+                                "rawEnd": 25
+                              }
+                            }
+                          ],
+                          "sessionId": "0563c0ac-f53a-4ee9-bb94-9d1469d949c9",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 11,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 12,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "in",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 21,
+                                "time": null
+                              },
+                              {
+                                "value": "1",
+                                "confidence": 1.0,
+                                "rangeStart": 22,
+                                "rangeEnd": 23,
+                                "time": null
+                              },
+                              {
+                                "value": "hour",
+                                "confidence": 1.0,
+                                "rangeStart": 24,
+                                "rangeEnd": 28,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn on the lights in 1 hour",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-10T02:21:08.701365+00:00",
+                      "context": {
+                        "id": "01GXMFF56X5ANNJ1E25033X3B7",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnWhen'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-10T02:21:08.709270+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXMFF5729BKTNSS6MQA5SCF7",
+                    "parent_id": "01GXMFF56X5ANNJ1E25033X3B7",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "input_datetime",
+                    "service": "set_datetime",
+                    "service_data": {
+                      "time": "00:00:00",
+                      "entity_id": [
+                        "input_datetime.led_turn_on_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_datetime.led_turn_on_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-10T02:21:08.712522+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"0563c0ac-f53a-4ee9-bb94-9d1469d949c9\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092141423",
+            "alias": "LightOnWhen",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnWhen"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "input_datetime.set_datetime",
+                "data": {
+                  "time": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "input_datetime.led_turn_on_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXMFF5729BKTNSS6MQA5SCF7",
+            "parent_id": "01GXMFF56X5ANNJ1E25033X3B7",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "4fcac4560158c76871c6525adef529be",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:21:08.706852+00:00",
+            "finish": "2023-04-10T02:21:08.715600+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092141423",
+          "trigger": "event 'rhasspy_LightOnWhen'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "d7d2d4bca3a8115817888bb7caeae26d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:23:21.349591+00:00",
+            "finish": "2023-04-10T02:23:21.360736+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092141423",
+          "trigger": "event 'rhasspy_LightOnWhen'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-10T02:23:21.349850+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonwhen",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-10T02:21:08.707369+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092141423",
+                      "friendly_name": "LightOnWhen"
+                    },
+                    "last_changed": "2023-04-10T02:18:27.204530+00:00",
+                    "last_updated": "2023-04-10T02:21:08.715040+00:00",
+                    "context": {
+                      "id": "01GXMFF5729BKTNSS6MQA5SCF7",
+                      "parent_id": "01GXMFF56X5ANNJ1E25033X3B7",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnWhen",
+                      "data": {
+                        "hour": "1",
+                        "hour_raw_value": "one",
+                        "_text": "turn on the lights in 1 hour",
+                        "_raw_text": "turn on the lights in 1 hour",
+                        "_intent": {
+                          "input": "turn on the lights in 1 hour",
+                          "intent": {
+                            "intentName": "LightOnWhen",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "a9af033a-0e97-4987-804e-d8815ad3e2be",
+                          "slots": [
+                            {
+                              "entity": "hour",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "1"
+                              },
+                              "slotName": "hour",
+                              "rawValue": "one",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 22,
+                                "end": 23,
+                                "rawStart": 22,
+                                "rawEnd": 25
+                              }
+                            }
+                          ],
+                          "sessionId": "a9af033a-0e97-4987-804e-d8815ad3e2be",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 11,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 12,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "in",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 21,
+                                "time": null
+                              },
+                              {
+                                "value": "1",
+                                "confidence": 1.0,
+                                "rangeStart": 22,
+                                "rangeEnd": 23,
+                                "time": null
+                              },
+                              {
+                                "value": "hour",
+                                "confidence": 1.0,
+                                "rangeStart": 24,
+                                "rangeEnd": 28,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn on the lights in 1 hour",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-10T02:23:21.343607+00:00",
+                      "context": {
+                        "id": "01GXMFK6QZH1W9AKWJ1HMV9D67",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnWhen'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-10T02:23:21.352178+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXMFK6R5CJNMXVCXA4R0EGYE",
+                    "parent_id": "01GXMFK6QZH1W9AKWJ1HMV9D67",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "input_datetime",
+                    "service": "set_datetime",
+                    "service_data": {
+                      "time": "1:00:00",
+                      "entity_id": [
+                        "input_datetime.led_turn_on_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_datetime.led_turn_on_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-10T02:23:21.357101+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"a9af033a-0e97-4987-804e-d8815ad3e2be\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092141423",
+            "alias": "LightOnWhen",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnWhen"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "input_datetime.set_datetime",
+                "data": {
+                  "time": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "input_datetime.led_turn_on_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXMFK6R5CJNMXVCXA4R0EGYE",
+            "parent_id": "01GXMFK6QZH1W9AKWJ1HMV9D67",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "d7d2d4bca3a8115817888bb7caeae26d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:23:21.349591+00:00",
+            "finish": "2023-04-10T02:23:21.360736+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092141423",
+          "trigger": "event 'rhasspy_LightOnWhen'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "3c9c6507b632676015ec1cb3bb3fa348",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:37:57.406948+00:00",
+            "finish": "2023-04-10T02:37:57.420347+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092141423",
+          "trigger": "event 'rhasspy_LightOnWhen'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-10T02:37:57.406995+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonwhen",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-10T02:23:21.350395+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092141423",
+                      "friendly_name": "LightOnWhen"
+                    },
+                    "last_changed": "2023-04-10T02:37:00.235724+00:00",
+                    "last_updated": "2023-04-10T02:37:00.235724+00:00",
+                    "context": {
+                      "id": "01GXMGC6EBB49DP8H57WKZ2AWA",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnWhen",
+                      "data": {
+                        "second": "2",
+                        "second_raw_value": "two",
+                        "_text": "turn the lights on in 2 seconds",
+                        "_raw_text": "turn the lights on in 2 seconds",
+                        "_intent": {
+                          "input": "turn the lights on in 2 seconds",
+                          "intent": {
+                            "intentName": "LightOnWhen",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "d7265987-afff-40d9-ba5c-81e55cff149d",
+                          "slots": [
+                            {
+                              "entity": "second",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "2"
+                              },
+                              "slotName": "second",
+                              "rawValue": "two",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 22,
+                                "end": 23,
+                                "rawStart": 22,
+                                "rawEnd": 25
+                              }
+                            }
+                          ],
+                          "sessionId": "d7265987-afff-40d9-ba5c-81e55cff149d",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 8,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 9,
+                                "rangeEnd": 15,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 16,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "in",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 21,
+                                "time": null
+                              },
+                              {
+                                "value": "2",
+                                "confidence": 1.0,
+                                "rangeStart": 22,
+                                "rangeEnd": 23,
+                                "time": null
+                              },
+                              {
+                                "value": "seconds",
+                                "confidence": 1.0,
+                                "rangeStart": 24,
+                                "rangeEnd": 31,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn the lights on in 2 seconds",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-10T02:37:57.402548+00:00",
+                      "context": {
+                        "id": "01GXMGDY8TN3GKC854PNAE1TAE",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnWhen'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-10T02:37:57.408530+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXMGDY8YVQEVV309DEDSAY46",
+                    "parent_id": "01GXMGDY8TN3GKC854PNAE1TAE",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "00:00:2",
+                      "entity_id": [
+                        "timer.led_turn_on_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.led_turn_on_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-10T02:37:57.416136+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"d7265987-afff-40d9-ba5c-81e55cff149d\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092141423",
+            "alias": "LightOnWhen",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnWhen"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "timer.led_turn_on_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXMGDY8YVQEVV309DEDSAY46",
+            "parent_id": "01GXMGDY8TN3GKC854PNAE1TAE",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "3c9c6507b632676015ec1cb3bb3fa348",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:37:57.406948+00:00",
+            "finish": "2023-04-10T02:37:57.420347+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092141423",
+          "trigger": "event 'rhasspy_LightOnWhen'"
+        }
+      }
+    ],
     "automation.1680818984534": [
       {
         "extended_dict": {
@@ -3090,6 +3854,1125 @@
           "domain": "automation",
           "item_id": "1680917001630",
           "trigger": "event 'rhasspy_PlayMusic'"
+        }
+      }
+    ],
+    "automation.1681092180682": [
+      {
+        "extended_dict": {
+          "last_step": "action/2",
+          "run_id": "78b72b8aff35d420f907557ab95c0562",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:27:02.833372+00:00",
+            "finish": "2023-04-10T02:27:02.851913+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-10T02:27:02.833432+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonfor",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092180682",
+                      "friendly_name": "LightOnFor"
+                    },
+                    "last_changed": "2023-04-10T02:26:42.460200+00:00",
+                    "last_updated": "2023-04-10T02:26:42.460200+00:00",
+                    "context": {
+                      "id": "01GXMFSB4WMM22GQQW43FE4KWP",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnFor",
+                      "data": {
+                        "second": "2",
+                        "second_raw_value": "two",
+                        "_text": "turn the lights on for 2 seconds",
+                        "_raw_text": "turn the lights on for 2 seconds",
+                        "_intent": {
+                          "input": "turn the lights on for 2 seconds",
+                          "intent": {
+                            "intentName": "LightOnFor",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "ce0f972e-9b34-4f0f-a740-fcf12bc40ee6",
+                          "slots": [
+                            {
+                              "entity": "second",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "2"
+                              },
+                              "slotName": "second",
+                              "rawValue": "two",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 23,
+                                "end": 24,
+                                "rawStart": 23,
+                                "rawEnd": 26
+                              }
+                            }
+                          ],
+                          "sessionId": "ce0f972e-9b34-4f0f-a740-fcf12bc40ee6",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 8,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 9,
+                                "rangeEnd": 15,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 16,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "for",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 22,
+                                "time": null
+                              },
+                              {
+                                "value": "2",
+                                "confidence": 1.0,
+                                "rangeStart": 23,
+                                "rangeEnd": 24,
+                                "time": null
+                              },
+                              {
+                                "value": "seconds",
+                                "confidence": 1.0,
+                                "rangeStart": 25,
+                                "rangeEnd": 32,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn the lights on for 2 seconds",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-10T02:27:02.829505+00:00",
+                      "context": {
+                        "id": "01GXMFSZ1DFQ1EMX9NGA95M9EA",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnFor'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-10T02:27:02.835606+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXMFSZ1HNJY8WF653J5BMRQD",
+                    "parent_id": "01GXMFSZ1DFQ1EMX9NGA95M9EA",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.wled"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-10T02:27:02.841944+00:00",
+                "result": {
+                  "params": {
+                    "domain": "input_datetime",
+                    "service": "set_datetime",
+                    "service_data": {
+                      "time": "00:00:2",
+                      "entity_id": [
+                        "input_datetime.led_turn_off_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_datetime.led_turn_off_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/2": [
+              {
+                "path": "action/2",
+                "timestamp": "2023-04-10T02:27:02.848315+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"ce0f972e-9b34-4f0f-a740-fcf12bc40ee6\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092180682",
+            "alias": "LightOnFor",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnFor"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_on",
+                "data": {},
+                "target": {
+                  "entity_id": "light.wled"
+                }
+              },
+              {
+                "service": "input_datetime.set_datetime",
+                "data": {
+                  "time": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "input_datetime.led_turn_off_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXMFSZ1HNJY8WF653J5BMRQD",
+            "parent_id": "01GXMFSZ1DFQ1EMX9NGA95M9EA",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/2",
+          "run_id": "78b72b8aff35d420f907557ab95c0562",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:27:02.833372+00:00",
+            "finish": "2023-04-10T02:27:02.851913+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/2",
+          "run_id": "af3701a32f7b7ef293eaacc682fdea46",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:35:41.824988+00:00",
+            "finish": "2023-04-10T02:35:41.846608+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-10T02:35:41.825107+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonfor",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-10T02:27:02.833593+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092180682",
+                      "friendly_name": "LightOnFor"
+                    },
+                    "last_changed": "2023-04-10T02:35:27.025479+00:00",
+                    "last_updated": "2023-04-10T02:35:27.025479+00:00",
+                    "context": {
+                      "id": "01GXMG9BDHBJH58C4Z2J1NF6Q3",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnFor",
+                      "data": {
+                        "second": "2",
+                        "second_raw_value": "two",
+                        "_text": "turn the lights on for 2 seconds",
+                        "_raw_text": "turn the lights on for 2 seconds",
+                        "_intent": {
+                          "input": "turn the lights on for 2 seconds",
+                          "intent": {
+                            "intentName": "LightOnFor",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "879bcb9f-e48d-43e4-b036-8680e5d3c136",
+                          "slots": [
+                            {
+                              "entity": "second",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "2"
+                              },
+                              "slotName": "second",
+                              "rawValue": "two",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 23,
+                                "end": 24,
+                                "rawStart": 23,
+                                "rawEnd": 26
+                              }
+                            }
+                          ],
+                          "sessionId": "879bcb9f-e48d-43e4-b036-8680e5d3c136",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 8,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 9,
+                                "rangeEnd": 15,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 16,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "for",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 22,
+                                "time": null
+                              },
+                              {
+                                "value": "2",
+                                "confidence": 1.0,
+                                "rangeStart": 23,
+                                "rangeEnd": 24,
+                                "time": null
+                              },
+                              {
+                                "value": "seconds",
+                                "confidence": 1.0,
+                                "rangeStart": 25,
+                                "rangeEnd": 32,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn the lights on for 2 seconds",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-10T02:35:41.820961+00:00",
+                      "context": {
+                        "id": "01GXMG9SVW4MQAWXW12D99XC3M",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnFor'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-10T02:35:41.827488+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXMG9SW03BWJN6F2H28Q6Q15",
+                    "parent_id": "01GXMG9SVW4MQAWXW12D99XC3M",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.wled"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-10T02:35:41.831493+00:00",
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "00:00:2",
+                      "entity_id": [
+                        "input_datetime.led_turn_off_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_datetime.led_turn_off_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/2": [
+              {
+                "path": "action/2",
+                "timestamp": "2023-04-10T02:35:41.839304+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"879bcb9f-e48d-43e4-b036-8680e5d3c136\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092180682",
+            "alias": "LightOnFor",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnFor"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_on",
+                "data": {},
+                "target": {
+                  "entity_id": "light.wled"
+                }
+              },
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "input_datetime.led_turn_off_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXMG9SW03BWJN6F2H28Q6Q15",
+            "parent_id": "01GXMG9SVW4MQAWXW12D99XC3M",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/2",
+          "run_id": "af3701a32f7b7ef293eaacc682fdea46",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:35:41.824988+00:00",
+            "finish": "2023-04-10T02:35:41.846608+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/2",
+          "run_id": "80990dd42b7d28bbbac5bc7ca3245857",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:37:03.217892+00:00",
+            "finish": "2023-04-10T02:37:04.237139+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-10T02:37:03.218071+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonfor",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-10T02:35:41.825258+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092180682",
+                      "friendly_name": "LightOnFor"
+                    },
+                    "last_changed": "2023-04-10T02:36:49.810272+00:00",
+                    "last_updated": "2023-04-10T02:36:49.810272+00:00",
+                    "context": {
+                      "id": "01GXMGBW8JEN48E5H6PRJHXNVN",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnFor",
+                      "data": {
+                        "second": "2",
+                        "second_raw_value": "two",
+                        "_text": "turn the lights on for 2 seconds",
+                        "_raw_text": "turn the lights on for 2 seconds",
+                        "_intent": {
+                          "input": "turn the lights on for 2 seconds",
+                          "intent": {
+                            "intentName": "LightOnFor",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "41d67259-e1b5-4496-89c5-f083b102bb93",
+                          "slots": [
+                            {
+                              "entity": "second",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "2"
+                              },
+                              "slotName": "second",
+                              "rawValue": "two",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 23,
+                                "end": 24,
+                                "rawStart": 23,
+                                "rawEnd": 26
+                              }
+                            }
+                          ],
+                          "sessionId": "41d67259-e1b5-4496-89c5-f083b102bb93",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 8,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 9,
+                                "rangeEnd": 15,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 16,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "for",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 22,
+                                "time": null
+                              },
+                              {
+                                "value": "2",
+                                "confidence": 1.0,
+                                "rangeStart": 23,
+                                "rangeEnd": 24,
+                                "time": null
+                              },
+                              {
+                                "value": "seconds",
+                                "confidence": 1.0,
+                                "rangeStart": 25,
+                                "rangeEnd": 32,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn the lights on for 2 seconds",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-10T02:37:03.209923+00:00",
+                      "context": {
+                        "id": "01GXMGC9B955FWVYRDA1A71RZQ",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnFor'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-10T02:37:03.219230+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXMGC9BHFM51MFDNKJGPZ60G",
+                    "parent_id": "01GXMGC9B955FWVYRDA1A71RZQ",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.wled"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-10T02:37:03.221257+00:00",
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "00:00:2",
+                      "entity_id": [
+                        "timer.led_turn_off_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.led_turn_off_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/2": [
+              {
+                "path": "action/2",
+                "timestamp": "2023-04-10T02:37:03.222487+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"41d67259-e1b5-4496-89c5-f083b102bb93\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092180682",
+            "alias": "LightOnFor",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnFor"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_on",
+                "data": {},
+                "target": {
+                  "entity_id": "light.wled"
+                }
+              },
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "timer.led_turn_off_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXMGC9BHFM51MFDNKJGPZ60G",
+            "parent_id": "01GXMGC9B955FWVYRDA1A71RZQ",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/2",
+          "run_id": "80990dd42b7d28bbbac5bc7ca3245857",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:37:03.217892+00:00",
+            "finish": "2023-04-10T02:37:04.237139+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'"
+        }
+      }
+    ],
+    "automation.1681092363114": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "a0515e1cebaffc9809ca00a96d1959a9",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:37:05.006171+00:00",
+            "finish": "2023-04-10T02:37:05.020761+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092363114",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-10T02:37:05.006227+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ledturnoffauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092363114",
+                      "friendly_name": "LEDTurnOffAuto"
+                    },
+                    "last_changed": "2023-04-10T02:33:51.364152+00:00",
+                    "last_updated": "2023-04-10T02:33:51.364152+00:00",
+                    "context": {
+                      "id": "01GXMG6E04W11KA9TYNRG2EYEB",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.led_turn_off_time",
+                        "finished_at": "2023-04-10T02:37:05+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-10T02:37:05.000995+00:00",
+                      "context": {
+                        "id": "01GXMGCB38JGVJVC1SKJ7HW3DJ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-10T02:37:05.007364+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXMGCB3EJM58X20J9Y2ND7AK",
+                    "parent_id": "01GXMGCB38JGVJVC1SKJ7HW3DJ",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.wled"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092363114",
+            "alias": "LEDTurnOffAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.led_turn_off_time"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": "light.wled"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXMGCB3EJM58X20J9Y2ND7AK",
+            "parent_id": "01GXMGCB38JGVJVC1SKJ7HW3DJ",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "a0515e1cebaffc9809ca00a96d1959a9",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:37:05.006171+00:00",
+            "finish": "2023-04-10T02:37:05.020761+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092363114",
+          "trigger": "event 'timer.finished'"
+        }
+      }
+    ],
+    "automation.1681092324041": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "786fc9a9d3cb3e5489677eea07c91a64",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:37:59.002264+00:00",
+            "finish": "2023-04-10T02:37:59.009856+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092324041",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-10T02:37:59.002350+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ledturnonauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092324041",
+                      "friendly_name": "LEDTurnOnAuto"
+                    },
+                    "last_changed": "2023-04-10T02:34:13.839408+00:00",
+                    "last_updated": "2023-04-10T02:34:13.839408+00:00",
+                    "context": {
+                      "id": "01GXMG73YFMKMSG5GGJN231EW7",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.led_turn_on_time",
+                        "finished_at": "2023-04-10T02:37:59+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-10T02:37:59.001182+00:00",
+                      "context": {
+                        "id": "01GXMGDZTSENGBR9B464319X0E",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-10T02:37:59.003281+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GXMGDZTTBPBYPV180XRR5WMY",
+                    "parent_id": "01GXMGDZTSENGBR9B464319X0E",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.wled"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092324041",
+            "alias": "LEDTurnOnAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.led_turn_on_time"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_on",
+                "data": {},
+                "target": {
+                  "entity_id": "light.wled"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GXMGDZTTBPBYPV180XRR5WMY",
+            "parent_id": "01GXMGDZTSENGBR9B464319X0E",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "786fc9a9d3cb3e5489677eea07c91a64",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-10T02:37:59.002264+00:00",
+            "finish": "2023-04-10T02:37:59.009856+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092324041",
+          "trigger": "event 'timer.finished'"
         }
       }
     ]

@@ -41,3 +41,87 @@
     target:
       entity_id: media_player.spotify
   mode: single
+- id: '1681092141423'
+  alias: LightOnWhen
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_LightOnWhen
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: "{% if trigger.event.data.hour is not defined %}\n  {% set hour =
+        '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif
+        %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00'
+        %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{%
+        if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{%
+        else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour
+        }}:{{ minute }}:{{ second }}\n"
+    target:
+      entity_id: timer.led_turn_on_time
+  - service: mqtt.publish
+    data:
+      topic: hermes/dialogueManager/endSession
+      payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
+        text" : "ok"}'
+  mode: single
+- id: '1681092180682'
+  alias: LightOnFor
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_LightOnFor
+  condition: []
+  action:
+  - service: light.turn_on
+    data: {}
+    target:
+      entity_id: light.wled
+  - service: timer.start
+    data:
+      duration: "{% if trigger.event.data.hour is not defined %}\n  {% set hour =
+        '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif
+        %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00'
+        %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{%
+        if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{%
+        else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour
+        }}:{{ minute }}:{{ second }}\n"
+    target:
+      entity_id: timer.led_turn_off_time
+  - service: mqtt.publish
+    data:
+      topic: hermes/dialogueManager/endSession
+      payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
+        text" : "ok"}'
+  mode: single
+- id: '1681092324041'
+  alias: LEDTurnOnAuto
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.led_turn_on_time
+  condition: []
+  action:
+  - service: light.turn_on
+    data: {}
+    target:
+      entity_id: light.wled
+  mode: single
+- id: '1681092363114'
+  alias: LEDTurnOffAuto
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.led_turn_off_time
+  condition: []
+  action:
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id: light.wled
+  mode: single

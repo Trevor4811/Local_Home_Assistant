@@ -13,16 +13,16 @@
           "user_id": "4b25b92e70d340a5ba7601bdfdb600eb",
           "friendly_name": "Johnny"
         },
-        "last_changed": "2023-04-08T01:33:29.013777+00:00",
-        "last_updated": "2023-04-08T01:33:56.200082+00:00",
+        "last_changed": "2023-04-10T01:40:19.474257+00:00",
+        "last_updated": "2023-04-10T01:40:49.601096+00:00",
         "context": {
-          "id": "01GXF7Z938YFGRB8CSF1Y5RV5A",
+          "id": "01GXMD5AT1GVRFK12ENP0QE9R8",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-08T01:33:56.201791+00:00"
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
     },
     {
       "state": {
@@ -35,16 +35,16 @@
           "id": "1680818984534",
           "friendly_name": "ChangeLightState"
         },
-        "last_changed": "2023-04-08T01:33:29.945206+00:00",
-        "last_updated": "2023-04-08T01:33:29.945206+00:00",
+        "last_changed": "2023-04-10T01:40:23.723285+00:00",
+        "last_updated": "2023-04-10T01:40:23.723285+00:00",
         "context": {
-          "id": "01GXF7YFESA6N20A5A3GZ0WK57",
+          "id": "01GXMD4HHBFV0D49Y8XN59CD3P",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-08T01:33:56.201791+00:00"
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
     },
     {
       "state": {
@@ -57,16 +57,16 @@
           "id": "1680916818783",
           "friendly_name": "PauseMusic"
         },
-        "last_changed": "2023-04-08T01:33:29.945317+00:00",
-        "last_updated": "2023-04-08T01:33:29.945317+00:00",
+        "last_changed": "2023-04-10T01:40:23.723478+00:00",
+        "last_updated": "2023-04-10T01:40:23.723478+00:00",
         "context": {
-          "id": "01GXF7YFESJAW1SESXZRHG7YH7",
+          "id": "01GXMD4HHBEKQEWWAXDZ01NP1F",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-08T01:33:56.201791+00:00"
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
     },
     {
       "state": {
@@ -79,16 +79,144 @@
           "id": "1680917001630",
           "friendly_name": "PlayMusic"
         },
-        "last_changed": "2023-04-08T01:33:29.945401+00:00",
-        "last_updated": "2023-04-08T01:33:29.945401+00:00",
+        "last_changed": "2023-04-10T01:40:23.723669+00:00",
+        "last_updated": "2023-04-10T01:40:23.723669+00:00",
         "context": {
-          "id": "01GXF7YFESEWMFDVG5TKYEFD51",
+          "id": "01GXMD4HHBPD50WV1X40YJWPCN",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-08T01:33:56.201791+00:00"
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.lightonwhen",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-10T02:37:57.407159+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1681092141423",
+          "friendly_name": "LightOnWhen"
+        },
+        "last_changed": "2023-04-10T02:37:00.235724+00:00",
+        "last_updated": "2023-04-10T02:37:57.419630+00:00",
+        "context": {
+          "id": "01GXMGDY8YVQEVV309DEDSAY46",
+          "parent_id": "01GXMGDY8TN3GKC854PNAE1TAE",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.lightonfor",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-10T02:37:03.218248+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1681092180682",
+          "friendly_name": "LightOnFor"
+        },
+        "last_changed": "2023-04-10T02:36:49.810272+00:00",
+        "last_updated": "2023-04-10T02:37:04.235000+00:00",
+        "context": {
+          "id": "01GXMGC9BHFM51MFDNKJGPZ60G",
+          "parent_id": "01GXMGC9B955FWVYRDA1A71RZQ",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ledturnonauto",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-10T02:37:59.002540+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1681092324041",
+          "friendly_name": "LEDTurnOnAuto"
+        },
+        "last_changed": "2023-04-10T02:34:13.839408+00:00",
+        "last_updated": "2023-04-10T02:37:59.008929+00:00",
+        "context": {
+          "id": "01GXMGDZTTBPBYPV180XRR5WMY",
+          "parent_id": "01GXMGDZTSENGBR9B464319X0E",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ledturnoffauto",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-10T02:37:05.006468+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1681092363114",
+          "friendly_name": "LEDTurnOffAuto"
+        },
+        "last_changed": "2023-04-10T02:33:51.364152+00:00",
+        "last_updated": "2023-04-10T02:37:05.019738+00:00",
+        "context": {
+          "id": "01GXMGCB3EJM58X20J9Y2ND7AK",
+          "parent_id": "01GXMGCB38JGVJVC1SKJ7HW3DJ",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "timer.led_turn_off_time",
+        "state": "idle",
+        "attributes": {
+          "duration": "0:00:02",
+          "editable": true,
+          "friendly_name": "LED Turn-off Time"
+        },
+        "last_changed": "2023-04-10T02:37:05.001313+00:00",
+        "last_updated": "2023-04-10T02:37:05.001313+00:00",
+        "context": {
+          "id": "01GXMGC9BHFM51MFDNKJGPZ60G",
+          "parent_id": "01GXMGC9B955FWVYRDA1A71RZQ",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "timer.led_turn_on_time",
+        "state": "idle",
+        "attributes": {
+          "duration": "0:00:02",
+          "editable": true,
+          "friendly_name": "LED Turn-on Time"
+        },
+        "last_changed": "2023-04-10T02:37:59.001375+00:00",
+        "last_updated": "2023-04-10T02:37:59.001375+00:00",
+        "context": {
+          "id": "01GXMGDY8YVQEVV309DEDSAY46",
+          "parent_id": "01GXMGDY8TN3GKC854PNAE1TAE",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:38:10.738923+00:00"
     },
     {
       "state": {
@@ -196,6 +324,78 @@
       },
       "extra_data": null,
       "last_seen": "2023-04-08T01:19:07.383869+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.lightoffwhen",
+        "state": "on",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "id": "1681092162773",
+          "friendly_name": "LightOffWhen"
+        },
+        "last_changed": "2023-04-10T02:02:45.451161+00:00",
+        "last_updated": "2023-04-10T02:02:45.451161+00:00",
+        "context": {
+          "id": "01GXMEDFTB1EWDKQF58FJNBHST",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:03:12.205674+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_datetime.led_turn_off_time",
+        "state": "00:00:02",
+        "attributes": {
+          "has_date": false,
+          "has_time": true,
+          "editable": true,
+          "hour": 0,
+          "minute": 0,
+          "second": 2,
+          "timestamp": 2,
+          "friendly_name": "LED Turn-off Time"
+        },
+        "last_changed": "2023-04-10T02:27:02.844065+00:00",
+        "last_updated": "2023-04-10T02:27:02.844065+00:00",
+        "context": {
+          "id": "01GXMFSZ1HNJY8WF653J5BMRQD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:29:12.989558+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_datetime.led_turn_on_time",
+        "state": "01:00:00",
+        "attributes": {
+          "has_date": false,
+          "has_time": true,
+          "editable": true,
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "timestamp": 3600,
+          "friendly_name": "LED Turn-on Time"
+        },
+        "last_changed": "2023-04-10T02:23:21.355352+00:00",
+        "last_updated": "2023-04-10T02:23:21.355352+00:00",
+        "context": {
+          "id": "01GXMFK6R5CJNMXVCXA4R0EGYE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-10T02:29:16.668483+00:00"
     }
   ]
 }

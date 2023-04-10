@@ -3,6 +3,19 @@
   "minor_version": 1,
   "key": "timer",
   "data": {
-    "items": []
+    "items": [
+      {
+        "name": "LED Turn-off Time",
+        "duration": "0:00:00",
+        "restore": false,
+        "id": "led_turn_off_time"
+      },
+      {
+        "name": "LED Turn-on Time",
+        "duration": "0:00:00",
+        "restore": false,
+        "id": "led_turn_on_time"
+      }
+    ]
   }
 }
