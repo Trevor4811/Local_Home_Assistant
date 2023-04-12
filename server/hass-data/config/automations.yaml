@@ -33,13 +33,33 @@
   description: ''
   trigger:
   - platform: event
-    event_type: rhasspy_PlayMusic
+    event_type: rhasspy_PlayMusicWithSource
   condition: []
   action:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ trigger.event.data.name == ''laptop'' }}'
+      sequence:
+      - service: media_player.select_source
+        data:
+          source: Web Player (Chrome)
+        target:
+          entity_id: media_player.spotify
+    - conditions:
+      - condition: template
+        value_template: '{{ trigger.event.data.name == ''phone'' }}'
+      sequence:
+      - service: media_player.select_source
+        data:
+          source: iPhone
+        target:
+          entity_id: media_player.spotify
+    default: []
   - service: media_player.media_play
-    data: {}
     target:
       entity_id: media_player.spotify
+    data: {}
   mode: single
 - id: '1681092141423'
   alias: LightOnWhen
