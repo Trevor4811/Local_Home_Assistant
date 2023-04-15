@@ -13,16 +13,56 @@
           "user_id": "4b25b92e70d340a5ba7601bdfdb600eb",
           "friendly_name": "Johnny"
         },
-        "last_changed": "2023-04-10T01:40:19.474257+00:00",
-        "last_updated": "2023-04-10T01:40:49.601096+00:00",
+        "last_changed": "2023-04-13T03:10:10.489245+00:00",
+        "last_updated": "2023-04-13T03:10:42.120288+00:00",
         "context": {
-          "id": "01GXMD5AT1GVRFK12ENP0QE9R8",
+          "id": "01GXW9G1Y8GK7Y127X976Z96S5",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "timer.led_turn_off_time",
+        "state": "idle",
+        "attributes": {
+          "duration": "0:00:00",
+          "editable": true,
+          "friendly_name": "LED Turn-off Time"
+        },
+        "last_changed": "2023-04-13T03:10:15.417276+00:00",
+        "last_updated": "2023-04-13T03:10:15.417276+00:00",
+        "context": {
+          "id": "01GXW9F7VSQ95TEATQ56JZTZEF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "timer.led_turn_on_time",
+        "state": "idle",
+        "attributes": {
+          "duration": "0:00:00",
+          "editable": true,
+          "friendly_name": "LED Turn-on Time"
+        },
+        "last_changed": "2023-04-13T03:10:15.417383+00:00",
+        "last_updated": "2023-04-13T03:10:15.417383+00:00",
+        "context": {
+          "id": "01GXW9F7VSD1ESKYD74YHXGK35",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {
@@ -35,16 +75,16 @@
           "id": "1680818984534",
           "friendly_name": "ChangeLightState"
         },
-        "last_changed": "2023-04-10T01:40:23.723285+00:00",
-        "last_updated": "2023-04-10T01:40:23.723285+00:00",
+        "last_changed": "2023-04-13T03:10:15.838989+00:00",
+        "last_updated": "2023-04-13T03:10:15.838989+00:00",
         "context": {
-          "id": "01GXMD4HHBFV0D49Y8XN59CD3P",
+          "id": "01GXW9F88YCFJ9T8W2ZMMH58FM",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {
@@ -57,16 +97,16 @@
           "id": "1680916818783",
           "friendly_name": "PauseMusic"
         },
-        "last_changed": "2023-04-10T01:40:23.723478+00:00",
-        "last_updated": "2023-04-10T01:40:23.723478+00:00",
+        "last_changed": "2023-04-13T03:10:15.839134+00:00",
+        "last_updated": "2023-04-13T03:10:15.839134+00:00",
         "context": {
-          "id": "01GXMD4HHBEKQEWWAXDZ01NP1F",
+          "id": "01GXW9F88Z6N1VT69HRAD89E8G",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {
@@ -79,16 +119,16 @@
           "id": "1680917001630",
           "friendly_name": "PlayMusic"
         },
-        "last_changed": "2023-04-10T01:40:23.723669+00:00",
-        "last_updated": "2023-04-10T01:40:23.723669+00:00",
+        "last_changed": "2023-04-13T03:10:15.839255+00:00",
+        "last_updated": "2023-04-13T03:10:15.839255+00:00",
         "context": {
-          "id": "01GXMD4HHBPD50WV1X40YJWPCN",
+          "id": "01GXW9F88ZYQZXVTJ5NTH2AYKD",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {
@@ -101,16 +141,16 @@
           "id": "1681092141423",
           "friendly_name": "LightOnWhen"
         },
-        "last_changed": "2023-04-10T02:37:00.235724+00:00",
-        "last_updated": "2023-04-10T02:37:57.419630+00:00",
+        "last_changed": "2023-04-13T03:10:15.839370+00:00",
+        "last_updated": "2023-04-13T03:10:15.839370+00:00",
         "context": {
-          "id": "01GXMGDY8YVQEVV309DEDSAY46",
-          "parent_id": "01GXMGDY8TN3GKC854PNAE1TAE",
+          "id": "01GXW9F88ZFSK251YTE6Z64W6W",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {
@@ -123,16 +163,16 @@
           "id": "1681092180682",
           "friendly_name": "LightOnFor"
         },
-        "last_changed": "2023-04-10T02:36:49.810272+00:00",
-        "last_updated": "2023-04-10T02:37:04.235000+00:00",
+        "last_changed": "2023-04-13T03:10:15.839484+00:00",
+        "last_updated": "2023-04-13T03:10:15.839484+00:00",
         "context": {
-          "id": "01GXMGC9BHFM51MFDNKJGPZ60G",
-          "parent_id": "01GXMGC9B955FWVYRDA1A71RZQ",
+          "id": "01GXW9F88ZWEY1XWA3B6AAWE4S",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {
@@ -145,16 +185,16 @@
           "id": "1681092324041",
           "friendly_name": "LEDTurnOnAuto"
         },
-        "last_changed": "2023-04-10T02:34:13.839408+00:00",
-        "last_updated": "2023-04-10T02:37:59.008929+00:00",
+        "last_changed": "2023-04-13T03:10:15.839595+00:00",
+        "last_updated": "2023-04-13T03:10:15.839595+00:00",
         "context": {
-          "id": "01GXMGDZTTBPBYPV180XRR5WMY",
-          "parent_id": "01GXMGDZTSENGBR9B464319X0E",
+          "id": "01GXW9F88Z0NX2FKPBRQFSQ4CY",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {
@@ -167,163 +207,129 @@
           "id": "1681092363114",
           "friendly_name": "LEDTurnOffAuto"
         },
-        "last_changed": "2023-04-10T02:33:51.364152+00:00",
-        "last_updated": "2023-04-10T02:37:05.019738+00:00",
+        "last_changed": "2023-04-13T03:10:15.839704+00:00",
+        "last_updated": "2023-04-13T03:10:15.839704+00:00",
         "context": {
-          "id": "01GXMGCB3EJM58X20J9Y2ND7AK",
-          "parent_id": "01GXMGCB38JGVJVC1SKJ7HW3DJ",
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "timer.led_turn_off_time",
-        "state": "idle",
-        "attributes": {
-          "duration": "0:00:02",
-          "editable": true,
-          "friendly_name": "LED Turn-off Time"
-        },
-        "last_changed": "2023-04-10T02:37:05.001313+00:00",
-        "last_updated": "2023-04-10T02:37:05.001313+00:00",
-        "context": {
-          "id": "01GXMGC9BHFM51MFDNKJGPZ60G",
-          "parent_id": "01GXMGC9B955FWVYRDA1A71RZQ",
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "timer.led_turn_on_time",
-        "state": "idle",
-        "attributes": {
-          "duration": "0:00:02",
-          "editable": true,
-          "friendly_name": "LED Turn-on Time"
-        },
-        "last_changed": "2023-04-10T02:37:59.001375+00:00",
-        "last_updated": "2023-04-10T02:37:59.001375+00:00",
-        "context": {
-          "id": "01GXMGDY8YVQEVV309DEDSAY46",
-          "parent_id": "01GXMGDY8TN3GKC854PNAE1TAE",
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2023-04-10T02:38:10.738923+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "button.wled_restart",
-        "state": "unavailable",
-        "attributes": {
-          "device_class": "restart",
-          "friendly_name": "WLED Restart"
-        },
-        "last_changed": "2023-04-06T22:55:20.442474+00:00",
-        "last_updated": "2023-04-06T22:55:20.442474+00:00",
-        "context": {
-          "id": "01GXCCG5BTNVRKM4AWY2G8YTNH",
+          "id": "01GXW9F88ZRJHN65BP36SSYJ5B",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-06T23:03:57.673494+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {
-        "entity_id": "update.wled_firmware",
-        "state": "unavailable",
-        "attributes": {
-          "device_class": "firmware",
-          "entity_picture": "https://brands.home-assistant.io/_/wled/icon.png",
-          "friendly_name": "WLED Firmware",
-          "supported_features": 3
-        },
-        "last_changed": "2023-04-06T22:55:20.442620+00:00",
-        "last_updated": "2023-04-06T22:55:20.442620+00:00",
-        "context": {
-          "id": "01GXCCG5BTMQN0F97AZSZCYPMX",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2023-04-06T23:03:57.673494+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "timer.30_minutes",
-        "state": "idle",
-        "attributes": {
-          "duration": "0:30:00",
-          "editable": true,
-          "friendly_name": "30 minutes"
-        },
-        "last_changed": "2023-04-06T22:48:16.788767+00:00",
-        "last_updated": "2023-04-06T22:48:16.788767+00:00",
-        "context": {
-          "id": "01GXCC37MM396TRBP3CPFQXKQS",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2023-04-06T22:56:20.308108+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "input_datetime.time_of_day",
-        "state": "00:00:00",
-        "attributes": {
-          "has_date": false,
-          "has_time": true,
-          "editable": true,
-          "hour": 0,
-          "minute": 0,
-          "second": 0,
-          "timestamp": 0,
-          "friendly_name": "LED On Time"
-        },
-        "last_changed": "2023-04-06T22:48:17.075473+00:00",
-        "last_updated": "2023-04-06T22:48:17.075473+00:00",
-        "context": {
-          "id": "01GXCC37XKVFETSJRXC57PFKS3",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2023-04-06T22:56:23.757768+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "automation.automation",
+        "entity_id": "automation.gettemperature",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-08T01:18:43.974609+00:00",
+          "last_triggered": "2023-04-13T03:30:49.200878+00:00",
           "mode": "single",
           "current": 0,
-          "id": "1680916532466",
-          "friendly_name": "automation"
+          "id": "1681355815356",
+          "friendly_name": "GetTemperature"
         },
-        "last_changed": "2023-04-08T01:15:47.298495+00:00",
-        "last_updated": "2023-04-08T01:18:44.179905+00:00",
+        "last_changed": "2023-04-13T03:30:35.917289+00:00",
+        "last_updated": "2023-04-13T03:30:49.210140+00:00",
         "context": {
-          "id": "01GXF73E86EVGDAZJHW8421GBK",
-          "parent_id": null,
+          "id": "01GXWAMWQGEXS3P2E6XV2TB3N9",
+          "parent_id": "01GXWAMWQCHZTJPB4TVAXS8116",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-08T01:19:07.383869+00:00"
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.room_temperature_f",
+        "state": "67.0",
+        "attributes": {
+          "initial": null,
+          "editable": true,
+          "min": 50.0,
+          "max": 100.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "Farenheit",
+          "friendly_name": "Room Temperature (F)"
+        },
+        "last_changed": "2023-04-15T21:57:25.013222+00:00",
+        "last_updated": "2023-04-15T21:57:25.013222+00:00",
+        "context": {
+          "id": "01GY3ERJCFMXF0AGNR6MS7P45V",
+          "parent_id": "01GY3ERJCBMAZ4FNT4TXM6EQHK",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.10secperiodictimer",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-15T21:57:25.006967+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1681595008670",
+          "friendly_name": "10SecPeriodicTimer"
+        },
+        "last_changed": "2023-04-15T21:51:41.726539+00:00",
+        "last_updated": "2023-04-15T21:57:25.014391+00:00",
+        "context": {
+          "id": "01GY3ERJCE6CXXZXDZSR0HQFV8",
+          "parent_id": "01GY3ERJCBMAZ4FNT4TXM6EQHK",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "timer.temperature_periodic_timer",
+        "state": "active",
+        "attributes": {
+          "duration": "0:00:10",
+          "editable": true,
+          "finishes_at": "2023-04-15T21:57:35+00:00",
+          "remaining": "0:00:10",
+          "friendly_name": "Temperature Periodic Timer"
+        },
+        "last_changed": "2023-04-15T21:57:25.011432+00:00",
+        "last_updated": "2023-04-15T21:57:25.011432+00:00",
+        "context": {
+          "id": "01GY3ERJCE6CXXZXDZSR0HQFV8",
+          "parent_id": "01GY3ERJCBMAZ4FNT4TXM6EQHK",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.randomtempauto",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-15T21:57:25.007436+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1681595381038",
+          "friendly_name": "RandomTempAuto"
+        },
+        "last_changed": "2023-04-15T21:56:05.146355+00:00",
+        "last_updated": "2023-04-15T21:57:25.015252+00:00",
+        "context": {
+          "id": "01GY3ERJCFMXF0AGNR6MS7P45V",
+          "parent_id": "01GY3ERJCBMAZ4FNT4TXM6EQHK",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-15T21:57:33.797423+00:00"
     },
     {
       "state": {

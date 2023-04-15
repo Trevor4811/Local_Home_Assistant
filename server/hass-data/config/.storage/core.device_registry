@@ -82,6 +82,19 @@
         "via_device_id": null
       }
     ],
-    "deleted_devices": []
+    "deleted_devices": [
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "nws",
+            "42.0_-71.0"
+          ]
+        ],
+        "id": "eaa18d3dfed31ba000d9c812ebb93e2f",
+        "orphaned_timestamp": 1681594699.8582156
+      }
+    ]
   }
 }

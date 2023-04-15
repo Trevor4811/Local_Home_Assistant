@@ -145,3 +145,52 @@
     target:
       entity_id: light.wled
   mode: single
+- id: '1681355815356'
+  alias: GetTemperature
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_GetTemperature
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: hermes/dialogueManager/endSession
+      payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
+        text" : "The temperature is {{states(''input_number.room_temperature_f'')
+        | int}} degrees"}'
+  mode: single
+- id: '1681595008670'
+  alias: 10SecPeriodicTimer
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.temperature_periodic_timer
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: '10'
+    target:
+      entity_id: timer.temperature_periodic_timer
+  mode: single
+- id: '1681595381038'
+  alias: RandomTempAuto
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.temperature_periodic_timer
+  condition: []
+  action:
+  - service: input_number.set_value
+    data:
+      value: '{{ range(50, 100) | random | int }}'
+    target:
+      entity_id: input_number.room_temperature_f
+  mode: single

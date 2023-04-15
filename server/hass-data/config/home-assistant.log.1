@@ -1,1 +1,19 @@
-2023-04-08 01:33:56.162 WARNING (MainThread) [homeassistant.config_entries] Config entry 'WLED' for wled integration not ready yet: Invalid response from API: Timeout occurred while connecting to WLED device at 192.168.15.102; Retrying in background
+2023-04-10 01:40:19.538 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2023-04-10 01:40:24.799 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry Iris for spotify
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 383, in async_setup
+    result = await component.async_setup_entry(hass, self)
+  File "/usr/src/homeassistant/homeassistant/components/spotify/__init__.py", line 74, in async_setup_entry
+    implementation = await async_get_config_entry_implementation(hass, entry)
+  File "/usr/src/homeassistant/homeassistant/helpers/config_entry_oauth2_flow.py", line 401, in async_get_config_entry_implementation
+    raise ValueError("Implementation not available")
+ValueError: Implementation not available
+2023-04-10 01:40:49.585 WARNING (MainThread) [homeassistant.config_entries] Config entry 'WLED' for wled integration not ready yet: Invalid response from API: Timeout occurred while connecting to WLED device at 192.168.15.102; Retrying in background
+2023-04-10 01:40:49.632 WARNING (Recorder) [homeassistant.components.recorder.migration] Database is about to upgrade from schema version: 41 to: 35
+2023-04-10 02:27:02.836 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
+2023-04-10 02:35:41.828 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
+2023-04-10 02:35:41.834 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities input_datetime.led_turn_off_time or it is/they are currently not available
+2023-04-10 02:37:03.220 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
+2023-04-10 02:37:05.010 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
+2023-04-10 02:37:59.004 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
+2023-04-10 02:38:10.711 WARNING (Thread-2 (_thread_main)) [homeassistant.components.mqtt.client] Disconnected from MQTT server host.docker.internal:1883 (7)
