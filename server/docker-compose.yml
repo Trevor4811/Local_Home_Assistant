@@ -21,9 +21,10 @@ services:
     ports:
         - "12101:12101"
     volumes:
-        - ./rhasspy-data/profiles:/profiles
-        - /etc/localtime:/etc/localtime:ro
-    # devices:
-    #     - /dev/snd:/dev/snd
+      - ./rhasspy-data/profiles:/profiles
+      - /etc/localtime:/etc/localtime:ro
+    #  - ~/.config/pulse:/root/.config/pulse
+    environment:
+      - PULSE_SERVER=host.docker.internal
     command: --user-profiles /profiles --profile en
 

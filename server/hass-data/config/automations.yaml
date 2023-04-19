@@ -8,9 +8,11 @@
   action:
   - service: mqtt.publish
     data:
+      qos: 0
+      retain: false
       topic: hermes/dialogueManager/endSession
       payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
-        text" : "ok"}'
+        "text": "ok"}'
   - service_template: light.turn_{{trigger.event.data.state}}
     data:
       entity_id: light.{{trigger.event.data.name.replace(' ', '_')}}
@@ -82,9 +84,11 @@
       entity_id: timer.led_turn_on_time
   - service: mqtt.publish
     data:
+      qos: 0
+      retain: false
       topic: hermes/dialogueManager/endSession
       payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
-        text" : "ok"}'
+        "text": "ok"}'
   mode: single
 - id: '1681092180682'
   alias: LightOnFor
@@ -111,9 +115,11 @@
       entity_id: timer.led_turn_off_time
   - service: mqtt.publish
     data:
+      qos: 0
+      retain: false
       topic: hermes/dialogueManager/endSession
       payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
-        text" : "ok"}'
+        "text": "ok"}'
   mode: single
 - id: '1681092324041'
   alias: LEDTurnOnAuto
@@ -155,9 +161,11 @@
   action:
   - service: mqtt.publish
     data:
+      qos: 0
+      retain: false
       topic: hermes/dialogueManager/endSession
       payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
-        text" : "The temperature is {{states(''input_number.room_temperature_f'')
+        "text": "The temperature is {{states(''input_number.room_temperature_f'')
         | int}} degrees"}'
   mode: single
 - id: '1681595008670'

@@ -1,6 +1,6 @@
 {
     "dialogue": {
-        "system": "hermes"
+        "system": "rhasspy"
     },
     "handle": {
         "system": "hass"
@@ -14,14 +14,23 @@
         "system": "fsticuffs"
     },
     "microphone": {
-        "system": "hermes"
+        "arecord": {
+            "device": "pulse"
+        },
+        "pyaudio": {
+            "device": "pulse"
+        },
+        "system": "arecord"
     },
     "mqtt": {
         "enabled": "true",
         "host": "host.docker.internal"
     },
     "sounds": {
-        "system": "hermes"
+        "aplay": {
+            "device": "pulse"
+        },
+        "system": "aplay"
     },
     "speech_to_text": {
         "system": "kaldi"
