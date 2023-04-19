@@ -48,21 +48,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "6756356fe1e5b7696559c54fd558d5bf",
-        "version": 1,
-        "domain": "wled",
-        "title": "WLED",
-        "data": {
-          "host": "192.168.15.102"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "4cebd6cc1324",
-        "disabled_by": null
-      },
-      {
         "entry_id": "6085f369f85855135a02a3eb0af69d31",
         "version": 1,
         "domain": "spotify",
@@ -85,6 +70,21 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "iristhegreat88",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "615d1ee2806dd3d29cb95dacf66f4375",
+        "version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.15.101"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "4cebd6cc1324",
         "disabled_by": null
       }
     ]

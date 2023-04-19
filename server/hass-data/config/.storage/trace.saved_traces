@@ -3,6 +3,2352 @@
   "minor_version": 1,
   "key": "trace.saved_traces",
   "data": {
+    "automation.1681595008670": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "01c1f4b375abb5762c6ad76ba14aa09a",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:35.008703+00:00",
+            "finish": "2023-04-19T01:14:35.029480+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-04-19T01:14:35.008826+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.10secperiodictimer",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:14:25.002450+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595008670",
+                      "friendly_name": "10SecPeriodicTimer"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428345+00:00",
+                    "last_updated": "2023-04-19T01:14:25.009787+00:00",
+                    "context": {
+                      "id": "01GYBH7EBAJQEVX02GNDTW5B9G",
+                      "parent_id": "01GYBH7EB8JPY6K4T2AB2P2X1T",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:14:35+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:14:35.000677+00:00",
+                      "context": {
+                        "id": "01GYBH7R3R24XD46XKEM340PY2",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:14:35.012675+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH7R40GK8X7PFR3MKJKB51",
+                    "parent_id": "01GYBH7R3R24XD46XKEM340PY2",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "10",
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595008670",
+            "alias": "10SecPeriodicTimer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "homeassistant",
+                "event": "start"
+              },
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "10"
+                },
+                "target": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH7R40GK8X7PFR3MKJKB51",
+            "parent_id": "01GYBH7R3R24XD46XKEM340PY2",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "01c1f4b375abb5762c6ad76ba14aa09a",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:35.008703+00:00",
+            "finish": "2023-04-19T01:14:35.029480+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "6e587fcd890d2391d95378fb8bbc2734",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:45.007110+00:00",
+            "finish": "2023-04-19T01:14:45.016078+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-04-19T01:14:45.007375+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.10secperiodictimer",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:14:35.009095+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595008670",
+                      "friendly_name": "10SecPeriodicTimer"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428345+00:00",
+                    "last_updated": "2023-04-19T01:14:35.026416+00:00",
+                    "context": {
+                      "id": "01GYBH7R40GK8X7PFR3MKJKB51",
+                      "parent_id": "01GYBH7R3R24XD46XKEM340PY2",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:14:45+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:14:45.001750+00:00",
+                      "context": {
+                        "id": "01GYBH81W9KE59MN4A97R983EV",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:14:45.010113+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH81WF6TNFRM03SPVPKZE7",
+                    "parent_id": "01GYBH81W9KE59MN4A97R983EV",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "10",
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595008670",
+            "alias": "10SecPeriodicTimer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "homeassistant",
+                "event": "start"
+              },
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "10"
+                },
+                "target": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH81WF6TNFRM03SPVPKZE7",
+            "parent_id": "01GYBH81W9KE59MN4A97R983EV",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "6e587fcd890d2391d95378fb8bbc2734",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:45.007110+00:00",
+            "finish": "2023-04-19T01:14:45.016078+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "cb2a65218aabfc1e565fe629e98f870b",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:55.007679+00:00",
+            "finish": "2023-04-19T01:14:55.016378+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-04-19T01:14:55.007773+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.10secperiodictimer",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:14:45.007609+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595008670",
+                      "friendly_name": "10SecPeriodicTimer"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428345+00:00",
+                    "last_updated": "2023-04-19T01:14:45.015365+00:00",
+                    "context": {
+                      "id": "01GYBH81WF6TNFRM03SPVPKZE7",
+                      "parent_id": "01GYBH81W9KE59MN4A97R983EV",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:14:55+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:14:55.003888+00:00",
+                      "context": {
+                        "id": "01GYBH8BMVBMRP13F2802FZYFB",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:14:55.009952+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH8BMZEXBXGPSNFJX4GHH0",
+                    "parent_id": "01GYBH8BMVBMRP13F2802FZYFB",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "10",
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595008670",
+            "alias": "10SecPeriodicTimer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "homeassistant",
+                "event": "start"
+              },
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "10"
+                },
+                "target": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH8BMZEXBXGPSNFJX4GHH0",
+            "parent_id": "01GYBH8BMVBMRP13F2802FZYFB",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "cb2a65218aabfc1e565fe629e98f870b",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:55.007679+00:00",
+            "finish": "2023-04-19T01:14:55.016378+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "2247b5e378a3cf21e9ea22f17f5774e0",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:15:05.006339+00:00",
+            "finish": "2023-04-19T01:15:05.015405+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-04-19T01:15:05.006449+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.10secperiodictimer",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:14:55.007959+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595008670",
+                      "friendly_name": "10SecPeriodicTimer"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428345+00:00",
+                    "last_updated": "2023-04-19T01:14:55.015449+00:00",
+                    "context": {
+                      "id": "01GYBH8BMZEXBXGPSNFJX4GHH0",
+                      "parent_id": "01GYBH8BMVBMRP13F2802FZYFB",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:15:05+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:15:05.001644+00:00",
+                      "context": {
+                        "id": "01GYBH8ND9GM9PM5BTZM6FV7JS",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:15:05.008419+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH8NDERKHXWYTYRC88JHCP",
+                    "parent_id": "01GYBH8ND9GM9PM5BTZM6FV7JS",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "10",
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595008670",
+            "alias": "10SecPeriodicTimer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "homeassistant",
+                "event": "start"
+              },
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "10"
+                },
+                "target": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH8NDERKHXWYTYRC88JHCP",
+            "parent_id": "01GYBH8ND9GM9PM5BTZM6FV7JS",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "2247b5e378a3cf21e9ea22f17f5774e0",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:15:05.006339+00:00",
+            "finish": "2023-04-19T01:15:05.015405+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "e926bc1ea6d5640c3604943231afce66",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:15:15.007775+00:00",
+            "finish": "2023-04-19T01:15:15.015959+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-04-19T01:15:15.007894+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.10secperiodictimer",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:15:05.006639+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595008670",
+                      "friendly_name": "10SecPeriodicTimer"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428345+00:00",
+                    "last_updated": "2023-04-19T01:15:05.014426+00:00",
+                    "context": {
+                      "id": "01GYBH8NDERKHXWYTYRC88JHCP",
+                      "parent_id": "01GYBH8ND9GM9PM5BTZM6FV7JS",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:15:15+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:15:15.003628+00:00",
+                      "context": {
+                        "id": "01GYBH8Z5VZ3VGGFZK1GQJPFEB",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:15:15.010106+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH8Z5ZENNJXCAMVGVP7DQD",
+                    "parent_id": "01GYBH8Z5VZ3VGGFZK1GQJPFEB",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "10",
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.temperature_periodic_timer"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595008670",
+            "alias": "10SecPeriodicTimer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "homeassistant",
+                "event": "start"
+              },
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "10"
+                },
+                "target": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH8Z5ZENNJXCAMVGVP7DQD",
+            "parent_id": "01GYBH8Z5VZ3VGGFZK1GQJPFEB",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "e926bc1ea6d5640c3604943231afce66",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:15:15.007775+00:00",
+            "finish": "2023-04-19T01:15:15.015959+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595008670",
+          "trigger": "event 'timer.finished'"
+        }
+      }
+    ],
+    "automation.1681595381038": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "76c6c0b60d6bb53fe92b548d1ba7f00e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:35.009913+00:00",
+            "finish": "2023-04-19T01:14:35.031933+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:14:35.010050+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.randomtempauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:14:25.002732+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595381038",
+                      "friendly_name": "RandomTempAuto"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428545+00:00",
+                    "last_updated": "2023-04-19T01:14:25.011004+00:00",
+                    "context": {
+                      "id": "01GYBH7EBA35AF41YRF6P7FEBX",
+                      "parent_id": "01GYBH7EB8JPY6K4T2AB2P2X1T",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:14:35+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:14:35.000677+00:00",
+                      "context": {
+                        "id": "01GYBH7R3R24XD46XKEM340PY2",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:14:35.013609+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH7R419K2PAAZ026JE9Z9F",
+                    "parent_id": "01GYBH7R3R24XD46XKEM340PY2",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "input_number",
+                    "service": "set_value",
+                    "service_data": {
+                      "value": 52,
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595381038",
+            "alias": "RandomTempAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "input_number.set_value",
+                "data": {
+                  "value": "{{ range(50, 100) | random | int }}"
+                },
+                "target": {
+                  "entity_id": "input_number.room_temperature_f"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH7R419K2PAAZ026JE9Z9F",
+            "parent_id": "01GYBH7R3R24XD46XKEM340PY2",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "76c6c0b60d6bb53fe92b548d1ba7f00e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:35.009913+00:00",
+            "finish": "2023-04-19T01:14:35.031933+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "a7e8e17f7b0bfcfdc24ea685337a52ae",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:45.008022+00:00",
+            "finish": "2023-04-19T01:14:45.016941+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:14:45.008123+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.randomtempauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:14:35.010189+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595381038",
+                      "friendly_name": "RandomTempAuto"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428545+00:00",
+                    "last_updated": "2023-04-19T01:14:35.030012+00:00",
+                    "context": {
+                      "id": "01GYBH7R419K2PAAZ026JE9Z9F",
+                      "parent_id": "01GYBH7R3R24XD46XKEM340PY2",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:14:45+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:14:45.001750+00:00",
+                      "context": {
+                        "id": "01GYBH81W9KE59MN4A97R983EV",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:14:45.010553+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH81WFW6W8WKJQ8DM28B49",
+                    "parent_id": "01GYBH81W9KE59MN4A97R983EV",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "input_number",
+                    "service": "set_value",
+                    "service_data": {
+                      "value": 99,
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595381038",
+            "alias": "RandomTempAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "input_number.set_value",
+                "data": {
+                  "value": "{{ range(50, 100) | random | int }}"
+                },
+                "target": {
+                  "entity_id": "input_number.room_temperature_f"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH81WFW6W8WKJQ8DM28B49",
+            "parent_id": "01GYBH81W9KE59MN4A97R983EV",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "a7e8e17f7b0bfcfdc24ea685337a52ae",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:45.008022+00:00",
+            "finish": "2023-04-19T01:14:45.016941+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "a7569cda02c87a5e7f45a6117c33ef13",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:55.008347+00:00",
+            "finish": "2023-04-19T01:14:55.017312+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:14:55.008412+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.randomtempauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:14:45.008501+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595381038",
+                      "friendly_name": "RandomTempAuto"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428545+00:00",
+                    "last_updated": "2023-04-19T01:14:45.016148+00:00",
+                    "context": {
+                      "id": "01GYBH81WFW6W8WKJQ8DM28B49",
+                      "parent_id": "01GYBH81W9KE59MN4A97R983EV",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:14:55+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:14:55.003888+00:00",
+                      "context": {
+                        "id": "01GYBH8BMVBMRP13F2802FZYFB",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:14:55.010536+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH8BN0MXW5ACQHT81R1TXQ",
+                    "parent_id": "01GYBH8BMVBMRP13F2802FZYFB",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "input_number",
+                    "service": "set_value",
+                    "service_data": {
+                      "value": 99,
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595381038",
+            "alias": "RandomTempAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "input_number.set_value",
+                "data": {
+                  "value": "{{ range(50, 100) | random | int }}"
+                },
+                "target": {
+                  "entity_id": "input_number.room_temperature_f"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH8BN0MXW5ACQHT81R1TXQ",
+            "parent_id": "01GYBH8BMVBMRP13F2802FZYFB",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "a7569cda02c87a5e7f45a6117c33ef13",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:14:55.008347+00:00",
+            "finish": "2023-04-19T01:14:55.017312+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "3d67ba564e7c7d36cc90cadf8baaf81d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:15:05.006940+00:00",
+            "finish": "2023-04-19T01:15:05.016413+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:15:05.007001+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.randomtempauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:14:55.008488+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595381038",
+                      "friendly_name": "RandomTempAuto"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428545+00:00",
+                    "last_updated": "2023-04-19T01:14:55.016504+00:00",
+                    "context": {
+                      "id": "01GYBH8BN0MXW5ACQHT81R1TXQ",
+                      "parent_id": "01GYBH8BMVBMRP13F2802FZYFB",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:15:05+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:15:05.001644+00:00",
+                      "context": {
+                        "id": "01GYBH8ND9GM9PM5BTZM6FV7JS",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:15:05.008726+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH8NDEPQ8XXEZKW61P3BAM",
+                    "parent_id": "01GYBH8ND9GM9PM5BTZM6FV7JS",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "input_number",
+                    "service": "set_value",
+                    "service_data": {
+                      "value": 60,
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595381038",
+            "alias": "RandomTempAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "input_number.set_value",
+                "data": {
+                  "value": "{{ range(50, 100) | random | int }}"
+                },
+                "target": {
+                  "entity_id": "input_number.room_temperature_f"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH8NDEPQ8XXEZKW61P3BAM",
+            "parent_id": "01GYBH8ND9GM9PM5BTZM6FV7JS",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "3d67ba564e7c7d36cc90cadf8baaf81d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:15:05.006940+00:00",
+            "finish": "2023-04-19T01:15:05.016413+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "9f00eb9ab2f366f5083026a6167cea6e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:15:15.008502+00:00",
+            "finish": "2023-04-19T01:15:15.016824+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:15:15.008561+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.randomtempauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:15:05.007079+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681595381038",
+                      "friendly_name": "RandomTempAuto"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.428545+00:00",
+                    "last_updated": "2023-04-19T01:15:05.015491+00:00",
+                    "context": {
+                      "id": "01GYBH8NDEPQ8XXEZKW61P3BAM",
+                      "parent_id": "01GYBH8ND9GM9PM5BTZM6FV7JS",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.temperature_periodic_timer",
+                        "finished_at": "2023-04-19T01:15:15+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:15:15.003628+00:00",
+                      "context": {
+                        "id": "01GYBH8Z5VZ3VGGFZK1GQJPFEB",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:15:15.010492+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH8Z60VMR0DD7CHFV9H3RB",
+                    "parent_id": "01GYBH8Z5VZ3VGGFZK1GQJPFEB",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "input_number",
+                    "service": "set_value",
+                    "service_data": {
+                      "value": 72,
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "input_number.room_temperature_f"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681595381038",
+            "alias": "RandomTempAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.temperature_periodic_timer"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "input_number.set_value",
+                "data": {
+                  "value": "{{ range(50, 100) | random | int }}"
+                },
+                "target": {
+                  "entity_id": "input_number.room_temperature_f"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH8Z60VMR0DD7CHFV9H3RB",
+            "parent_id": "01GYBH8Z5VZ3VGGFZK1GQJPFEB",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "9f00eb9ab2f366f5083026a6167cea6e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:15:15.008502+00:00",
+            "finish": "2023-04-19T01:15:15.016824+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681595381038",
+          "trigger": "event 'timer.finished'"
+        }
+      }
+    ],
+    "automation.1681355815356": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "c4aba0c1c9c92d7d686ca7247ad4f0b0",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:56:11.365826+00:00",
+            "finish": "2023-04-17T18:56:11.372379+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-17T18:56:11.365966+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.gettemperature",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-17T18:55:26.284051+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681355815356",
+                      "friendly_name": "GetTemperature"
+                    },
+                    "last_changed": "2023-04-16T00:45:05.627213+00:00",
+                    "last_updated": "2023-04-17T18:55:26.288885+00:00",
+                    "context": {
+                      "id": "01GY894SJBA21BXPC2JN0NRSQB",
+                      "parent_id": "01GY894SJ8GF5SFG4SCY95BJHQ",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_GetTemperature",
+                      "data": {
+                        "_text": "how hot is it",
+                        "_raw_text": "how hot is it",
+                        "_intent": {
+                          "input": "how hot is it",
+                          "intent": {
+                            "intentName": "GetTemperature",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "1ff370d9-9fed-4b7d-801f-9612c5113869",
+                          "slots": [],
+                          "sessionId": "1ff370d9-9fed-4b7d-801f-9612c5113869",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "how",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 3,
+                                "time": null
+                              },
+                              {
+                                "value": "hot",
+                                "confidence": 1.0,
+                                "rangeStart": 4,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "is",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 10,
+                                "time": null
+                              },
+                              {
+                                "value": "it",
+                                "confidence": 1.0,
+                                "rangeStart": 11,
+                                "rangeEnd": 13,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "how hot is it",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-17T18:56:11.358759+00:00",
+                      "context": {
+                        "id": "01GY8965JY8VMQPNQFF5X0H2CY",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_GetTemperature'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-17T18:56:11.367700+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GY8965K5JMK6Y8HE439S0PPB",
+                    "parent_id": "01GY8965JY8VMQPNQFF5X0H2CY",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"1ff370d9-9fed-4b7d-801f-9612c5113869\", text\" : \"The temperature is 65 degrees\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681355815356",
+            "alias": "GetTemperature",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_GetTemperature"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"The temperature is {{states('input_number.room_temperature_f') | int}} degrees\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GY8965K5JMK6Y8HE439S0PPB",
+            "parent_id": "01GY8965JY8VMQPNQFF5X0H2CY",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "c4aba0c1c9c92d7d686ca7247ad4f0b0",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:56:11.365826+00:00",
+            "finish": "2023-04-17T18:56:11.372379+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "7a5a83e5174dd30e854b097cf52a69fd",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:56:52.606456+00:00",
+            "finish": "2023-04-17T18:56:52.613974+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-17T18:56:52.606740+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.gettemperature",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-17T18:56:11.366143+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681355815356",
+                      "friendly_name": "GetTemperature"
+                    },
+                    "last_changed": "2023-04-16T00:45:05.627213+00:00",
+                    "last_updated": "2023-04-17T18:56:11.371400+00:00",
+                    "context": {
+                      "id": "01GY8965K5JMK6Y8HE439S0PPB",
+                      "parent_id": "01GY8965JY8VMQPNQFF5X0H2CY",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_GetTemperature",
+                      "data": {
+                        "_text": "how hot is it",
+                        "_raw_text": "how hot is it",
+                        "_intent": {
+                          "input": "how hot is it",
+                          "intent": {
+                            "intentName": "GetTemperature",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "8cce4bce-1668-4a33-84cc-a31e0ca7f8ba",
+                          "slots": [],
+                          "sessionId": "8cce4bce-1668-4a33-84cc-a31e0ca7f8ba",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "how",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 3,
+                                "time": null
+                              },
+                              {
+                                "value": "hot",
+                                "confidence": 1.0,
+                                "rangeStart": 4,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "is",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 10,
+                                "time": null
+                              },
+                              {
+                                "value": "it",
+                                "confidence": 1.0,
+                                "rangeStart": 11,
+                                "rangeEnd": 13,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "how hot is it",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-17T18:56:52.601715+00:00",
+                      "context": {
+                        "id": "01GY897DVSZ2785FRS8W0VF344",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_GetTemperature'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-17T18:56:52.608822+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GY897DVYVA3P505ZN5VRQC88",
+                    "parent_id": "01GY897DVSZ2785FRS8W0VF344",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"8cce4bce-1668-4a33-84cc-a31e0ca7f8ba\", text\" : \"The temperature is 93 degrees\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681355815356",
+            "alias": "GetTemperature",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_GetTemperature"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"The temperature is {{states('input_number.room_temperature_f') | int}} degrees\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GY897DVYVA3P505ZN5VRQC88",
+            "parent_id": "01GY897DVSZ2785FRS8W0VF344",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "7a5a83e5174dd30e854b097cf52a69fd",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:56:52.606456+00:00",
+            "finish": "2023-04-17T18:56:52.613974+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "76d84bbff8c56bccbdb7c5353ff9b698",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:56:59.006220+00:00",
+            "finish": "2023-04-17T18:56:59.017033+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-17T18:56:59.006375+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.gettemperature",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-17T18:56:52.607172+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681355815356",
+                      "friendly_name": "GetTemperature"
+                    },
+                    "last_changed": "2023-04-16T00:45:05.627213+00:00",
+                    "last_updated": "2023-04-17T18:56:52.612698+00:00",
+                    "context": {
+                      "id": "01GY897DVYVA3P505ZN5VRQC88",
+                      "parent_id": "01GY897DVSZ2785FRS8W0VF344",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_GetTemperature",
+                      "data": {
+                        "_text": "how hot is it",
+                        "_raw_text": "how hot is it",
+                        "_intent": {
+                          "input": "how hot is it",
+                          "intent": {
+                            "intentName": "GetTemperature",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "563c9be2-b134-4c7e-a3df-bda3b0707b0c",
+                          "slots": [],
+                          "sessionId": "563c9be2-b134-4c7e-a3df-bda3b0707b0c",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "how",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 3,
+                                "time": null
+                              },
+                              {
+                                "value": "hot",
+                                "confidence": 1.0,
+                                "rangeStart": 4,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "is",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 10,
+                                "time": null
+                              },
+                              {
+                                "value": "it",
+                                "confidence": 1.0,
+                                "rangeStart": 11,
+                                "rangeEnd": 13,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "how hot is it",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-17T18:56:59.001692+00:00",
+                      "context": {
+                        "id": "01GY897M3SJWT96EKN38069W3S",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_GetTemperature'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-17T18:56:59.008327+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GY897M3XFDX298NRV46DTGWM",
+                    "parent_id": "01GY897M3SJWT96EKN38069W3S",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"563c9be2-b134-4c7e-a3df-bda3b0707b0c\", text\" : \"The temperature is 89 degrees\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681355815356",
+            "alias": "GetTemperature",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_GetTemperature"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"The temperature is {{states('input_number.room_temperature_f') | int}} degrees\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GY897M3XFDX298NRV46DTGWM",
+            "parent_id": "01GY897M3SJWT96EKN38069W3S",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "76d84bbff8c56bccbdb7c5353ff9b698",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:56:59.006220+00:00",
+            "finish": "2023-04-17T18:56:59.017033+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "23f579b4b8f471e9781271c4790761a5",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:56:59.815172+00:00",
+            "finish": "2023-04-17T18:56:59.821940+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-17T18:56:59.815276+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.gettemperature",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-17T18:56:59.006548+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681355815356",
+                      "friendly_name": "GetTemperature"
+                    },
+                    "last_changed": "2023-04-16T00:45:05.627213+00:00",
+                    "last_updated": "2023-04-17T18:56:59.016194+00:00",
+                    "context": {
+                      "id": "01GY897M3XFDX298NRV46DTGWM",
+                      "parent_id": "01GY897M3SJWT96EKN38069W3S",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_GetTemperature",
+                      "data": {
+                        "_text": "how hot is it",
+                        "_raw_text": "how hot is it",
+                        "_intent": {
+                          "input": "how hot is it",
+                          "intent": {
+                            "intentName": "GetTemperature",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "9b360825-8fb7-4fe2-8e34-daf1e0fd43b4",
+                          "slots": [],
+                          "sessionId": "9b360825-8fb7-4fe2-8e34-daf1e0fd43b4",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "how",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 3,
+                                "time": null
+                              },
+                              {
+                                "value": "hot",
+                                "confidence": 1.0,
+                                "rangeStart": 4,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "is",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 10,
+                                "time": null
+                              },
+                              {
+                                "value": "it",
+                                "confidence": 1.0,
+                                "rangeStart": 11,
+                                "rangeEnd": 13,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "how hot is it",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-17T18:56:59.808546+00:00",
+                      "context": {
+                        "id": "01GY897MX04KNG6QJDX5AE29PB",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_GetTemperature'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-17T18:56:59.816935+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GY897MX7C299SCM5RG1RWDG0",
+                    "parent_id": "01GY897MX04KNG6QJDX5AE29PB",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"9b360825-8fb7-4fe2-8e34-daf1e0fd43b4\", text\" : \"The temperature is 89 degrees\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681355815356",
+            "alias": "GetTemperature",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_GetTemperature"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"The temperature is {{states('input_number.room_temperature_f') | int}} degrees\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GY897MX7C299SCM5RG1RWDG0",
+            "parent_id": "01GY897MX04KNG6QJDX5AE29PB",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "23f579b4b8f471e9781271c4790761a5",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:56:59.815172+00:00",
+            "finish": "2023-04-17T18:56:59.821940+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "bb2035745eda6d9a5b1c9467644b70cd",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:57:03.354620+00:00",
+            "finish": "2023-04-17T18:57:03.366210+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-17T18:57:03.354768+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.gettemperature",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-17T18:56:59.815522+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681355815356",
+                      "friendly_name": "GetTemperature"
+                    },
+                    "last_changed": "2023-04-16T00:45:05.627213+00:00",
+                    "last_updated": "2023-04-17T18:56:59.821049+00:00",
+                    "context": {
+                      "id": "01GY897MX7C299SCM5RG1RWDG0",
+                      "parent_id": "01GY897MX04KNG6QJDX5AE29PB",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_GetTemperature",
+                      "data": {
+                        "_text": "how hot is it",
+                        "_raw_text": "how hot is it",
+                        "_intent": {
+                          "input": "how hot is it",
+                          "intent": {
+                            "intentName": "GetTemperature",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "86948722-2430-4606-8f0b-66fdbb398613",
+                          "slots": [],
+                          "sessionId": "86948722-2430-4606-8f0b-66fdbb398613",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "how",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 3,
+                                "time": null
+                              },
+                              {
+                                "value": "hot",
+                                "confidence": 1.0,
+                                "rangeStart": 4,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "is",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 10,
+                                "time": null
+                              },
+                              {
+                                "value": "it",
+                                "confidence": 1.0,
+                                "rangeStart": 11,
+                                "rangeEnd": 13,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "how hot is it",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-17T18:57:03.351363+00:00",
+                      "context": {
+                        "id": "01GY897RBQ2P714T0G39HZJTBY",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_GetTemperature'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-17T18:57:03.356251+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GY897RBTCDS5TQA13VJGR9B0",
+                    "parent_id": "01GY897RBQ2P714T0G39HZJTBY",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"86948722-2430-4606-8f0b-66fdbb398613\", text\" : \"The temperature is 78 degrees\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681355815356",
+            "alias": "GetTemperature",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_GetTemperature"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"The temperature is {{states('input_number.room_temperature_f') | int}} degrees\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GY897RBTCDS5TQA13VJGR9B0",
+            "parent_id": "01GY897RBQ2P714T0G39HZJTBY",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "bb2035745eda6d9a5b1c9467644b70cd",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-17T18:57:03.354620+00:00",
+            "finish": "2023-04-17T18:57:03.366210+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681355815356",
+          "trigger": "event 'rhasspy_GetTemperature'"
+        }
+      }
+    ],
     "automation.1681092141423": [
       {
         "extended_dict": {
@@ -765,42 +3111,41 @@
           "item_id": "1681092141423",
           "trigger": "event 'rhasspy_LightOnWhen'"
         }
-      }
-    ],
-    "automation.1680818984534": [
+      },
       {
         "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "12b2f1b491b9dc4cf7c0982d37038c31",
+          "last_step": "action/0",
+          "run_id": "5d1b29371bb6d08ce8404a52bd6fc843",
           "state": "stopped",
-          "script_execution": "finished",
+          "script_execution": "error",
           "timestamp": {
-            "start": "2023-04-06T22:48:28.184979+00:00",
-            "finish": "2023-04-06T22:48:28.337861+00:00"
+            "start": "2023-04-19T01:10:33.736441+00:00",
+            "finish": "2023-04-19T01:10:33.749614+00:00"
           },
           "domain": "automation",
-          "item_id": "1680818984534",
-          "trigger": "event 'rhasspy_ChangeLightState'",
+          "item_id": "1681092141423",
+          "error": "offset 00:00:five 5 should be format 'HH:MM', 'HH:MM:SS' or 'HH:MM:SS.F' for dictionary value @ data['duration']",
+          "trigger": "event 'rhasspy_LightOnWhen'",
           "trace": {
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2023-04-06T22:48:28.185088+00:00",
+                "timestamp": "2023-04-19T01:10:33.736576+00:00",
                 "changed_variables": {
                   "this": {
-                    "entity_id": "automation.changelightstate",
+                    "entity_id": "automation.lightonwhen",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2023-04-06T22:28:50.074942+00:00",
+                      "last_triggered": "2023-04-10T02:37:57.407159+00:00",
                       "mode": "single",
                       "current": 0,
-                      "id": "1680818984534",
-                      "friendly_name": "ChangeLightState"
+                      "id": "1681092141423",
+                      "friendly_name": "LightOnWhen"
                     },
-                    "last_changed": "2023-04-06T22:48:17.033533+00:00",
-                    "last_updated": "2023-04-06T22:48:17.033533+00:00",
+                    "last_changed": "2023-04-19T00:51:34.427097+00:00",
+                    "last_updated": "2023-04-19T00:51:34.427097+00:00",
                     "context": {
-                      "id": "01GXCC37W9X5W28FWDTY3QJFVN",
+                      "id": "01GYBFXKWVFPYG2MRWV1ZM70WD",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -811,57 +3156,39 @@
                     "alias": null,
                     "platform": "event",
                     "event": {
-                      "event_type": "rhasspy_ChangeLightState",
+                      "event_type": "rhasspy_LightOnWhen",
                       "data": {
-                        "state": "on",
-                        "state_raw_value": "on",
-                        "name": "wled",
-                        "name_raw_value": "wled",
-                        "_text": "turn on the wled",
-                        "_raw_text": "turn on the wled",
+                        "second": "five 5",
+                        "second_raw_value": "five",
+                        "_text": "turn on the lights in five 5 seconds",
+                        "_raw_text": "turn on the lights in 5 seconds",
                         "_intent": {
-                          "input": "turn on the wled",
+                          "input": "turn on the lights in five 5 seconds",
                           "intent": {
-                            "intentName": "ChangeLightState",
+                            "intentName": "LightOnWhen",
                             "confidenceScore": 1.0
                           },
                           "siteId": "default",
-                          "id": "d8ce4387-b9e9-4bcb-a2f1-e634b638c743",
+                          "id": "b43c2ea3-7e0c-422a-8117-1d76ec533c63",
                           "slots": [
                             {
-                              "entity": "state",
+                              "entity": "second",
                               "value": {
                                 "kind": "Unknown",
-                                "value": "on"
+                                "value": "five 5"
                               },
-                              "slotName": "state",
-                              "rawValue": "on",
+                              "slotName": "second",
+                              "rawValue": "five",
                               "confidence": 1.0,
                               "range": {
-                                "start": 5,
-                                "end": 7,
-                                "rawStart": 5,
-                                "rawEnd": 7
-                              }
-                            },
-                            {
-                              "entity": "name",
-                              "value": {
-                                "kind": "Unknown",
-                                "value": "wled"
-                              },
-                              "slotName": "name",
-                              "rawValue": "wled",
-                              "confidence": 1.0,
-                              "range": {
-                                "start": 12,
-                                "end": 16,
-                                "rawStart": 12,
-                                "rawEnd": 16
+                                "start": 22,
+                                "end": 28,
+                                "rawStart": 22,
+                                "rawEnd": 26
                               }
                             }
                           ],
-                          "sessionId": "d8ce4387-b9e9-4bcb-a2f1-e634b638c743",
+                          "sessionId": "b43c2ea3-7e0c-422a-8117-1d76ec533c63",
                           "customData": null,
                           "asrTokens": [
                             [
@@ -887,30 +3214,58 @@
                                 "time": null
                               },
                               {
-                                "value": "wled",
+                                "value": "lights",
                                 "confidence": 1.0,
                                 "rangeStart": 12,
-                                "rangeEnd": 16,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "in",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 21,
+                                "time": null
+                              },
+                              {
+                                "value": "five",
+                                "confidence": 1.0,
+                                "rangeStart": 22,
+                                "rangeEnd": 26,
+                                "time": null
+                              },
+                              {
+                                "value": "5",
+                                "confidence": 1.0,
+                                "rangeStart": 27,
+                                "rangeEnd": 28,
+                                "time": null
+                              },
+                              {
+                                "value": "seconds",
+                                "confidence": 1.0,
+                                "rangeStart": 29,
+                                "rangeEnd": 36,
                                 "time": null
                               }
                             ]
                           ],
                           "asrConfidence": null,
-                          "rawInput": "turn on the wled",
+                          "rawInput": "turn on the lights in 5 seconds",
                           "wakewordId": null,
                           "lang": null
                         },
                         "_site_id": "default"
                       },
                       "origin": "REMOTE",
-                      "time_fired": "2023-04-06T22:48:28.180084+00:00",
+                      "time_fired": "2023-04-19T01:10:33.731817+00:00",
                       "context": {
-                        "id": "01GXCC3JRMRNGRVEP58RRXHFQN",
+                        "id": "01GYBH0CG31SGVB3GB8B1WSS9M",
                         "parent_id": null,
                         "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
                       }
                     },
-                    "description": "event 'rhasspy_ChangeLightState'"
+                    "description": "event 'rhasspy_LightOnWhen'"
                   }
                 }
               }
@@ -918,23 +3273,266 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2023-04-06T22:48:28.189657+00:00",
+                "timestamp": "2023-04-19T01:10:33.740215+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01GXCC3JRR8RA53JKQG3CR98NS",
-                    "parent_id": "01GXCC3JRMRNGRVEP58RRXHFQN",
+                    "id": "01GYBH0CG8E4QMHBVQ3E96RA47",
+                    "parent_id": "01GYBH0CG31SGVB3GB8B1WSS9M",
+                    "user_id": null
+                  }
+                },
+                "error": "offset 00:00:five 5 should be format 'HH:MM', 'HH:MM:SS' or 'HH:MM:SS.F' for dictionary value @ data['duration']",
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "00:00:five 5",
+                      "entity_id": [
+                        "timer.led_turn_on_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.led_turn_on_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092141423",
+            "alias": "LightOnWhen",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnWhen"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "timer.led_turn_on_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH0CG8E4QMHBVQ3E96RA47",
+            "parent_id": "01GYBH0CG31SGVB3GB8B1WSS9M",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "5d1b29371bb6d08ce8404a52bd6fc843",
+          "state": "stopped",
+          "script_execution": "error",
+          "timestamp": {
+            "start": "2023-04-19T01:10:33.736441+00:00",
+            "finish": "2023-04-19T01:10:33.749614+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092141423",
+          "error": "offset 00:00:five 5 should be format 'HH:MM', 'HH:MM:SS' or 'HH:MM:SS.F' for dictionary value @ data['duration']",
+          "trigger": "event 'rhasspy_LightOnWhen'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "25bef682c52aa1314ad75de539491fff",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:11:12.589971+00:00",
+            "finish": "2023-04-19T01:11:12.602877+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092141423",
+          "trigger": "event 'rhasspy_LightOnWhen'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:11:12.590066+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonwhen",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:10:33.737067+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092141423",
+                      "friendly_name": "LightOnWhen"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.427097+00:00",
+                    "last_updated": "2023-04-19T01:10:33.745620+00:00",
+                    "context": {
+                      "id": "01GYBH0CG8E4QMHBVQ3E96RA47",
+                      "parent_id": "01GYBH0CG31SGVB3GB8B1WSS9M",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnWhen",
+                      "data": {
+                        "second": "3",
+                        "second_raw_value": "three",
+                        "_text": "turn on the lights in 3 seconds",
+                        "_raw_text": "turn on the lights in 3 seconds",
+                        "_intent": {
+                          "input": "turn on the lights in 3 seconds",
+                          "intent": {
+                            "intentName": "LightOnWhen",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "1ff06ae7-2547-4544-b48f-60fb3033a4a5",
+                          "slots": [
+                            {
+                              "entity": "second",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "3"
+                              },
+                              "slotName": "second",
+                              "rawValue": "three",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 22,
+                                "end": 23,
+                                "rawStart": 22,
+                                "rawEnd": 27
+                              }
+                            }
+                          ],
+                          "sessionId": "1ff06ae7-2547-4544-b48f-60fb3033a4a5",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 11,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 12,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "in",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 21,
+                                "time": null
+                              },
+                              {
+                                "value": "3",
+                                "confidence": 1.0,
+                                "rangeStart": 22,
+                                "rangeEnd": 23,
+                                "time": null
+                              },
+                              {
+                                "value": "seconds",
+                                "confidence": 1.0,
+                                "rangeStart": 24,
+                                "rangeEnd": 31,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn on the lights in 3 seconds",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-19T01:11:12.585765+00:00",
+                      "context": {
+                        "id": "01GYBH1JE9W4BH302KBDD0JWKD",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnWhen'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:11:12.594962+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH1JEDCW0FAEYCG1B1ABRR",
+                    "parent_id": "01GYBH1JE9W4BH302KBDD0JWKD",
                     "user_id": null
                   }
                 },
                 "result": {
                   "params": {
-                    "domain": "mqtt",
-                    "service": "publish",
+                    "domain": "timer",
+                    "service": "start",
                     "service_data": {
-                      "topic": "hermes/dialogueManager/endSession",
-                      "payload_template": "{\"sessionId\": \"d8ce4387-b9e9-4bcb-a2f1-e634b638c743\", text\" : \"ok\"}"
+                      "duration": "00:00:3",
+                      "entity_id": [
+                        "timer.led_turn_on_time"
+                      ]
                     },
-                    "target": {}
+                    "target": {
+                      "entity_id": [
+                        "timer.led_turn_on_time"
+                      ]
+                    }
                   },
                   "running_script": false,
                   "limit": 10
@@ -944,13 +3542,14 @@
             "action/1": [
               {
                 "path": "action/1",
-                "timestamp": "2023-04-06T22:48:28.196406+00:00",
+                "timestamp": "2023-04-19T01:11:12.599361+00:00",
                 "result": {
                   "params": {
-                    "domain": "light",
-                    "service": "turn_on",
+                    "domain": "mqtt",
+                    "service": "publish",
                     "service_data": {
-                      "entity_id": "light.wled"
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"1ff06ae7-2547-4544-b48f-60fb3033a4a5\", text\" : \"ok\"}"
                     },
                     "target": {}
                   },
@@ -961,28 +3560,31 @@
             ]
           },
           "config": {
-            "id": "1680818984534",
-            "alias": "ChangeLightState",
+            "id": "1681092141423",
+            "alias": "LightOnWhen",
             "description": "",
             "trigger": [
               {
                 "platform": "event",
-                "event_type": "rhasspy_ChangeLightState"
+                "event_type": "rhasspy_LightOnWhen"
               }
             ],
             "condition": [],
             "action": [
               {
+                "service": "timer.start",
+                "data": {
+                  "duration": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "timer.led_turn_on_time"
+                }
+              },
+              {
                 "service": "mqtt.publish",
                 "data": {
                   "topic": "hermes/dialogueManager/endSession",
                   "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
-                }
-              },
-              {
-                "service_template": "light.turn_{{trigger.event.data.state}}",
-                "data": {
-                  "entity_id": "light.{{trigger.event.data.name.replace(' ', '_')}}"
                 }
               }
             ],
@@ -990,25 +3592,27 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GXCC3JRR8RA53JKQG3CR98NS",
-            "parent_id": "01GXCC3JRMRNGRVEP58RRXHFQN",
+            "id": "01GYBH1JEDCW0FAEYCG1B1ABRR",
+            "parent_id": "01GYBH1JE9W4BH302KBDD0JWKD",
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/1",
-          "run_id": "12b2f1b491b9dc4cf7c0982d37038c31",
+          "run_id": "25bef682c52aa1314ad75de539491fff",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-04-06T22:48:28.184979+00:00",
-            "finish": "2023-04-06T22:48:28.337861+00:00"
+            "start": "2023-04-19T01:11:12.589971+00:00",
+            "finish": "2023-04-19T01:11:12.602877+00:00"
           },
           "domain": "automation",
-          "item_id": "1680818984534",
-          "trigger": "event 'rhasspy_ChangeLightState'"
+          "item_id": "1681092141423",
+          "trigger": "event 'rhasspy_LightOnWhen'"
         }
-      },
+      }
+    ],
+    "automation.1680818984534": [
       {
         "extended_dict": {
           "last_step": "action/1",
@@ -1967,6 +4571,254 @@
           "timestamp": {
             "start": "2023-04-06T22:51:35.233730+00:00",
             "finish": "2023-04-06T22:51:35.377003+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "046f12f07764c9ddc602f51f19c2c864",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:13:22.551239+00:00",
+            "finish": "2023-04-19T01:13:22.698919+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680818984534",
+          "trigger": "event 'rhasspy_ChangeLightState'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:13:22.551514+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.changelightstate",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-06T22:51:35.234719+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680818984534",
+                      "friendly_name": "ChangeLightState"
+                    },
+                    "last_changed": "2023-04-19T00:51:34.426644+00:00",
+                    "last_updated": "2023-04-19T00:51:34.426644+00:00",
+                    "context": {
+                      "id": "01GYBFXKWT9NQNBPVMCAF613SZ",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_ChangeLightState",
+                      "data": {
+                        "state": "off",
+                        "state_raw_value": "off",
+                        "name": "kitchen",
+                        "name_raw_value": "kitchen",
+                        "_text": "turn off the kitchen lights",
+                        "_raw_text": "turn off the kitchen lights",
+                        "_intent": {
+                          "input": "turn off the kitchen lights",
+                          "intent": {
+                            "intentName": "ChangeLightState",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "a0555019-fee5-4c6a-afec-57a15f825731",
+                          "slots": [
+                            {
+                              "entity": "state",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "off"
+                              },
+                              "slotName": "state",
+                              "rawValue": "off",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 5,
+                                "end": 8,
+                                "rawStart": 5,
+                                "rawEnd": 8
+                              }
+                            },
+                            {
+                              "entity": "name",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "kitchen"
+                              },
+                              "slotName": "name",
+                              "rawValue": "kitchen",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 13,
+                                "end": 20,
+                                "rawStart": 13,
+                                "rawEnd": 20
+                              }
+                            }
+                          ],
+                          "sessionId": "a0555019-fee5-4c6a-afec-57a15f825731",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "off",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 8,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 9,
+                                "rangeEnd": 12,
+                                "time": null
+                              },
+                              {
+                                "value": "kitchen",
+                                "confidence": 1.0,
+                                "rangeStart": 13,
+                                "rangeEnd": 20,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 21,
+                                "rangeEnd": 27,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn off the kitchen lights",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-19T01:13:22.544593+00:00",
+                      "context": {
+                        "id": "01GYBH5HBGWC8EFE0F0XSJQ2RM",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_ChangeLightState'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:13:22.553482+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH5HBQPCG7JC4F0SGCYZX0",
+                    "parent_id": "01GYBH5HBGWC8EFE0F0XSJQ2RM",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"a0555019-fee5-4c6a-afec-57a15f825731\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-19T01:13:22.556045+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_off",
+                    "service_data": {
+                      "entity_id": "light.kitchen"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680818984534",
+            "alias": "ChangeLightState",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_ChangeLightState"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              },
+              {
+                "service_template": "light.turn_{{trigger.event.data.state}}",
+                "data": {
+                  "entity_id": "light.{{trigger.event.data.name.replace(' ', '_')}}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH5HBQPCG7JC4F0SGCYZX0",
+            "parent_id": "01GYBH5HBGWC8EFE0F0XSJQ2RM",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "046f12f07764c9ddc602f51f19c2c864",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:13:22.551239+00:00",
+            "finish": "2023-04-19T01:13:22.698919+00:00"
           },
           "domain": "automation",
           "item_id": "1680818984534",
@@ -4700,6 +7552,568 @@
           "item_id": "1681092180682",
           "trigger": "event 'rhasspy_LightOnFor'"
         }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/2",
+          "run_id": "4665e161944d12294bbf3711512190cc",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:10:13.865772+00:00",
+            "finish": "2023-04-19T01:10:14.007603+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:10:13.865821+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonfor",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-10T02:37:03.218248+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092180682",
+                      "friendly_name": "LightOnFor"
+                    },
+                    "last_changed": "2023-04-19T01:09:10.191176+00:00",
+                    "last_updated": "2023-04-19T01:09:10.191176+00:00",
+                    "context": {
+                      "id": "01GYBGXTXFW43EGKWFH240V2NB",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnFor",
+                      "data": {
+                        "second": "2",
+                        "second_raw_value": "two",
+                        "_text": "turn on the lights for 2 seconds",
+                        "_raw_text": "turn on the lights for 2 seconds",
+                        "_intent": {
+                          "input": "turn on the lights for 2 seconds",
+                          "intent": {
+                            "intentName": "LightOnFor",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "7b7104f7-443c-479d-8f86-e1cd27423631",
+                          "slots": [
+                            {
+                              "entity": "second",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "2"
+                              },
+                              "slotName": "second",
+                              "rawValue": "two",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 23,
+                                "end": 24,
+                                "rawStart": 23,
+                                "rawEnd": 26
+                              }
+                            }
+                          ],
+                          "sessionId": "7b7104f7-443c-479d-8f86-e1cd27423631",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 11,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 12,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "for",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 22,
+                                "time": null
+                              },
+                              {
+                                "value": "2",
+                                "confidence": 1.0,
+                                "rangeStart": 23,
+                                "rangeEnd": 24,
+                                "time": null
+                              },
+                              {
+                                "value": "seconds",
+                                "confidence": 1.0,
+                                "rangeStart": 25,
+                                "rangeEnd": 32,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn on the lights for 2 seconds",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-19T01:10:13.862346+00:00",
+                      "context": {
+                        "id": "01GYBGZS36MSEQ8BVV4PZZ8MB5",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnFor'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:10:13.870295+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBGZS39WX702VX2WCYAKRAD",
+                    "parent_id": "01GYBGZS36MSEQ8BVV4PZZ8MB5",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.master"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-19T01:10:13.994103+00:00",
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "00:00:2",
+                      "entity_id": [
+                        "timer.led_turn_off_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.led_turn_off_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/2": [
+              {
+                "path": "action/2",
+                "timestamp": "2023-04-19T01:10:13.999069+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"7b7104f7-443c-479d-8f86-e1cd27423631\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092180682",
+            "alias": "LightOnFor",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnFor"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_on",
+                "data": {},
+                "target": {
+                  "entity_id": "light.master"
+                }
+              },
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "timer.led_turn_off_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBGZS39WX702VX2WCYAKRAD",
+            "parent_id": "01GYBGZS36MSEQ8BVV4PZZ8MB5",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/2",
+          "run_id": "4665e161944d12294bbf3711512190cc",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:10:13.865772+00:00",
+            "finish": "2023-04-19T01:10:14.007603+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/2",
+          "run_id": "ff8f4a80fea8f0d3c3044a38c26d458f",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:10:22.882982+00:00",
+            "finish": "2023-04-19T01:10:22.996000+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:10:22.883080+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.lightonfor",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:10:13.865988+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092180682",
+                      "friendly_name": "LightOnFor"
+                    },
+                    "last_changed": "2023-04-19T01:09:10.191176+00:00",
+                    "last_updated": "2023-04-19T01:10:14.006600+00:00",
+                    "context": {
+                      "id": "01GYBGZS39WX702VX2WCYAKRAD",
+                      "parent_id": "01GYBGZS36MSEQ8BVV4PZZ8MB5",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "rhasspy_LightOnFor",
+                      "data": {
+                        "second": "10",
+                        "second_raw_value": "ten",
+                        "_text": "turn on the lights for 10 seconds",
+                        "_raw_text": "turn on the lights for 10 seconds",
+                        "_intent": {
+                          "input": "turn on the lights for 10 seconds",
+                          "intent": {
+                            "intentName": "LightOnFor",
+                            "confidenceScore": 1.0
+                          },
+                          "siteId": "default",
+                          "id": "3be28fcf-8361-44bf-a812-8beba5b83b8a",
+                          "slots": [
+                            {
+                              "entity": "second",
+                              "value": {
+                                "kind": "Unknown",
+                                "value": "10"
+                              },
+                              "slotName": "second",
+                              "rawValue": "ten",
+                              "confidence": 1.0,
+                              "range": {
+                                "start": 23,
+                                "end": 25,
+                                "rawStart": 23,
+                                "rawEnd": 26
+                              }
+                            }
+                          ],
+                          "sessionId": "3be28fcf-8361-44bf-a812-8beba5b83b8a",
+                          "customData": null,
+                          "asrTokens": [
+                            [
+                              {
+                                "value": "turn",
+                                "confidence": 1.0,
+                                "rangeStart": 0,
+                                "rangeEnd": 4,
+                                "time": null
+                              },
+                              {
+                                "value": "on",
+                                "confidence": 1.0,
+                                "rangeStart": 5,
+                                "rangeEnd": 7,
+                                "time": null
+                              },
+                              {
+                                "value": "the",
+                                "confidence": 1.0,
+                                "rangeStart": 8,
+                                "rangeEnd": 11,
+                                "time": null
+                              },
+                              {
+                                "value": "lights",
+                                "confidence": 1.0,
+                                "rangeStart": 12,
+                                "rangeEnd": 18,
+                                "time": null
+                              },
+                              {
+                                "value": "for",
+                                "confidence": 1.0,
+                                "rangeStart": 19,
+                                "rangeEnd": 22,
+                                "time": null
+                              },
+                              {
+                                "value": "10",
+                                "confidence": 1.0,
+                                "rangeStart": 23,
+                                "rangeEnd": 25,
+                                "time": null
+                              },
+                              {
+                                "value": "seconds",
+                                "confidence": 1.0,
+                                "rangeStart": 26,
+                                "rangeEnd": 33,
+                                "time": null
+                              }
+                            ]
+                          ],
+                          "asrConfidence": null,
+                          "rawInput": "turn on the lights for 10 seconds",
+                          "wakewordId": null,
+                          "lang": null
+                        },
+                        "_site_id": "default"
+                      },
+                      "origin": "REMOTE",
+                      "time_fired": "2023-04-19T01:10:22.878007+00:00",
+                      "context": {
+                        "id": "01GYBH01WX4ZQVP0HKKG52J16Q",
+                        "parent_id": null,
+                        "user_id": "4b25b92e70d340a5ba7601bdfdb600eb"
+                      }
+                    },
+                    "description": "event 'rhasspy_LightOnFor'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:10:22.884162+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH01X215Q5G3BW9YB01GH5",
+                    "parent_id": "01GYBH01WX4ZQVP0HKKG52J16Q",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.master"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-04-19T01:10:22.988116+00:00",
+                "result": {
+                  "params": {
+                    "domain": "timer",
+                    "service": "start",
+                    "service_data": {
+                      "duration": "00:00:10",
+                      "entity_id": [
+                        "timer.led_turn_off_time"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "timer.led_turn_off_time"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ],
+            "action/2": [
+              {
+                "path": "action/2",
+                "timestamp": "2023-04-19T01:10:22.992306+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "hermes/dialogueManager/endSession",
+                      "payload_template": "{\"sessionId\": \"3be28fcf-8361-44bf-a812-8beba5b83b8a\", text\" : \"ok\"}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092180682",
+            "alias": "LightOnFor",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "rhasspy_LightOnFor"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_on",
+                "data": {},
+                "target": {
+                  "entity_id": "light.master"
+                }
+              },
+              {
+                "service": "timer.start",
+                "data": {
+                  "duration": "{% if trigger.event.data.hour is not defined %}\n  {% set hour = '00' %}\n{% else %}\n  {% set hour = trigger.event.data.hour %}\n{% endif %}\n{% if trigger.event.data.minute is not defined %}\n  {% set minute = '00' %}\n{% else %}\n  {% set minute = trigger.event.data.minute %}\n{% endif %}\n{% if trigger.event.data.second is not defined %}\n  {% set second = '00' %}\n{% else %}\n  {% set second = trigger.event.data.second %}\n{% endif %}\n{{ hour }}:{{ minute }}:{{ second }}\n"
+                },
+                "target": {
+                  "entity_id": "timer.led_turn_off_time"
+                }
+              },
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "hermes/dialogueManager/endSession",
+                  "payload_template": "{\"sessionId\": \"{{trigger.event.data._intent.sessionId}}\", text\" : \"ok\"}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH01X215Q5G3BW9YB01GH5",
+            "parent_id": "01GYBH01WX4ZQVP0HKKG52J16Q",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/2",
+          "run_id": "ff8f4a80fea8f0d3c3044a38c26d458f",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:10:22.882982+00:00",
+            "finish": "2023-04-19T01:10:22.996000+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092180682",
+          "trigger": "event 'rhasspy_LightOnFor'"
+        }
       }
     ],
     "automation.1681092363114": [
@@ -4837,6 +8251,276 @@
           "item_id": "1681092363114",
           "trigger": "event 'timer.finished'"
         }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "289b4b5493da1390a750ec60ee66b843",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:10:15.007207+00:00",
+            "finish": "2023-04-19T01:10:15.228342+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092363114",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:10:15.007360+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ledturnoffauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-10T02:37:05.006468+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092363114",
+                      "friendly_name": "LEDTurnOffAuto"
+                    },
+                    "last_changed": "2023-04-19T01:09:36.249641+00:00",
+                    "last_updated": "2023-04-19T01:09:36.249641+00:00",
+                    "context": {
+                      "id": "01GYBGYMBS9K0MAR99ECTWPBT3",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.led_turn_off_time",
+                        "finished_at": "2023-04-19T01:10:15+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:10:15.000738+00:00",
+                      "context": {
+                        "id": "01GYBGZT6R1MZK3WXQNRAK14CF",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:10:15.023383+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBGZT6ZN6EW9RAVPYRV53ZN",
+                    "parent_id": "01GYBGZT6R1MZK3WXQNRAK14CF",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.master"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092363114",
+            "alias": "LEDTurnOffAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.led_turn_off_time"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": "light.master"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBGZT6ZN6EW9RAVPYRV53ZN",
+            "parent_id": "01GYBGZT6R1MZK3WXQNRAK14CF",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "289b4b5493da1390a750ec60ee66b843",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:10:15.007207+00:00",
+            "finish": "2023-04-19T01:10:15.228342+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092363114",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "b3ec86547ca5f72ca83f8942a8bf6f39",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:10:32.005183+00:00",
+            "finish": "2023-04-19T01:10:32.105490+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092363114",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:10:32.005263+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ledturnoffauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-19T01:10:15.008028+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092363114",
+                      "friendly_name": "LEDTurnOffAuto"
+                    },
+                    "last_changed": "2023-04-19T01:09:36.249641+00:00",
+                    "last_updated": "2023-04-19T01:10:15.227651+00:00",
+                    "context": {
+                      "id": "01GYBGZT6ZN6EW9RAVPYRV53ZN",
+                      "parent_id": "01GYBGZT6R1MZK3WXQNRAK14CF",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.led_turn_off_time",
+                        "finished_at": "2023-04-19T01:10:32+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:10:32.001077+00:00",
+                      "context": {
+                        "id": "01GYBH0AT1SSQ7QYCPVA90TPS4",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:10:32.005924+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH0AT5D7MS641EAAE2AYTK",
+                    "parent_id": "01GYBH0AT1SSQ7QYCPVA90TPS4",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.master"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092363114",
+            "alias": "LEDTurnOffAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.led_turn_off_time"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": "light.master"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH0AT5D7MS641EAAE2AYTK",
+            "parent_id": "01GYBH0AT1SSQ7QYCPVA90TPS4",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "b3ec86547ca5f72ca83f8942a8bf6f39",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:10:32.005183+00:00",
+            "finish": "2023-04-19T01:10:32.105490+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092363114",
+          "trigger": "event 'timer.finished'"
+        }
       }
     ],
     "automation.1681092324041": [
@@ -4969,6 +8653,141 @@
           "timestamp": {
             "start": "2023-04-10T02:37:59.002264+00:00",
             "finish": "2023-04-10T02:37:59.009856+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092324041",
+          "trigger": "event 'timer.finished'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "cc1e36a8c07a357170095eb0a976a3ae",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:11:15.014654+00:00",
+            "finish": "2023-04-19T01:11:15.111001+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1681092324041",
+          "trigger": "event 'timer.finished'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-04-19T01:11:15.014702+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ledturnonauto",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-04-10T02:37:59.002540+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1681092324041",
+                      "friendly_name": "LEDTurnOnAuto"
+                    },
+                    "last_changed": "2023-04-19T01:09:46.712338+00:00",
+                    "last_updated": "2023-04-19T01:09:46.712338+00:00",
+                    "context": {
+                      "id": "01GYBGYYJRR4AJA6VXHFRHN8VN",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "event",
+                    "event": {
+                      "event_type": "timer.finished",
+                      "data": {
+                        "entity_id": "timer.led_turn_on_time",
+                        "finished_at": "2023-04-19T01:11:15+00:00"
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-04-19T01:11:15.002511+00:00",
+                      "context": {
+                        "id": "01GYBH1MST8EFTBX8N50781FWJ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'timer.finished'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-04-19T01:11:15.023005+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GYBH1MT67MXQBRA10Z1BCEVB",
+                    "parent_id": "01GYBH1MST8EFTBX8N50781FWJ",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.master"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1681092324041",
+            "alias": "LEDTurnOnAuto",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "event",
+                "event_type": "timer.finished",
+                "event_data": {
+                  "entity_id": "timer.led_turn_on_time"
+                }
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "light.turn_on",
+                "data": {},
+                "target": {
+                  "entity_id": "light.master"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GYBH1MT67MXQBRA10Z1BCEVB",
+            "parent_id": "01GYBH1MST8EFTBX8N50781FWJ",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "cc1e36a8c07a357170095eb0a976a3ae",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-04-19T01:11:15.014654+00:00",
+            "finish": "2023-04-19T01:11:15.111001+00:00"
           },
           "domain": "automation",
           "item_id": "1681092324041",

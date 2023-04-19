@@ -97,7 +97,7 @@
   - service: light.turn_on
     data: {}
     target:
-      entity_id: light.wled
+      entity_id: light.master
   - service: timer.start
     data:
       duration: "{% if trigger.event.data.hour is not defined %}\n  {% set hour =
@@ -128,7 +128,7 @@
   - service: light.turn_on
     data: {}
     target:
-      entity_id: light.wled
+      entity_id: light.master
   mode: single
 - id: '1681092363114'
   alias: LEDTurnOffAuto
@@ -143,7 +143,7 @@
   - service: light.turn_off
     data: {}
     target:
-      entity_id: light.wled
+      entity_id: light.master
   mode: single
 - id: '1681355815356'
   alias: GetTemperature

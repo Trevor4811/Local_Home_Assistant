@@ -7,35 +7,6 @@
       {
         "area_id": null,
         "config_entries": [
-          "6756356fe1e5b7696559c54fd558d5bf"
-        ],
-        "configuration_url": "http://192.168.15.102",
-        "connections": [
-          [
-            "mac",
-            "4c:eb:d6:cc:13:24"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": "esp02",
-        "id": "1087109fd4c5936419acd95f2e5ba331",
-        "identifiers": [
-          [
-            "wled",
-            "4cebd6cc1324"
-          ]
-        ],
-        "manufacturer": "WLED",
-        "model": "FOSS",
-        "name_by_user": null,
-        "name": "WLED",
-        "sw_version": "0.13.3",
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
           "57fd4957487c1f2d5ee598ad86c3467a"
         ],
         "configuration_url": null,
@@ -79,6 +50,35 @@
         "name_by_user": null,
         "name": "Spotify Iris",
         "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "615d1ee2806dd3d29cb95dacf66f4375"
+        ],
+        "configuration_url": "http://192.168.15.101",
+        "connections": [
+          [
+            "mac",
+            "4c:eb:d6:cc:13:24"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "esp02",
+        "id": "1087109fd4c5936419acd95f2e5ba331",
+        "identifiers": [
+          [
+            "wled",
+            "4cebd6cc1324"
+          ]
+        ],
+        "manufacturer": "WLED",
+        "model": "FOSS",
+        "name_by_user": null,
+        "name": "WLED",
+        "sw_version": "0.13.3",
         "via_device_id": null
       }
     ],

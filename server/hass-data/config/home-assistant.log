@@ -1,5 +1,4 @@
-2023-04-13 03:10:10.559 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2023-04-13 03:10:16.600 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry Iris for spotify
+2023-04-19 00:51:34.792 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry Iris for spotify
 Traceback (most recent call last):
   File "/usr/src/homeassistant/homeassistant/config_entries.py", line 383, in async_setup
     result = await component.async_setup_entry(hass, self)
@@ -8,47 +7,67 @@ Traceback (most recent call last):
   File "/usr/src/homeassistant/homeassistant/helpers/config_entry_oauth2_flow.py", line 401, in async_get_config_entry_implementation
     raise ValueError("Implementation not available")
 ValueError: Implementation not available
-2023-04-13 03:10:42.106 WARNING (MainThread) [homeassistant.config_entries] Config entry 'WLED' for wled integration not ready yet: Invalid response from API: Timeout occurred while connecting to WLED device at 192.168.15.102; Retrying in background
-2023-04-13 03:10:42.127 WARNING (Recorder) [homeassistant.components.recorder.migration] Database is about to upgrade from schema version: 41 to: 35
-2023-04-13 03:23:13.000 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS forecast station KTAN data: 500, message='Internal Server Error', url=URL('https://api.weather.gov/gridpoints/BOX/76,74/forecast')
-2023-04-15 21:50:23.601 WARNING (MainThread) [homeassistant.components.automation.10secperiodictimer] 10SecPeriodicTimer: Already running
-2023-04-15 21:53:25.012 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:53:25.018 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:53:35.011 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:53:35.017 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:53:45.013 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:53:45.021 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:53:55.015 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:53:55.019 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:54:05.007 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:54:05.011 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:54:15.014 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:54:15.017 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:54:25.015 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:54:25.019 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:54:35.008 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:54:35.012 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:54:45.013 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:54:45.016 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:54:55.014 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:54:55.017 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:55:05.020 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:55:05.025 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:55:15.010 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:55:15.015 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:55:25.010 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:55:25.014 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:55:35.010 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:55:35.013 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:55:45.010 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:55:45.015 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:55:55.011 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:55:55.014 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:56:05.013 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] RandomTempAuto: Error executing script. Invalid data for call_service at pos 1: expected float for dictionary value @ data['value']
-2023-04-15 21:56:05.020 ERROR (MainThread) [homeassistant.components.automation.randomtempauto] Error while executing automation automation.randomtempauto: expected float for dictionary value @ data['value']
-2023-04-15 21:59:22.606 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'input_number' is undefined when rendering '{"sessionId": "{{trigger.event.data._intent.sessionId}}", text" : "The temperature is {{input_number.room_temperature_f}} degrees"}'
-2023-04-15 21:59:22.626 ERROR (MainThread) [homeassistant.components.automation.gettemperature] GetTemperature: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'input_number' is undefined
-2023-04-15 21:59:22.628 ERROR (MainThread) [homeassistant.components.automation.gettemperature] Error while executing automation automation.gettemperature: Error rendering data template: UndefinedError: 'input_number' is undefined
-2023-04-15 22:00:39.807 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'input_number' is undefined when rendering '{"sessionId": "{{trigger.event.data._intent.sessionId}}", text" : "The temperature is {{states(input_number.room_temperature_f)}} degrees"}'
-2023-04-15 22:00:39.809 ERROR (MainThread) [homeassistant.components.automation.gettemperature] GetTemperature: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'input_number' is undefined
-2023-04-15 22:00:39.815 ERROR (MainThread) [homeassistant.components.automation.gettemperature] Error while executing automation automation.gettemperature: Error rendering data template: UndefinedError: 'input_number' is undefined
+2023-04-19 00:51:34.999 WARNING (Recorder) [homeassistant.components.recorder.migration] Database is about to upgrade from schema version: 41 to: 35
+2023-04-19 00:51:35.013 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Error requesting homeassistant_alerts data: Cannot connect to host alerts.home-assistant.io:443 ssl:default [Name does not resolve]
+2023-04-19 00:51:57.767 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_middlewares.py", line 117, in impl
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/security_filter.py", line 67, in security_filter_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/forwarded.py", line 100, in forwarded_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/request_context.py", line 28, in request_context_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/ban.py", line 80, in ban_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/auth.py", line 235, in auth_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/view.py", line 146, in handle
+    result = await result
+  File "/usr/src/homeassistant/homeassistant/components/config/config_entries.py", line 180, in post
+    return await super().post(request, flow_id)
+  File "/usr/src/homeassistant/homeassistant/components/http/data_validator.py", line 72, in wrapper
+    result = await method(view, request, data, *args, **kwargs)
+  File "/usr/src/homeassistant/homeassistant/helpers/data_entry_flow.py", line 110, in post
+    result = await self._flow_mgr.async_configure(flow_id, data)
+  File "/usr/src/homeassistant/homeassistant/data_entry_flow.py", line 271, in async_configure
+    result = await self._async_handle_step(
+  File "/usr/src/homeassistant/homeassistant/data_entry_flow.py", line 367, in _async_handle_step
+    result: FlowResult = await getattr(flow, method)(user_input)
+  File "/usr/src/homeassistant/homeassistant/components/wled/config_flow.py", line 40, in async_step_user
+    device = await self._async_get_device(user_input[CONF_HOST])
+  File "/usr/src/homeassistant/homeassistant/components/wled/config_flow.py", line 117, in _async_get_device
+    return await wled.update()
+  File "/usr/local/lib/python3.10/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/wled/wled.py", line 238, in update
+    if not (data := await self.request("/json")):
+  File "/usr/local/lib/python3.10/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/wled/wled.py", line 178, in request
+    response = await self.session.request(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 508, in _request
+    req = self._request_class(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client_reqrep.py", line 306, in __init__
+    self.update_headers(headers)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client_reqrep.py", line 394, in update_headers
+    if self.url.port is not None and not self.url.is_default_port():
+  File "/usr/local/lib/python3.10/site-packages/yarl/_url.py", line 513, in port
+    return self._val.port or DEFAULT_PORTS.get(self._val.scheme)
+  File "/usr/local/lib/python3.10/urllib/parse.py", line 177, in port
+    raise ValueError(f"Port could not be cast to integer value as {port!r}")
+ValueError: Port could not be cast to integer value as '//192.168.15.101/:80'
+2023-04-19 00:57:29.167 ERROR (MainThread) [homeassistant.components.light] Platform wled does not generate unique IDs. ID 4cebd6cc1324_6 already exists - ignoring light.wled_segment_6
+2023-04-19 00:57:29.173 ERROR (MainThread) [homeassistant.components.number] Platform wled does not generate unique IDs. ID 4cebd6cc1324_speed_6 already exists - ignoring number.wled_segment_6_speed
+2023-04-19 00:57:29.174 ERROR (MainThread) [homeassistant.components.number] Platform wled does not generate unique IDs. ID 4cebd6cc1324_intensity_6 already exists - ignoring number.wled_segment_6_intensity
+2023-04-19 00:57:29.176 ERROR (MainThread) [homeassistant.components.select] Platform wled does not generate unique IDs. ID 4cebd6cc1324_palette_6 already exists - ignoring select.wled_segment_6_color_palette
+2023-04-19 00:57:29.176 ERROR (MainThread) [homeassistant.components.switch] Platform wled does not generate unique IDs. ID 4cebd6cc1324_reverse_6 already exists - ignoring switch.wled_segment_6_reverse
+2023-04-19 01:08:34.215 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.16.1 (192.168.16.1). Requested URL: '/auth/login_flow/0c0ae10f9ca5b290edfc58680a46c156'. (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36)
+2023-04-19 01:10:33.741 ERROR (MainThread) [homeassistant.components.automation.lightonwhen] LightOnWhen: Error executing script. Invalid data for call_service at pos 1: offset 00:00:five 5 should be format 'HH:MM', 'HH:MM:SS' or 'HH:MM:SS.F' for dictionary value @ data['duration']
+2023-04-19 01:10:33.747 ERROR (MainThread) [homeassistant.components.automation.lightonwhen] Error while executing automation automation.lightonwhen: offset 00:00:five 5 should be format 'HH:MM', 'HH:MM:SS' or 'HH:MM:SS.F' for dictionary value @ data['duration']
+2023-04-19 01:15:16.910 WARNING (Thread-2 (_thread_main)) [homeassistant.components.mqtt.client] Disconnected from MQTT server host.docker.internal:1883 (7)
