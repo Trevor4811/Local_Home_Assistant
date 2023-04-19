@@ -1,12 +1,21 @@
 # Server
 
 The files in this directory are used to set up instances of
-the applications needed for home automation.
+the applications needed for home automation. The idea is
+that a Matrix Voice (or any other device which is capable
+of recording audio) may connect to the services that run on
+a server to pass audio and perform the automations which
+are configured on the server.
 
 ## Architecture
 
 The server consists of an MQTT server, Home Assistant
-server, and Rhasspy server.
+server, and Rhasspy server. Voice audio is sent from the
+Matrix Voice to an MQTT server using the Hermes protocol.
+Rhasspy listens for those messages and performs a speech-
+to-text conversion and looks for a configured intent. The
+intent is passed to Home Assistant to perform an
+automation.
 
 ## Usage
 
@@ -17,7 +26,8 @@ already set-up before proceeding.
 
 ### Running the server
 
-The server can be run by executing the following commands:
+The instances of the applications packaged into the server
+can be run by executing the following commands:
 
 ``` shell
 cd server/
@@ -27,4 +37,23 @@ docker compose up
 
 docker compose down
 ```
+
+## Supported Automations
+
+The current automations which are supported are:
+
+1. Turning on and off a WLED strip
+  a. "turn on/off the master lights"
+2. Turning on and off individual LEDs on the LED strip
+  a. The individual LEDs are represented as segments which
+  must be set up on the WLED side
+  b. "turn on/off the garage/living room/kitchen/dining room/bedroom/porch lights"
+3. Turning on the master lights with a delay
+  a. "turn on the lights in x hours/minutes/seconds"
+  b. Only supports multiples of 10 - e.g. in 45 minutes is not supported while 40 minutes is
+4. Turning on the master lights for a duration of time
+  a. "turn on the lights for x hours/minutes/seconds"
+  b. Only supports multiples of 10 - e.g. in 45 minutes is not supported while 40 minutes is
+5. Retrieving the temperatures
+  a. "what is the temperature?"
 
