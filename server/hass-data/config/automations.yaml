@@ -202,3 +202,12 @@
     target:
       entity_id: input_number.room_temperature_f
   mode: single
+- id: '123'
+  alias: PlaySong
+  trigger:
+  - platform: event
+    event_type: rhasspy_PlayMusicWithSource
+  action:
+    service: shell_command.play_song
+    data_template:
+      command: '{{ trigger.event.data._raw_text }}'
