@@ -31,7 +31,7 @@
       entity_id: media_player.spotify
   mode: single
 - id: '1680917001630'
-  alias: PlayMusic
+  alias: PlayMusicWithSource
   description: ''
   trigger:
   - platform: event
@@ -206,8 +206,21 @@
   alias: PlaySong
   trigger:
   - platform: event
-    event_type: rhasspy_PlayMusicWithSource
+    event_type: rhasspy_SearchMusic
   action:
     service: shell_command.play_song
     data_template:
       command: '{{ trigger.event.data._raw_text }}'
+- id: '1682205684724'
+  alias: PlayMusic
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_PlayMusic
+  condition: []
+  action:
+  - service: media_player.media_play
+    data: {}
+    target:
+      entity_id: media_player.spotify
+  mode: single
