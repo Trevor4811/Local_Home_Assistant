@@ -13,56 +13,56 @@
           "user_id": "4b25b92e70d340a5ba7601bdfdb600eb",
           "friendly_name": "Johnny"
         },
-        "last_changed": "2023-04-19T02:44:56.605021+00:00",
-        "last_updated": "2023-04-19T02:45:03.705319+00:00",
+        "last_changed": "2023-04-23T19:43:16.988990+00:00",
+        "last_updated": "2023-04-23T19:43:47.524419+00:00",
         "context": {
-          "id": "01GYBPDDJSKWCS6FA08EPR6W84",
+          "id": "01GYQT9MT451MN7XAP86KQV0H0",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "timer.led_turn_off_time",
         "state": "idle",
         "attributes": {
-          "duration": "0:00:05",
+          "duration": "0:00:00",
           "editable": true,
           "friendly_name": "LED Turn-off Time"
         },
-        "last_changed": "2023-04-19T02:46:43.000674+00:00",
-        "last_updated": "2023-04-19T02:46:43.000674+00:00",
+        "last_changed": "2023-04-23T19:43:21.702508+00:00",
+        "last_updated": "2023-04-23T19:43:21.702508+00:00",
         "context": {
-          "id": "01GYBPG9K1HA79BPMDB6VGT3FZ",
-          "parent_id": "01GYBPG9JXSWJF888D8S323T2N",
+          "id": "01GYQT8VK6WP0D06QXQQF3JJP9",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "timer.led_turn_on_time",
         "state": "idle",
         "attributes": {
-          "duration": "0:00:02",
+          "duration": "0:00:00",
           "editable": true,
           "friendly_name": "LED Turn-on Time"
         },
-        "last_changed": "2023-04-19T02:46:12.002452+00:00",
-        "last_updated": "2023-04-19T02:46:12.002452+00:00",
+        "last_changed": "2023-04-23T19:43:21.702609+00:00",
+        "last_updated": "2023-04-23T19:43:21.702609+00:00",
         "context": {
-          "id": "01GYBPFEXH8V8WGWSFSJVBHZC2",
-          "parent_id": "01GYBPFEXDCGEVATXASG5BBR5G",
+          "id": "01GYQT8VK68PZ8GG6R5SWBYNKV",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
@@ -71,25 +71,25 @@
         "attributes": {
           "duration": "0:00:10",
           "editable": true,
-          "finishes_at": "2023-04-19T02:47:13+00:00",
+          "finishes_at": "2023-04-23T20:54:37+00:00",
           "remaining": "0:00:10",
           "friendly_name": "Temperature Periodic Timer"
         },
-        "last_changed": "2023-04-19T02:47:03.011934+00:00",
-        "last_updated": "2023-04-19T02:47:03.011934+00:00",
+        "last_changed": "2023-04-23T20:54:27.008657+00:00",
+        "last_updated": "2023-04-23T20:54:27.008657+00:00",
         "context": {
-          "id": "01GYBPH22YCPK0DVEARHASSEDG",
-          "parent_id": "01GYBPH22TS4WYVXV0NKZC6PP6",
+          "id": "01GYQYB0XXF75PE8E2XHJ6GM2H",
+          "parent_id": "01GYQYB0XWX1GPWNY16ADE74MQ",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "input_number.room_temperature_f",
-        "state": "68.0",
+        "state": "56.0",
         "attributes": {
           "initial": null,
           "editable": true,
@@ -100,284 +100,580 @@
           "unit_of_measurement": "Farenheit",
           "friendly_name": "Room Temperature (F)"
         },
-        "last_changed": "2023-04-19T02:47:03.013455+00:00",
-        "last_updated": "2023-04-19T02:47:03.013455+00:00",
+        "last_changed": "2023-04-23T20:54:27.008871+00:00",
+        "last_updated": "2023-04-23T20:54:27.008871+00:00",
         "context": {
-          "id": "01GYBPH22ZNPDEGX2MJECPZ2S7",
-          "parent_id": "01GYBPH22TS4WYVXV0NKZC6PP6",
+          "id": "01GYQYB0XYHN2MC35XZZPPYVT3",
+          "parent_id": "01GYQYB0XWX1GPWNY16ADE74MQ",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.changelightstate",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-19T02:45:40.337058+00:00",
+          "last_triggered": "2023-04-23T20:28:01.072527+00:00",
           "mode": "single",
           "current": 0,
           "id": "1680818984534",
           "friendly_name": "ChangeLightState"
         },
-        "last_changed": "2023-04-19T02:45:02.018734+00:00",
-        "last_updated": "2023-04-19T02:45:40.457355+00:00",
+        "last_changed": "2023-04-23T19:43:22.325580+00:00",
+        "last_updated": "2023-04-23T20:28:01.080905+00:00",
         "context": {
-          "id": "01GYBPEHBFP778MB265MH7G8PC",
-          "parent_id": "01GYBPEHBCCEGBVZ5WNB4AMZQW",
+          "id": "01GYQWTM5GRD4JG0RX1W3XCCJ2",
+          "parent_id": "01GYQWTM5B7DHV25MB28MY8ZZC",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.pause",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-08T01:27:41.296472+00:00",
+          "last_triggered": "2023-04-23T18:45:19.263805+00:00",
           "mode": "single",
           "current": 0,
           "id": "1680916818783",
           "friendly_name": "PauseMusic"
         },
-        "last_changed": "2023-04-19T02:45:02.019466+00:00",
-        "last_updated": "2023-04-19T02:45:02.019466+00:00",
+        "last_changed": "2023-04-23T19:43:22.325809+00:00",
+        "last_updated": "2023-04-23T19:43:22.325809+00:00",
         "context": {
-          "id": "01GYBPDBY37W4TYG7YGS05CM39",
+          "id": "01GYQT8W6NQ8E17EF69NA88D9P",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.playmusic",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-08T01:27:44.431382+00:00",
+          "last_triggered": "2023-04-23T17:34:44.576848+00:00",
           "mode": "single",
           "current": 0,
           "id": "1680917001630",
-          "friendly_name": "PlayMusic"
+          "friendly_name": "PlayMusicWithSource"
         },
-        "last_changed": "2023-04-19T02:45:02.020663+00:00",
-        "last_updated": "2023-04-19T02:45:02.020663+00:00",
+        "last_changed": "2023-04-23T19:43:22.325960+00:00",
+        "last_updated": "2023-04-23T19:43:22.325960+00:00",
         "context": {
-          "id": "01GYBPDBY44XV62C6RZ8149XGX",
+          "id": "01GYQT8W6NY7G5BYMEXN9PQXB4",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.lightonwhen",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-19T02:46:10.609695+00:00",
+          "last_triggered": "2023-04-23T18:46:59.325202+00:00",
           "mode": "single",
           "current": 0,
           "id": "1681092141423",
           "friendly_name": "LightOnWhen"
         },
-        "last_changed": "2023-04-19T02:45:02.021052+00:00",
-        "last_updated": "2023-04-19T02:46:10.618124+00:00",
+        "last_changed": "2023-04-23T19:43:22.326089+00:00",
+        "last_updated": "2023-04-23T19:43:22.326089+00:00",
         "context": {
-          "id": "01GYBPFEXH8V8WGWSFSJVBHZC2",
-          "parent_id": "01GYBPFEXDCGEVATXASG5BBR5G",
+          "id": "01GYQT8W6PFXQEVAEZ1EBAZD1D",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.lightonfor",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-19T02:46:37.922312+00:00",
+          "last_triggered": "2023-04-23T18:49:32.315010+00:00",
           "mode": "single",
           "current": 0,
           "id": "1681092180682",
           "friendly_name": "LightOnFor"
         },
-        "last_changed": "2023-04-19T02:45:02.023594+00:00",
-        "last_updated": "2023-04-19T02:46:38.035940+00:00",
+        "last_changed": "2023-04-23T19:43:22.326213+00:00",
+        "last_updated": "2023-04-23T19:43:22.326213+00:00",
         "context": {
-          "id": "01GYBPG9K1HA79BPMDB6VGT3FZ",
-          "parent_id": "01GYBPG9JXSWJF888D8S323T2N",
+          "id": "01GYQT8W6PAJQ8V85NSWR0SASV",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.ledturnonauto",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-19T02:46:12.008379+00:00",
+          "last_triggered": "2023-04-23T18:42:48.008181+00:00",
           "mode": "single",
           "current": 0,
           "id": "1681092324041",
           "friendly_name": "LEDTurnOnAuto"
         },
-        "last_changed": "2023-04-19T02:45:02.024212+00:00",
-        "last_updated": "2023-04-19T02:46:12.111470+00:00",
+        "last_changed": "2023-04-23T19:43:22.326334+00:00",
+        "last_updated": "2023-04-23T19:43:22.326334+00:00",
         "context": {
-          "id": "01GYBPFG97M12KE1XWN6C53BQF",
-          "parent_id": "01GYBPFG92QSM7S07GBR6JB3ZM",
+          "id": "01GYQT8W6PP4P6BZFV2DW21VGV",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.ledturnoffauto",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-19T02:46:43.003763+00:00",
+          "last_triggered": "2023-04-23T18:42:31.004576+00:00",
           "mode": "single",
           "current": 0,
           "id": "1681092363114",
           "friendly_name": "LEDTurnOffAuto"
         },
-        "last_changed": "2023-04-19T02:45:02.026949+00:00",
-        "last_updated": "2023-04-19T02:46:43.149846+00:00",
+        "last_changed": "2023-04-23T19:43:22.326529+00:00",
+        "last_updated": "2023-04-23T19:43:22.326529+00:00",
         "context": {
-          "id": "01GYBPGEHV24MX0NT7VJ90PPAM",
-          "parent_id": "01GYBPGEHRGV2QJCQ0YXSW1GSV",
+          "id": "01GYQT8W6PGDQ5TM28HP4N3TPX",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.gettemperature",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-19T02:45:50.049559+00:00",
+          "last_triggered": "2023-04-23T18:40:38.461139+00:00",
           "mode": "single",
           "current": 0,
           "id": "1681355815356",
           "friendly_name": "GetTemperature"
         },
-        "last_changed": "2023-04-19T02:45:02.027482+00:00",
-        "last_updated": "2023-04-19T02:45:50.056960+00:00",
+        "last_changed": "2023-04-23T19:43:22.326777+00:00",
+        "last_updated": "2023-04-23T19:43:22.326777+00:00",
         "context": {
-          "id": "01GYBPETV14XVBYA9ZDDSJ4JZM",
-          "parent_id": "01GYBPETTZ7PFNX6G49ASK6VKR",
+          "id": "01GYQT8W6P0WCRGA3M5VN6D1G3",
+          "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.10secperiodictimer",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-19T02:47:03.007093+00:00",
+          "last_triggered": "2023-04-23T20:54:27.005975+00:00",
           "mode": "single",
           "current": 0,
           "id": "1681595008670",
           "friendly_name": "10SecPeriodicTimer"
         },
-        "last_changed": "2023-04-19T02:45:02.027782+00:00",
-        "last_updated": "2023-04-19T02:47:03.016313+00:00",
+        "last_changed": "2023-04-23T19:43:22.326959+00:00",
+        "last_updated": "2023-04-23T20:54:27.009149+00:00",
         "context": {
-          "id": "01GYBPH22YCPK0DVEARHASSEDG",
-          "parent_id": "01GYBPH22TS4WYVXV0NKZC6PP6",
+          "id": "01GYQYB0XXF75PE8E2XHJ6GM2H",
+          "parent_id": "01GYQYB0XWX1GPWNY16ADE74MQ",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "automation.randomtempauto",
         "state": "on",
         "attributes": {
-          "last_triggered": "2023-04-19T02:47:03.008093+00:00",
+          "last_triggered": "2023-04-23T20:54:27.006395+00:00",
           "mode": "single",
           "current": 0,
           "id": "1681595381038",
           "friendly_name": "RandomTempAuto"
         },
-        "last_changed": "2023-04-19T02:45:02.028191+00:00",
-        "last_updated": "2023-04-19T02:47:03.017099+00:00",
+        "last_changed": "2023-04-23T19:43:22.327167+00:00",
+        "last_updated": "2023-04-23T20:54:27.009373+00:00",
         "context": {
-          "id": "01GYBPH22ZNPDEGX2MJECPZ2S7",
-          "parent_id": "01GYBPH22TS4WYVXV0NKZC6PP6",
+          "id": "01GYQYB0XYHN2MC35XZZPPYVT3",
+          "parent_id": "01GYQYB0XWX1GPWNY16ADE74MQ",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
-        "entity_id": "button.wled_restart",
-        "state": "unknown",
+        "entity_id": "automation.playsong",
+        "state": "on",
         "attributes": {
-          "device_class": "restart",
-          "friendly_name": "WLED Restart"
+          "last_triggered": "2023-04-23T20:53:35.532938+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "123",
+          "friendly_name": "PlaySong"
         },
-        "last_changed": "2023-04-19T02:45:03.701816+00:00",
-        "last_updated": "2023-04-19T02:45:03.701816+00:00",
+        "last_changed": "2023-04-23T19:43:22.327296+00:00",
+        "last_updated": "2023-04-23T20:53:37.164335+00:00",
         "context": {
-          "id": "01GYBPDDJNZB22B1H4DRKXRF1H",
+          "id": "01GYQY9ENCEF9PE921NEAVB52K",
+          "parent_id": "01GYQY9EN8KRF2V9GS22XNYEZ1",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.playmusic_2",
+        "state": "on",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "id": "1682205684724",
+          "friendly_name": "PlayMusic"
+        },
+        "last_changed": "2023-04-23T19:43:22.327412+00:00",
+        "last_updated": "2023-04-23T19:43:22.327412+00:00",
+        "context": {
+          "id": "01GYQT8W6QE2SGHCYZTT18MA89",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_battery_level",
+        "state": "43",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-40",
+          "friendly_name": "iPhone 13 Pro Max Battery Level"
+        },
+        "last_changed": "2023-04-23T19:43:22.368211+00:00",
+        "last_updated": "2023-04-23T19:43:22.368211+00:00",
+        "context": {
+          "id": "01GYQT8W80Y21HS6XMZTJKG80T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 43,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_bssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "iPhone 13 Pro Max BSSID"
+        },
+        "last_changed": "2023-04-23T19:43:22.368404+00:00",
+        "last_updated": "2023-04-23T19:43:22.368404+00:00",
+        "context": {
+          "id": "01GYQT8W804RAVW38QHQP7H2G4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Connected",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_ssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "iPhone 13 Pro Max SSID"
+        },
+        "last_changed": "2023-04-23T19:43:22.368510+00:00",
+        "last_updated": "2023-04-23T19:43:22.368510+00:00",
+        "context": {
+          "id": "01GYQT8W80Z88R5HRCDY9FY1TA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Connected",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_storage",
+        "state": "0.89",
+        "attributes": {
+          "Available": "1.99 GB",
+          "Available (Important)": "6.20 GB",
+          "Available (Opportunistic)": "1.14 GB",
+          "Total": "127.88 GB",
+          "unit_of_measurement": "% available",
+          "icon": "mdi:database",
+          "friendly_name": "iPhone 13 Pro Max Storage"
+        },
+        "last_changed": "2023-04-23T19:43:22.368611+00:00",
+        "last_updated": "2023-04-23T19:43:22.368611+00:00",
+        "context": {
+          "id": "01GYQT8W80SGMDY253DESAWSK5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "0.89",
+        "native_unit_of_measurement": "% available"
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_battery_state",
+        "state": "Not Charging",
+        "attributes": {
+          "Low Power Mode": false,
+          "icon": "mdi:battery-40",
+          "friendly_name": "iPhone 13 Pro Max Battery State"
+        },
+        "last_changed": "2023-04-23T19:43:22.368706+00:00",
+        "last_updated": "2023-04-23T19:43:22.368706+00:00",
+        "context": {
+          "id": "01GYQT8W80AGXY83VC50KX4YHY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_sim_2",
+        "state": "N/A",
+        "attributes": {
+          "Allows VoIP": true,
+          "Carrier ID": "0000000100000002",
+          "Carrier Name": "N/A",
+          "ISO Country Code": "N/A",
+          "Mobile Country Code": "N/A",
+          "Mobile Network Code": "N/A",
+          "icon": "mdi:sim",
+          "friendly_name": "iPhone 13 Pro Max SIM 2"
+        },
+        "last_changed": "2023-04-23T19:43:22.368804+00:00",
+        "last_updated": "2023-04-23T19:43:22.368804+00:00",
+        "context": {
+          "id": "01GYQT8W80A8GFX62XCM80174S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "N/A",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_sim_1",
+        "state": "AT&T",
+        "attributes": {
+          "Allows VoIP": true,
+          "Carrier ID": "0000000100000001",
+          "Carrier Name": "AT&T",
+          "Current Radio Technology": "Long-Term Evolution (LTE)",
+          "ISO Country Code": "us",
+          "Mobile Country Code": "310",
+          "Mobile Network Code": "410",
+          "icon": "mdi:sim",
+          "friendly_name": "iPhone 13 Pro Max SIM 1"
+        },
+        "last_changed": "2023-04-23T19:43:22.368937+00:00",
+        "last_updated": "2023-04-23T19:43:22.368937+00:00",
+        "context": {
+          "id": "01GYQT8W80V081PDE702VZKWKH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "AT&T",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_geocoded_location",
+        "state": "Unknown",
+        "attributes": {
+          "icon": "mdi:map",
+          "friendly_name": "iPhone 13 Pro Max Geocoded Location"
+        },
+        "last_changed": "2023-04-23T19:43:22.369043+00:00",
+        "last_updated": "2023-04-23T19:43:22.369043+00:00",
+        "context": {
+          "id": "01GYQT8W81YBT1QGZ7GQNCZ2YZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Unknown",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_last_update_trigger",
+        "state": "registration",
+        "attributes": {
+          "icon": "mdi:cellphone-wireless",
+          "friendly_name": "iPhone 13 Pro Max Last Update Trigger"
+        },
+        "last_changed": "2023-04-23T19:43:22.369135+00:00",
+        "last_updated": "2023-04-23T19:43:22.369135+00:00",
+        "context": {
+          "id": "01GYQT8W810DN7C9S12K628S68",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "registration",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_13_pro_max_connection_type",
+        "state": "Wi-Fi",
+        "attributes": {
+          "icon": "mdi:wifi",
+          "friendly_name": "iPhone 13 Pro Max Connection Type"
+        },
+        "last_changed": "2023-04-23T19:43:22.369225+00:00",
+        "last_updated": "2023-04-23T19:43:22.369225+00:00",
+        "context": {
+          "id": "01GYQT8W81W5CJDRD9E2C76BZN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Wi-Fi",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.iphone_13_pro_max",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "iPhone 13 Pro Max"
+        },
+        "last_changed": "2023-04-23T19:43:22.369332+00:00",
+        "last_updated": "2023-04-23T19:43:22.369332+00:00",
+        "context": {
+          "id": "01GYQT8W81HVDZ825XPH6PF36W",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.wled_restart",
+        "state": "unavailable",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "WLED Restart"
+        },
+        "last_changed": "2023-04-23T20:23:37.416045+00:00",
+        "last_updated": "2023-04-23T20:23:37.416045+00:00",
+        "context": {
+          "id": "01GYQWJJP870BQ3R3RFZVF3509",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     },
     {
       "state": {
         "entity_id": "update.wled_firmware",
-        "state": "unknown",
+        "state": "unavailable",
         "attributes": {
-          "auto_update": false,
-          "installed_version": "0.13.3",
-          "in_progress": false,
-          "latest_version": null,
-          "release_summary": null,
-          "release_url": null,
-          "skipped_version": null,
-          "title": "WLED",
           "device_class": "firmware",
           "entity_picture": "https://brands.home-assistant.io/_/wled/icon.png",
           "friendly_name": "WLED Firmware",
           "supported_features": 3
         },
-        "last_changed": "2023-04-19T02:45:03.701982+00:00",
-        "last_updated": "2023-04-19T02:45:03.701982+00:00",
+        "last_changed": "2023-04-23T20:23:37.416118+00:00",
+        "last_updated": "2023-04-23T20:23:37.416118+00:00",
         "context": {
-          "id": "01GYBPDDJNNAJMJWXGER99D3NF",
+          "id": "01GYQWJJP8EEBNKV39QJRRVH2T",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-04-19T02:47:05.084044+00:00"
+      "last_seen": "2023-04-23T20:54:36.336815+00:00"
     }
   ]
 }

@@ -3,6 +3,27 @@
   "minor_version": 2,
   "key": "repairs.issue_registry",
   "data": {
-    "issues": []
+    "issues": [
+      {
+        "created": "2023-04-23T18:15:29.367296+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": true,
+        "issue_id": "automation.pause_service_not_found_media_player.media_pause",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": null,
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "service": "media_player.media_pause",
+          "entity_id": "automation.pause",
+          "name": "Pause",
+          "edit": "/config/automation/edit/1680916818783"
+        }
+      }
+    ]
   }
 }
