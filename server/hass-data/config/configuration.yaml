@@ -10,8 +10,6 @@ frontend:
 tts:
   - platform: google_translate
 
-logger: debug
-
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
