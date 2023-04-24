@@ -1,0 +1,6 @@
+*ESP32-Rhasspy-Satellite*
+*esp32-platformio*
+*matrix-voice-esp32-ws-streamer*
+*server/mqtt-data/data/*
+*server/mqtt-data/log/*
+*server/rhasspy-data/profiles/en/kaldi/*
