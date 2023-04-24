@@ -48,21 +48,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "6756356fe1e5b7696559c54fd558d5bf",
-        "version": 1,
-        "domain": "wled",
-        "title": "WLED",
-        "data": {
-          "host": "192.168.15.102"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "4cebd6cc1324",
-        "disabled_by": null
-      },
-      {
         "entry_id": "6085f369f85855135a02a3eb0af69d31",
         "version": 1,
         "domain": "spotify",
@@ -70,12 +55,12 @@
         "data": {
           "auth_implementation": "spotify_0c9f2cca71e9410e91168860147a5bc3",
           "token": {
-            "access_token": "BQALUixN3AcEYYqf4zehAXWV4qbsZGldYGKChSZOJ3WHsQvUu5AbEWYtBc69soJarUfp5cIDyNgAUlLfV-Rb5RO7bGMWRweFYQntLABCkdwrkgphaXYD0bv52ub4tc-vuCDcnC4naAnfzyzDIJWG0bBVNx9mRytuuMpQC8T-uOcKMZF7UAtxclCpAOiuW7fZqChocFHmpAf3MXDnaPVG2i4_OtruGGZ2-6R8xARHPOQu-Ue-PjAa",
+            "access_token": "BQDEIJnRrVXvJBf8McY93yTfW5iOcIhI-bCV5lJnY5qYXkKoi0-4hivQt5vKmjyHFHRjmTlzOBLB9N4jSV9EHLKXDc5sKYLkOBARnwm4mLta4ToNzNFtOhtXPmcYiB77IScft2Jkp3Umcbl7KNfZKZFgdQT8CQ42-h7pgYWeuAkfTkdnDgzXTBg5NuOHiO1NuEBXFG4nPJLgP3Bbbu9xS7PET_8172mHcWpLn6KvhBQjIO19NdO7EyA",
             "token_type": "Bearer",
             "expires_in": 3600,
             "refresh_token": "AQCcbGXkrzlmfpODWXP-1R6VRIdTKS2khGvWsoMbH4_s3mX-0mwSRsMI5cQFzD2NkLtYmVU7vcUdr7ap0sQHG5GO9yubUtXXLe8FmVirR-F-IRs1jU_Nf7NVfUV3qkGlq5Y",
-            "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-recently-played user-read-playback-position user-read-private user-top-read",
-            "expires_at": 1680919069.4372811
+            "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-email user-read-recently-played user-read-playback-position user-read-private user-top-read",
+            "expires_at": 1682286203.797704
           },
           "id": "iristhegreat88",
           "name": "Iris"
@@ -85,6 +70,53 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "iristhegreat88",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "615d1ee2806dd3d29cb95dacf66f4375",
+        "version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.15.101"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "4cebd6cc1324",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9e5da4e8142a43e2f07a71307755eda8",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "iPhone 13 Pro Max",
+        "data": {
+          "os_name": "iOS",
+          "app_name": "Home Assistant",
+          "supports_encryption": true,
+          "app_id": "io.robbie.HomeAssistant",
+          "device_name": "iPhone 13 Pro Max",
+          "app_data": {
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification",
+            "push_token": "ex_wLF7rr09Ohfy5HDxLcO:APA91bG4Ddm_oKyqQNie_MMTASSx2MOL31XWbEqrDiQoahZ5wrqPX0zxm3zbvt4AVi-IT8tIvPazyw4EkEZHqNg1O1oEuxj3yrCrvZ65V1UUpS7CYT38UVDnYIWO8a-_v_K2XNHyOlPx"
+          },
+          "device_id": "49F5EF8F-653B-465E-AF43-7E2C6B85798F",
+          "app_version": "2023.4 (2023.460)",
+          "model": "iPhone14,3",
+          "manufacturer": "Apple",
+          "os_version": "16.3.1",
+          "webhook_id": "221d162fdbc60eab849988b2a3bf2e1e05eb4e41525e3388831dff93a2bd84b9",
+          "secret": "cc50f45d859918189638bcb6e24ff535d38afa83e99d3999b01713114df1e657",
+          "user_id": "4b25b92e70d340a5ba7601bdfdb600eb",
+          "no_legacy_encryption": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.robbie.HomeAssistant-49F5EF8F-653B-465E-AF43-7E2C6B85798F",
         "disabled_by": null
       }
     ]

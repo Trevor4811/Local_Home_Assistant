@@ -15,15 +15,20 @@ services:
       - "8123:8123"
     volumes:
       - ./hass-data/config:/config
+    environment:
+      - SPOTIPY_CLIENT_ID=0c9f2cca71e9410e91168860147a5bc3
+      - SPOTIPY_CLIENT_SECRET=5517d37a51f44d36a8d2ff9836402f9e
+      - SPOTIPY_REDIRECT_URI=http://localhost:5173/callback
   rhasspy:
     build: ./rhasspy
     restart: unless-stopped
     ports:
         - "12101:12101"
     volumes:
-        - ./rhasspy-data/profiles:/profiles
-        - /etc/localtime:/etc/localtime:ro
-    # devices:
-    #     - /dev/snd:/dev/snd
+      - ./rhasspy-data/profiles:/profiles
+      - /etc/localtime:/etc/localtime:ro
+    #  - ~/.config/pulse:/root/.config/pulse
+    environment:
+      - PULSE_SERVER=host.docker.internal
     command: --user-profiles /profiles --profile en
 

@@ -1,19 +1,45 @@
-2023-04-10 01:40:19.538 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2023-04-10 01:40:24.799 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry Iris for spotify
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 383, in async_setup
-    result = await component.async_setup_entry(hass, self)
-  File "/usr/src/homeassistant/homeassistant/components/spotify/__init__.py", line 74, in async_setup_entry
-    implementation = await async_get_config_entry_implementation(hass, entry)
-  File "/usr/src/homeassistant/homeassistant/helpers/config_entry_oauth2_flow.py", line 401, in async_get_config_entry_implementation
-    raise ValueError("Implementation not available")
-ValueError: Implementation not available
-2023-04-10 01:40:49.585 WARNING (MainThread) [homeassistant.config_entries] Config entry 'WLED' for wled integration not ready yet: Invalid response from API: Timeout occurred while connecting to WLED device at 192.168.15.102; Retrying in background
-2023-04-10 01:40:49.632 WARNING (Recorder) [homeassistant.components.recorder.migration] Database is about to upgrade from schema version: 41 to: 35
-2023-04-10 02:27:02.836 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
-2023-04-10 02:35:41.828 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
-2023-04-10 02:35:41.834 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities input_datetime.led_turn_off_time or it is/they are currently not available
-2023-04-10 02:37:03.220 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
-2023-04-10 02:37:05.010 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
-2023-04-10 02:37:59.004 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.wled or it is/they are currently not available
-2023-04-10 02:38:10.711 WARNING (Thread-2 (_thread_main)) [homeassistant.components.mqtt.client] Disconnected from MQTT server host.docker.internal:1883 (7)
+2023-04-23 19:43:47.513 WARNING (MainThread) [homeassistant.config_entries] Config entry 'WLED' for wled integration not ready yet: Invalid response from API: Timeout occurred while connecting to WLED device at 192.168.15.101; Retrying in background
+2023-04-23 19:43:47.536 WARNING (Recorder) [homeassistant.components.recorder.migration] Database is about to upgrade from schema version: 41 to: 35
+2023-04-23 19:54:43.369 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.master or it is/they are currently not available
+2023-04-23 20:01:33.413 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:05:34.589 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:06:53.206 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:08:25.975 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:09:14.278 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:09:27.129 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:09:31.424 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:09:37.564 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:10:12.607 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:20:23.235 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.master or it is/they are currently not available
+2023-04-23 20:20:53.594 WARNING (SyncWorker_3) [urllib3.connectionpool] Retrying (Retry(total=2, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a4379660>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:20:54.205 WARNING (SyncWorker_3) [urllib3.connectionpool] Retrying (Retry(total=1, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a43786a0>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:20:55.415 WARNING (SyncWorker_3) [urllib3.connectionpool] Retrying (Retry(total=0, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a4379390>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:21:23.586 WARNING (SyncWorker_4) [urllib3.connectionpool] Retrying (Retry(total=2, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a21252d0>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:21:24.195 WARNING (SyncWorker_4) [urllib3.connectionpool] Retrying (Retry(total=1, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a2124070>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:21:25.406 WARNING (SyncWorker_4) [urllib3.connectionpool] Retrying (Retry(total=0, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a21258a0>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:21:53.585 WARNING (SyncWorker_9) [urllib3.connectionpool] Retrying (Retry(total=2, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a210c130>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:21:54.194 WARNING (SyncWorker_9) [urllib3.connectionpool] Retrying (Retry(total=1, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a2106ec0>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:21:55.402 WARNING (SyncWorker_9) [urllib3.connectionpool] Retrying (Retry(total=0, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a2106b30>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:22:23.595 WARNING (SyncWorker_3) [urllib3.connectionpool] Retrying (Retry(total=2, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a21a0130>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:22:24.206 WARNING (SyncWorker_3) [urllib3.connectionpool] Retrying (Retry(total=1, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a21a3eb0>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:22:25.418 WARNING (SyncWorker_3) [urllib3.connectionpool] Retrying (Retry(total=0, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a210d870>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:22:53.586 WARNING (SyncWorker_9) [urllib3.connectionpool] Retrying (Retry(total=2, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a200ae90>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:22:54.195 WARNING (SyncWorker_9) [urllib3.connectionpool] Retrying (Retry(total=1, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a200aa10>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:22:55.406 WARNING (SyncWorker_9) [urllib3.connectionpool] Retrying (Retry(total=0, connect=None, read=False, redirect=None, status=3)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f34a2008fd0>: Failed to establish a new connection: [Errno -2] Name does not resolve')': /v1/me/player
+2023-04-23 20:23:32.789 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:28:01.079 ERROR (MainThread) [homeassistant.components.automation.changelightstate] ChangeLightState: Error executing script. Invalid data for call_service at pos 2: not a valid value for dictionary value @ data['entity_id']
+2023-04-23 20:28:01.084 ERROR (MainThread) [homeassistant.components.automation.changelightstate] Error while executing automation automation.changelightstate: not a valid value for dictionary value @ data['entity_id']
+2023-04-23 20:34:21.676 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `python search_and_play.py "{{ command }}"`, return code: 1
+NoneType: None
+2023-04-23 20:54:36.365 WARNING (Thread-2 (_thread_main)) [homeassistant.components.mqtt.client] Disconnected from MQTT server host.docker.internal:1883 (7)
+2023-04-23 20:54:36.811 WARNING (MainThread) [homeassistant.core] Task <Task pending name='Task-7589' coro=<DataUpdateCoordinator._handle_refresh_interval() running at /usr/src/homeassistant/homeassistant/helpers/update_coordinator.py:182> wait_for=<Future pending cb=[BaseSelectorEventLoop._sock_write_done(8, handle=<Handle BaseS...15.101', 80))>)(), Task.task_wakeup()]> cb=[set.remove()]> was still running after stage 2 shutdown; Integrations should cancel non-critical tasks when receiving the stop event to prevent delaying shutdown

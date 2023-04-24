@@ -7,7 +7,9 @@
       {
         "name": "Johnny",
         "user_id": "4b25b92e70d340a5ba7601bdfdb600eb",
-        "device_trackers": [],
+        "device_trackers": [
+          "device_tracker.iphone_13_pro_max"
+        ],
         "id": "johnny"
       }
     ]

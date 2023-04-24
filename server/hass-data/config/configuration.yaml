@@ -14,3 +14,6 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
+shell_command:
+  play_song: 'python search_and_play.py "{{ command }}"'
+

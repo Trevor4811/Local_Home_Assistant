@@ -7,35 +7,6 @@
       {
         "area_id": null,
         "config_entries": [
-          "6756356fe1e5b7696559c54fd558d5bf"
-        ],
-        "configuration_url": "http://192.168.15.102",
-        "connections": [
-          [
-            "mac",
-            "4c:eb:d6:cc:13:24"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": "esp02",
-        "id": "1087109fd4c5936419acd95f2e5ba331",
-        "identifiers": [
-          [
-            "wled",
-            "4cebd6cc1324"
-          ]
-        ],
-        "manufacturer": "WLED",
-        "model": "FOSS",
-        "name_by_user": null,
-        "name": "WLED",
-        "sw_version": "0.13.3",
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
           "57fd4957487c1f2d5ee598ad86c3467a"
         ],
         "configuration_url": null,
@@ -80,8 +51,74 @@
         "name": "Spotify Iris",
         "sw_version": null,
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "615d1ee2806dd3d29cb95dacf66f4375"
+        ],
+        "configuration_url": "http://192.168.15.101",
+        "connections": [
+          [
+            "mac",
+            "4c:eb:d6:cc:13:24"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "esp02",
+        "id": "1087109fd4c5936419acd95f2e5ba331",
+        "identifiers": [
+          [
+            "wled",
+            "4cebd6cc1324"
+          ]
+        ],
+        "manufacturer": "WLED",
+        "model": "FOSS",
+        "name_by_user": null,
+        "name": "WLED",
+        "sw_version": "0.13.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "9e5da4e8142a43e2f07a71307755eda8"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "661f54e0e1f0447773a84699c188852d",
+        "identifiers": [
+          [
+            "mobile_app",
+            "49F5EF8F-653B-465E-AF43-7E2C6B85798F"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone14,3",
+        "name_by_user": null,
+        "name": "iPhone 13 Pro Max",
+        "sw_version": "16.3.1",
+        "via_device_id": null
       }
     ],
-    "deleted_devices": []
+    "deleted_devices": [
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "nws",
+            "42.0_-71.0"
+          ]
+        ],
+        "id": "eaa18d3dfed31ba000d9c812ebb93e2f",
+        "orphaned_timestamp": 1681594699.8582156
+      }
+    ]
   }
 }

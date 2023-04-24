@@ -8,9 +8,11 @@
   action:
   - service: mqtt.publish
     data:
+      qos: 0
+      retain: false
       topic: hermes/dialogueManager/endSession
       payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
-        text" : "ok"}'
+        "text": "ok"}'
   - service_template: light.turn_{{trigger.event.data.state}}
     data:
       entity_id: light.{{trigger.event.data.name.replace(' ', '_')}}
@@ -29,7 +31,7 @@
       entity_id: media_player.spotify
   mode: single
 - id: '1680917001630'
-  alias: PlayMusic
+  alias: PlayMusicWithSource
   description: ''
   trigger:
   - platform: event
@@ -82,9 +84,11 @@
       entity_id: timer.led_turn_on_time
   - service: mqtt.publish
     data:
+      qos: 0
+      retain: false
       topic: hermes/dialogueManager/endSession
       payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
-        text" : "ok"}'
+        "text": "ok"}'
   mode: single
 - id: '1681092180682'
   alias: LightOnFor
@@ -97,7 +101,7 @@
   - service: light.turn_on
     data: {}
     target:
-      entity_id: light.wled
+      entity_id: light.master
   - service: timer.start
     data:
       duration: "{% if trigger.event.data.hour is not defined %}\n  {% set hour =
@@ -111,9 +115,11 @@
       entity_id: timer.led_turn_off_time
   - service: mqtt.publish
     data:
+      qos: 0
+      retain: false
       topic: hermes/dialogueManager/endSession
       payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
-        text" : "ok"}'
+        "text": "ok"}'
   mode: single
 - id: '1681092324041'
   alias: LEDTurnOnAuto
@@ -128,7 +134,7 @@
   - service: light.turn_on
     data: {}
     target:
-      entity_id: light.wled
+      entity_id: light.master
   mode: single
 - id: '1681092363114'
   alias: LEDTurnOffAuto
@@ -143,5 +149,78 @@
   - service: light.turn_off
     data: {}
     target:
-      entity_id: light.wled
+      entity_id: light.master
+  mode: single
+- id: '1681355815356'
+  alias: GetTemperature
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_GetTemperature
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      qos: 0
+      retain: false
+      topic: hermes/dialogueManager/endSession
+      payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
+        "text": "The temperature is {{states(''input_number.room_temperature_f'')
+        | int}} degrees"}'
+  mode: single
+- id: '1681595008670'
+  alias: 10SecPeriodicTimer
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.temperature_periodic_timer
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: '10'
+    target:
+      entity_id: timer.temperature_periodic_timer
+  mode: single
+- id: '1681595381038'
+  alias: RandomTempAuto
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.temperature_periodic_timer
+  condition: []
+  action:
+  - service: input_number.set_value
+    data:
+      value: '{{ range(50, 100) | random | int }}'
+    target:
+      entity_id: input_number.room_temperature_f
+  mode: single
+- id: '123'
+  alias: PlaySong
+  trigger:
+  - platform: event
+    event_type: rhasspy_SearchMusic
+  action:
+    service: shell_command.play_song
+    data_template:
+      command: '{{ trigger.event.data._raw_text }}'
+- id: '1682205684724'
+  alias: PlayMusic
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_PlayMusic
+  condition: []
+  action:
+  - service: media_player.media_play
+    data: {}
+    target:
+      entity_id: media_player.spotify
   mode: single
