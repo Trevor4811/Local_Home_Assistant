@@ -20,22 +20,22 @@
         "pyaudio": {
             "device": "pulse"
         },
-        "system": "arecord"
+        "system": "hermes"
     },
     "mqtt": {
         "enabled": "true",
-        "host": "host.docker.internal"
+        "host": "host.docker.internal",
+        "site_id": "satellite"
     },
     "sounds": {
         "aplay": {
             "device": "pulse"
         },
-        "system": "aplay"
+        "system": "hermes"
     },
     "speech_to_text": {
         "kaldi": {
-            "min_confidence": "0.1",
-            "open_transcription": true
+            "min_confidence": "0.1"
         },
         "system": "kaldi"
     },
