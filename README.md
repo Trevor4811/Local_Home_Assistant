@@ -44,6 +44,27 @@ It is recommended to set up the system in the following manner:
         2. Configure the address/port of the MQTT server to that of the server computer
         3. Save settings
 
+## Structure
+
+* docs/
+    * The system diagram
+* server/
+    * Docker files for starting the server side audio processing
+    * hass/
+        * Home assistant Dockerfile
+    * hass-data/
+        * Home assistant configuration files
+    * mqtt/
+        * Mosquitto MQTT Dockerfile
+    * mqtt-data/
+        * MQTT configuration files
+    * rhasspy/
+        * Rhasspy Dockerfile
+    * rhasspy-data/
+        * Rhasspy configuration files
+* voice_matrix/
+    * Files used for operating the Matrix Voice
+
 ## Team Members/Work Breakdown
 
 Trevor McDonald: For sprint 1 I will complete the bring-up of the matrix voice array and helping to integrate this with the raspberry pi running Rhasspy. Initially we will start by using the on-board hot word detection and transferring the wav file over serial, and I will also look into options of programming the on-board ESP32 to convert the audio to text and transfer over the internet to a server. 
