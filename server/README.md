@@ -38,6 +38,14 @@ docker compose up
 docker compose down
 ```
 
+### Home Assistant Credentials
+
+The Home Assistant administrator account can be used to set
+up automations. The credentials are:
+
+Username: `johnny`
+Password: `password`
+
 ## Supported Automations
 
 The current automations which are supported are:
@@ -56,4 +64,11 @@ The current automations which are supported are:
     2. Only supports multiples of 10 - e.g. in 45 minutes is not supported while 40 minutes is
 5. Retrieving the temperatures
     1. "what is the temperature?"
+6. Retrieving the time
+    1. "what is the time?"
+7. Starting and stopping Spotify
+    1. "start/pause music"
+8. Searching Spotify for music
+    1. Requires [Open transcription mode to be enabled in Rhasspy](https://github.com/neu-ece-4534-sp23/sp23-prj-voice-home-automation/blob/main/server/rhasspy-data/profiles/en/profile.json#L38)
+    2. "play 'song name'"
 
