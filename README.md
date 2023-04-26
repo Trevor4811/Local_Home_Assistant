@@ -11,6 +11,31 @@ After this first concept we will have a better idea of which direction to take o
 
 ![System Diagram](./docs/system_diagram.png)
 
+## Setup
+
+It is recommended to set up the system in the following manner:
+
+1. Set up the WLED module
+    1. Assign the WLED module a static IP
+        1. Connect the WLED to the network
+        2. Open the web UI
+        3. Navigate to the Settings and Wi-Fi Setup
+        4. Assign the IP to `192.168.15.101`
+        5. Assign the subnet mask as `255.255.255.0`
+        6. Assign the gateway to 192.168.15.2
+        7. Save settings and reboot the WLED module
+2. Set up the server
+    1. See the [server README](https://github.com/neu-ece-4534-sp23/sp23-prj-voice-home-automation/blob/main/server/README.md#usage)
+    for details
+3. Set up the Matrix Voice
+    1. Connect the Matrix Voice to the network
+        1. See the [Rhasspy Satellite README](https://github.com/Romkabouter/ESP32-Rhasspy-Satellite/blob/master/matrixvoice.md)
+        for details
+    2. Configure the Matrix Voice
+        1. Open the web UI
+        2. Configure the address/port of the MQTT server to that of the server computer
+        3. Save settings
+
 ## Team Members/Work Breakdown
 
 Trevor McDonald: For sprint 1 I will complete the bring-up of the matrix voice array and helping to integrate this with the raspberry pi running Rhasspy. Initially we will start by using the on-board hot word detection and transferring the wav file over serial, and I will also look into options of programming the on-board ESP32 to convert the audio to text and transfer over the internet to a server. 
