@@ -9,7 +9,7 @@ After this first concept we will have a better idea of which direction to take o
 
 ## System Diagram
 
-![System Diagram](./docs/system_diagram.jpg)
+![System Diagram](./docs/system_diagram.png)
 
 ## Team Members/Work Breakdown
 
