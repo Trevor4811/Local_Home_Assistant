@@ -27,6 +27,10 @@ It is recommended to set up the system in the following manner:
 2. Set up the server
     1. See the [server README](https://github.com/neu-ece-4534-sp23/sp23-prj-voice-home-automation/blob/main/server/README.md#usage)
     for details
+    2. Download the Rhasspy files
+        1. Navigate to the web UI at `localhost:12101`
+        2. Click on the "Download external files" button
+        3. Wait for the download to finish
 3. Set up the Matrix Voice
     1. Connect the Matrix Voice to the network
         1. See the [Rhasspy Satellite README](https://github.com/Romkabouter/ESP32-Rhasspy-Satellite/blob/master/matrixvoice.md)
