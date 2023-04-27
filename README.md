@@ -65,9 +65,32 @@ It is recommended to set up the system in the following manner:
 * voice_matrix/
     * Files used for operating the Matrix Voice
 
+## Matrix Stream Latency
+
+### Overview
+
+For quantafiable latency results we developed a method of using GPIO outputs to time notable events during each Rhasspy interaction. There were two aspects to this:
+1. Developed a new version of the [StateMachine.hpp](./voice_matrix/raspberry_pi_integration/gpio_timing/StateMachine.hpp) file to toggle one of the ESP32's GPIO pins during notable events. This is better than timing on the matrix and printing because that is a more expensive proess than writing to a GPIO and affects the programs latency more.
+    1. Play tone indicating hot word detected
+    2. Play tone indicating no more audio being collected
+    3. Play response audio based on the command
+2. Developed [code](./voice_matrix/raspberry_pi_integration/gpio_timing/gpio_timing.c) on the Raspberry Pi to record these GPIO events (when the pin is pulled low). Did this using [pigpio](https://abyz.me.uk/rpi/pigpio/) with a callback function that runs whenever the state of the specified gpio pin changes, time accurate to a few us. 
+
+Then connecting the GPIO from the matrix to the Raspberry Pi allows for recording of the latency of these events. May easily be adapted to record other events and even multiple gpio pins for different time differential measurements if desired.
+
+### Setup
+Follow the regular install instructions for using matrix stream but before flashing replace the StateMachine.hpp file in the ESP32-Rhasspy-Satellite Repository.
+
+For the raspberry pi:
+1. go to the [gpio_timing folder](./voice_matrix/raspberry_pi_integration/gpio_timing/)
+2. run `make`
+3. connect the io pin 25 on the matrix to GPIO 21 (pin 40) on the Raspberry Pi.
+4. run `./gpio_timing 21`
+5. speak commands to the matrix voice and timing results will be printed.
+
 ## Team Members/Work Breakdown
 
-Trevor McDonald: For sprint 1 I will complete the bring-up of the matrix voice array and helping to integrate this with the raspberry pi running Rhasspy. Initially we will start by using the on-board hot word detection and transferring the wav file over serial, and I will also look into options of programming the on-board ESP32 to convert the audio to text and transfer over the internet to a server. 
+Trevor McDonald: For sprint 1 I will complete the bring-up of the matrix voice array and helping to integrate this with the Raspberry Pi running Rhasspy. Initially we will start by using the on-board hot word detection and transferring the wav file over serial, and I will also look into options of programming the on-board ESP32 to convert the audio to text and transfer over the internet to a server. 
 
 Brett Sullivan: For sprint 1, I will install [Rhasspy](https://rhasspy.readthedocs.io/en/latest/) locally on the Raspberry Pi to start processing audio from the MATRIX Voice. We will explore integrating Rhasspy with Home Assistant. Initially, Rhasspy will be run locally on the Raspberry Pi, but as we transition to using the ESP32, if the ESP32 is unable to handle the load locally, we may transmit the audio over MQTT and run Rhasspy remotely using an existing open source project, [ESP32 Rhasspy Satelite](https://github.com/Romkabouter/ESP32-Rhasspy-Satellite). I will explore Rhasspy's scripting possibilities and the events they generate, and implement a simple script to verify functionality.
 
