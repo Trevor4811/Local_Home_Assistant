@@ -1,4 +1,11 @@
 {
+    "command": {
+        "webrtcvad": {
+            "max_sec": "10",
+            "silence_sec": "0.4",
+            "vad_mode": "3"
+        }
+    },
     "dialogue": {
         "system": "rhasspy"
     },
@@ -35,7 +42,10 @@
     },
     "speech_to_text": {
         "kaldi": {
-            "min_confidence": "0.1"
+            "cancel_probability": "0.01",
+            "min_confidence": "0.1",
+            "open_transcription": true,
+            "silence_probability": "0.5"
         },
         "system": "kaldi"
     },
