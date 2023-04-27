@@ -55,12 +55,12 @@
         "data": {
           "auth_implementation": "spotify_0c9f2cca71e9410e91168860147a5bc3",
           "token": {
-            "access_token": "BQDEIJnRrVXvJBf8McY93yTfW5iOcIhI-bCV5lJnY5qYXkKoi0-4hivQt5vKmjyHFHRjmTlzOBLB9N4jSV9EHLKXDc5sKYLkOBARnwm4mLta4ToNzNFtOhtXPmcYiB77IScft2Jkp3Umcbl7KNfZKZFgdQT8CQ42-h7pgYWeuAkfTkdnDgzXTBg5NuOHiO1NuEBXFG4nPJLgP3Bbbu9xS7PET_8172mHcWpLn6KvhBQjIO19NdO7EyA",
+            "access_token": "BQAh68LWfYgM_6xhclGcmwbrQBmvCIEoGQqocc6ZdyEFcYj7qHaFx1twyWBu5UEYgFge7nfjH74Vpswk_-k7Ia3CNjdhKg2O0-rQumu6Qd1rLC0QEHdUsEXx0YvJ-YrpTOSbzLBnMFNvAlt5HCAsRwGg39LASZsDGHWesXlu56X5hFxN2MMgTlDXv98_Rk_J7qjePzp9kEv7Fh_XHPDfaSiClQQe6ch-njPIG3XlGmy1wqbugtm1BSM",
             "token_type": "Bearer",
             "expires_in": 3600,
             "refresh_token": "AQCcbGXkrzlmfpODWXP-1R6VRIdTKS2khGvWsoMbH4_s3mX-0mwSRsMI5cQFzD2NkLtYmVU7vcUdr7ap0sQHG5GO9yubUtXXLe8FmVirR-F-IRs1jU_Nf7NVfUV3qkGlq5Y",
             "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-email user-read-recently-played user-read-playback-position user-read-private user-top-read",
-            "expires_at": 1682286203.797704
+            "expires_at": 1682451318.4695168
           },
           "id": "iristhegreat88",
           "name": "Iris"
@@ -70,21 +70,6 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "iristhegreat88",
-        "disabled_by": null
-      },
-      {
-        "entry_id": "615d1ee2806dd3d29cb95dacf66f4375",
-        "version": 1,
-        "domain": "wled",
-        "title": "WLED",
-        "data": {
-          "host": "192.168.15.101"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "4cebd6cc1324",
         "disabled_by": null
       },
       {
@@ -117,6 +102,56 @@
         "pref_disable_polling": false,
         "source": "registration",
         "unique_id": "io.robbie.HomeAssistant-49F5EF8F-653B-465E-AF43-7E2C6B85798F",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "3f1206d34f320f47f06f8126a8f91cad",
+        "version": 1,
+        "domain": "tplink",
+        "title": "Desk EP10(US)",
+        "data": {
+          "host": "192.168.1.106"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "00:31:92:0f:b0:24",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d5a640aa0fe271bd31cacc44eabda6be",
+        "version": 1,
+        "domain": "accuweather",
+        "title": "Home",
+        "data": {
+          "api_key": "70xcO1IuYzM2SuSUpIjLUHBZpx1uGIYp",
+          "latitude": 42.34,
+          "longitude": -71.1,
+          "name": "Home"
+        },
+        "options": {
+          "forecast": false
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "2626566",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d9ec4f8c80ada8c724b64a74a34466bf",
+        "version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.15.103"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "4cebd6cc1324",
         "disabled_by": null
       }
     ]

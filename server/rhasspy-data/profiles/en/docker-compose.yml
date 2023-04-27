@@ -1,0 +1,58 @@
+services:
+  dialogue:
+    command: --debug --host host.docker.internal --port 1883 --site-id satellite --session-timeout
+      30 --sound wake /usr/lib/rhasspy/etc/wav/beep_hi.wav --sound recorded /usr/lib/rhasspy/etc/wav/beep_lo.wav
+      --sound error /usr/lib/rhasspy/etc/wav/beep_error.wav --volume 1 --min-asr-confidence
+      0.1 --say-chars-per-second 33 --sound-suffix .wav --sound-suffix .mp3 --sound-suffix
+      .ogg --sound-suffix .flac
+    depends_on:
+    - mqtt
+    image: rhasspy/rhasspy-dialogue-hermes
+    tty: true
+  intent_recognition:
+    command: --intent-graph /profiles/en/intent_graph.pickle.gz --debug --host host.docker.internal
+      --port 1883 --site-id satellite --replace-numbers --language en_US --casing
+      lower --converters-dir /profiles/en/converters --failure-token <unk>
+    depends_on:
+    - mqtt
+    image: rhasspy/rhasspy-nlu-hermes
+    tty: true
+    volumes:
+    - /profiles:/profiles
+  speech_to_text:
+    command: --model-type nnet3 --model-dir /profiles/en/kaldi/model --graph-dir /profiles/en/kaldi/model/base_graph
+      --debug --host host.docker.internal --port 1883 --site-id satellite --no-overwrite-train
+      --base-dictionary /profiles/en/kaldi/base_dictionary.txt --base-dictionary /profiles/en/kaldi_custom_words.txt
+      --dictionary-casing lower --g2p-model /profiles/en/kaldi/g2p.fst --unknown-words
+      /profiles/en/kaldi_unknown_words.txt --base-language-model-fst /profiles/en/kaldi/base_language_model.fst
+      --base-language-model-weight 0 --mixed-language-model-fst /profiles/en/kaldi/mixed.fst
+      --frequent-words /usr/lib/rhasspy/rhasspy-profile/rhasspyprofile/profiles/en/frequent_words.txt
+      --max-frequent-words 100 --max-unknown-words 8 --unknown-words-probability 1e-05
+      --unknown-token '<unk>' --silence-probability 0.5 --cancel-word '' --cancel-probability
+      0.01 --voice-skip-seconds 0 --voice-min-seconds 1 --voice-max-seconds 10 --voice-speech-seconds
+      0.3 --voice-silence-seconds 0.4 --voice-before-seconds 0.5 --voice-sensitivity
+      3 --voice-silence-method vad_only
+    depends_on:
+    - mqtt
+    image: rhasspy/rhasspy-asr-kaldi-hermes
+    tty: true
+    volumes:
+    - /profiles:/profiles
+  text_to_speech:
+    command: --tts-command 'nanotts -v {lang} -o {file}' --temporary-wav --text-on-stdin
+      --volume 1 --debug --host host.docker.internal --port 1883 --site-id satellite
+      --language en-US
+    depends_on:
+    - mqtt
+    image: rhasspy/rhasspy-tts-cli-hermes
+    tty: true
+  wake:
+    command: --keyword porcupine.ppn --sensitivity 0.5 --keyword-dir /profiles/en/porcupine
+      --debug --host host.docker.internal --port 1883 --site-id satellite
+    depends_on:
+    - mqtt
+    image: rhasspy/rhasspy-wake-porcupine-hermes
+    tty: true
+    volumes:
+    - /profiles:/profiles
+version: '2'
