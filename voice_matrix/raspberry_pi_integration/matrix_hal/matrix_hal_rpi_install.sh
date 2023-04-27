@@ -23,6 +23,8 @@ cd build
 cmake ..
 make -j4 && sudo make install
 
+sudo apt install pigpio
+
 echo "Demo scripts are in ~/matrix-creater-hal/build/demos/"
 echo "Success!"
 
