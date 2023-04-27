@@ -6,17 +6,26 @@
 #include <pigpio.h>
 
 /*
-freq_count_1.c
-2014-08-21
-Public Domain
+gpio_timing.c
+based on freq_count_1 example from PigPIO library https://abyz.me.uk/rpi/pigpio/code/freq_count_1.zip
 
-gcc -o freq_count_1 freq_count_1.c -lpigpio -lpthread
-$ sudo ./freq_count_1  4 7 8
+make
+$ sudo ./gpio_timing 4
+make clean
 
 This program uses the gpioSetAlertFunc function to request
 a callback (the same one) for each gpio to be monitored.
 
 */
+
+// Using current StateMachine code toggles GPIO 3 times per interaction
+// Simply pulls io 25 down at notable times, resetting in between. Specifically when voice is told to play something audible
+//    1. Play tone indicating hot word detected
+//    2. Play tone indicating no more audio being collected
+//    3. Play response audio based on the command
+// 1->2 audio collection time
+// 2->3 processing time
+#define PULSES_PER_INTERACTION 3
 
 #define MAX_GPIOS 32
 
@@ -49,7 +58,7 @@ static uint32_t g_mask;
 static int g_num_gpios;
 static int g_gpio[MAX_GPIOS];
 
-static int g_opt_p = OPT_P_DEF; //
+static int g_opt_p = OPT_P_DEF; // period
 static int g_opt_r = OPT_R_DEF; // refresh rate (reset)
 static int g_opt_s = OPT_S_DEF; // sample rate
 static int g_opt_t = 0;
@@ -58,14 +67,11 @@ void usage()
 {
    fprintf(stderr,
            "\n"
-           "Usage: sudo ./freq_count_1 gpio ... [OPTION] ...\n"
+           "Usage: sudo ./gpio_timing gpio_num\n"
            "\nEXAMPLE\n"
            "sudo ./gpio_timing 4\n"
            "Monitor gpio 4\n"
-           "\n",
-           OPT_P_MIN, OPT_P_MAX,
-           OPT_R_MIN, OPT_R_MAX, OPT_R_DEF,
-           OPT_S_MIN, OPT_S_MAX, OPT_S_DEF);
+           "\n");
 }
 
 void fatal(int show_usage, char *fmt, ...)
@@ -93,9 +99,9 @@ void edges(int gpio, int level, uint32_t tick)
    if (level == 0)
    {
       // Logic for matrix voice
-      // On third pulse reset to 0
+      // On PULSES_PER_INTERACTION pulse reset to 0
       // On first pulse set initial time
-      if (l_gpio_data[gpio].pulse_count == 3)
+      if (l_gpio_data[gpio].pulse_count == PULSES_PER_INTERACTION)
       {
          l_gpio_data[gpio].pulse_count = 0;
       }
