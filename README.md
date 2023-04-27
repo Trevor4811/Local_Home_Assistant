@@ -37,6 +37,7 @@ It is recommended to set up the system in the following manner:
         3. Wait for the download to finish
 3. Set up the Matrix Voice in stream mode
     1. See the [esp32_satellite README](./voice_matrix/esp32_satellite/README.md)
+        - Similarly the local hot word detection version can be flashed by setting release 6.0.0 to local hot word detection and flashing but it did not work for us
 
 ## Structure
 
