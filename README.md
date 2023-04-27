@@ -35,14 +35,8 @@ It is recommended to set up the system in the following manner:
         1. Navigate to the web UI at `localhost:12101`
         2. Click on the "Download external files" button
         3. Wait for the download to finish
-3. Set up the Matrix Voice
-    1. Connect the Matrix Voice to the network
-        1. See the [Rhasspy Satellite README](https://github.com/Romkabouter/ESP32-Rhasspy-Satellite/blob/master/matrixvoice.md)
-        for details
-    2. Configure the Matrix Voice
-        1. Open the web UI
-        2. Configure the address/port of the MQTT server to that of the server computer
-        3. Save settings
+3. Set up the Matrix Voice in stream mode
+    1. See the [esp32_satellite README](./voice_matrix/esp32_satellite/README.md)
 
 ## Structure
 
@@ -63,7 +57,11 @@ It is recommended to set up the system in the following manner:
     * rhasspy-data/
         * Rhasspy configuration files
 * voice_matrix/
-    * Files used for operating the Matrix Voice
+    * esp32_satellite instructions and scripts to setup Matrix Stream mode
+        * gpio_timing contains files for latency timing for satellite stream
+    * raspberry_pi_integration for using the matrix from the raspberry pi using HAL
+        * matrix_hal contains hal install and example code
+        * rhasspy_integration contains rhasspy profile to use the matrix voice directly connected to a raspberry pi
 
 ## Matrix Stream Latency
 
@@ -88,7 +86,7 @@ For the raspberry pi:
 4. run `./gpio_timing 21`
 5. speak commands to the matrix voice and timing results will be printed.
 
-## Team Members/Work Breakdown
+## Team Members/Initial Work Breakdown
 
 Trevor McDonald: For sprint 1 I will complete the bring-up of the matrix voice array and helping to integrate this with the Raspberry Pi running Rhasspy. Initially we will start by using the on-board hot word detection and transferring the wav file over serial, and I will also look into options of programming the on-board ESP32 to convert the audio to text and transfer over the internet to a server. 
 

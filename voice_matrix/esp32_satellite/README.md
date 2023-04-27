@@ -23,8 +23,12 @@ On the personal computer
 1. Lights should turn blue when connected and automatically start streaming auido
 
 Light indicators of the Matrix Voice
-- Blue - Connected to the MQTT Server
+- Blue - Connected to the router
 - Red - Not connected, check the IP addresses the Matrix Voice was flashed with
+
+If the light is blue but system is not working check the MQTT server IP address is correct.
+
+Scanning for the IP address of the Matrix Voice allows you to connect to it using http://ip_addr and adjust settings including the MQTT server ip, satellite name, volume, and brightness.
 
 ## Reflashing
 - Connect the Matrix Voice to the Raspberry Pi 
