@@ -93,6 +93,12 @@ void edges(int gpio, int level, uint32_t tick)
    if (level == 0)
    {
       // Logic for matrix voice
+      // On third pulse reset to 0
+      // On first pulse set initial time
+      if (l_gpio_data[gpio].pulse_count == 3)
+      {
+         l_gpio_data[gpio].pulse_count = 0;
+      }
       if (l_gpio_data[gpio].pulse_count == 0)
       {
          l_gpio_data[gpio].first_tick = tick;
@@ -101,6 +107,7 @@ void edges(int gpio, int level, uint32_t tick)
       l_gpio_data[gpio].pulse_count++;
       printf("logic level change to low\n\tcount: %d\n\ttime: %d\n",
              l_gpio_data[gpio].pulse_count,
+             
              l_gpio_data[gpio].last_tick - l_gpio_data[gpio].first_tick);
    }
 
