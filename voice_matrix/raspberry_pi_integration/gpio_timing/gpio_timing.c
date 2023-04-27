@@ -18,6 +18,15 @@ a callback (the same one) for each gpio to be monitored.
 
 */
 
+// Using current StateMachine code toggles GPIO 3 times per interaction
+// Simply pulls io 25 down at notable times, resetting in between. Specifically when voice is told to play something audible
+//    1. Play tone indicating hot word detected
+//    2. Play tone indicating no more audio being collected
+//    3. Play response audio based on the command
+// 1->2 audio collection time
+// 2->3 processing time
+#define PULSES_PER_INTERACTION 3
+
 #define MAX_GPIOS 32
 
 #define OPT_P_MIN 1
@@ -90,9 +99,9 @@ void edges(int gpio, int level, uint32_t tick)
    if (level == 0)
    {
       // Logic for matrix voice
-      // On third pulse reset to 0
+      // On PULSES_PER_INTERACTION pulse reset to 0
       // On first pulse set initial time
-      if (l_gpio_data[gpio].pulse_count == 3)
+      if (l_gpio_data[gpio].pulse_count == PULSES_PER_INTERACTION)
       {
          l_gpio_data[gpio].pulse_count = 0;
       }

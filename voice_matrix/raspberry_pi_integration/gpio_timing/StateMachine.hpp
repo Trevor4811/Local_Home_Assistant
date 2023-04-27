@@ -1,5 +1,11 @@
 // Must use this file to time ESP using GPIO
 // Updated version of StateMachine.hpp for ESP32-Rhasspy-Satellite v7.9.1
+// Simply pulls io 25 down at notable times, resetting in between. Specifically when voice is told to play something audible
+//    1. Play tone indicating hot word detected
+//    2. Play tone indicating no more audio being collected
+//    3. Play response audio based on the command
+// 1->2 audio collection time
+// 2->3 processing time
 
 #include <tinyfsm.hpp>
 #include <AsyncMqttClient.h>
