@@ -165,7 +165,7 @@
       retain: false
       topic: hermes/dialogueManager/endSession
       payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
-        "text": "The temperature is {{states(''input_number.room_temperature_f'')
+        "text": "The temperature is {{states(''sensor.home_apparent_temperature'')
         | int}} degrees"}'
   mode: single
 - id: '1681595008670'
@@ -223,4 +223,20 @@
     data: {}
     target:
       entity_id: media_player.spotify
+  mode: single
+- id: '1682440745243'
+  alias: GetTime
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_GetTime
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      qos: 0
+      retain: false
+      topic: hermes/dialogueManager/endSession
+      payload_template: '{"sessionId": "{{trigger.event.data._intent.sessionId}}",
+        "text": "The time is currently {{states(''sensor.time'')}}"}'
   mode: single

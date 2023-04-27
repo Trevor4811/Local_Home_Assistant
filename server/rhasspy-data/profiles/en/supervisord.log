@@ -1,0 +1,690 @@
+2023-04-24 23:08:05,203 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-24 23:08:05,207 INFO supervisord started with pid 173
+2023-04-24 23:08:06,211 INFO spawned: 'dialogue' with pid 201
+2023-04-24 23:08:06,218 INFO spawned: 'speech_to_text' with pid 202
+2023-04-24 23:08:06,222 INFO spawned: 'wake_word' with pid 206
+2023-04-24 23:08:06,233 INFO spawned: 'intent_recognition' with pid 209
+2023-04-24 23:08:06,237 INFO spawned: 'intent_handling' with pid 214
+2023-04-24 23:08:06,242 INFO spawned: 'text_to_speech' with pid 218
+2023-04-24 23:08:07,215 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:08:07,215 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:08:08,219 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:08:08,219 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:08:08,219 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:08:08,219 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:15:22,657 WARN received SIGHUP indicating restart request
+2023-04-24 23:15:22,658 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-24 23:15:22,659 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-24 23:15:22,660 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-24 23:15:22,661 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-24 23:15:22,667 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-24 23:15:22,669 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-24 23:15:22,670 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-24 23:15:22,685 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-24 23:15:22,686 INFO supervisord started with pid 173
+2023-04-24 23:15:23,691 INFO spawned: 'dialogue' with pid 280
+2023-04-24 23:15:23,700 INFO spawned: 'speech_to_text' with pid 281
+2023-04-24 23:15:23,704 INFO spawned: 'wake_word' with pid 282
+2023-04-24 23:15:23,706 INFO spawned: 'intent_recognition' with pid 283
+2023-04-24 23:15:23,720 INFO spawned: 'intent_handling' with pid 284
+2023-04-24 23:15:23,724 INFO spawned: 'text_to_speech' with pid 294
+2023-04-24 23:15:24,692 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:15:24,692 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:15:24,723 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:15:24,723 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:15:24,724 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-24 23:15:24,725 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 09:36:53,657 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 09:36:53,666 INFO supervisord started with pid 173
+2023-04-25 09:36:54,670 INFO spawned: 'dialogue' with pid 200
+2023-04-25 09:36:54,677 INFO spawned: 'speech_to_text' with pid 201
+2023-04-25 09:36:54,681 INFO spawned: 'wake_word' with pid 205
+2023-04-25 09:36:54,686 INFO spawned: 'intent_recognition' with pid 209
+2023-04-25 09:36:54,692 INFO spawned: 'intent_handling' with pid 212
+2023-04-25 09:36:54,695 INFO spawned: 'text_to_speech' with pid 218
+2023-04-25 09:36:55,931 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 09:36:55,932 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 09:36:55,932 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 09:36:55,932 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 09:36:55,932 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 09:36:55,932 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 10:53:50,492 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 10:53:50,494 INFO supervisord started with pid 173
+2023-04-25 10:53:51,497 INFO spawned: 'dialogue' with pid 201
+2023-04-25 10:53:51,501 INFO spawned: 'speech_to_text' with pid 202
+2023-04-25 10:53:51,506 INFO spawned: 'wake_word' with pid 207
+2023-04-25 10:53:51,513 INFO spawned: 'intent_recognition' with pid 212
+2023-04-25 10:53:51,517 INFO spawned: 'intent_handling' with pid 217
+2023-04-25 10:53:51,522 INFO spawned: 'text_to_speech' with pid 218
+2023-04-25 10:53:53,371 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 10:53:53,371 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 10:53:53,371 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 10:53:53,371 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 10:53:53,371 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 10:53:53,371 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:07:38,008 WARN received SIGHUP indicating restart request
+2023-04-25 11:07:38,014 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:07:38,020 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:07:38,026 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:07:38,033 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:07:38,042 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:07:38,043 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:07:38,047 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:07:38,073 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:07:38,074 INFO supervisord started with pid 173
+2023-04-25 11:07:39,077 INFO spawned: 'dialogue' with pid 1348
+2023-04-25 11:07:39,081 INFO spawned: 'speech_to_text' with pid 1349
+2023-04-25 11:07:39,082 INFO spawned: 'wake_word' with pid 1350
+2023-04-25 11:07:39,086 INFO spawned: 'intent_recognition' with pid 1351
+2023-04-25 11:07:39,088 INFO spawned: 'intent_handling' with pid 1352
+2023-04-25 11:07:39,094 INFO spawned: 'text_to_speech' with pid 1353
+2023-04-25 11:07:41,041 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:07:41,041 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:07:41,041 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:07:41,041 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:07:41,041 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:07:41,041 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:08:56,760 WARN received SIGHUP indicating restart request
+2023-04-25 11:08:56,760 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:08:56,761 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:08:56,762 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:08:56,766 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:08:56,777 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:08:56,778 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:08:56,778 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:08:56,793 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:08:56,793 INFO supervisord started with pid 173
+2023-04-25 11:08:57,797 INFO spawned: 'dialogue' with pid 1947
+2023-04-25 11:08:57,801 INFO spawned: 'speech_to_text' with pid 1948
+2023-04-25 11:08:57,803 INFO spawned: 'wake_word' with pid 1949
+2023-04-25 11:08:57,805 INFO spawned: 'intent_recognition' with pid 1950
+2023-04-25 11:08:57,813 INFO spawned: 'intent_handling' with pid 1966
+2023-04-25 11:08:57,816 INFO spawned: 'text_to_speech' with pid 1968
+2023-04-25 11:08:59,586 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:08:59,587 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:08:59,587 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:08:59,587 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:08:59,587 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:08:59,587 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:09:37,769 WARN received SIGHUP indicating restart request
+2023-04-25 11:09:37,771 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:09:37,773 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:09:37,775 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:09:37,775 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:09:37,781 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:09:37,786 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:09:37,786 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:09:37,796 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:09:37,796 INFO supervisord started with pid 173
+2023-04-25 11:09:38,800 INFO spawned: 'dialogue' with pid 2546
+2023-04-25 11:09:38,804 INFO spawned: 'speech_to_text' with pid 2547
+2023-04-25 11:09:38,808 INFO spawned: 'wake_word' with pid 2548
+2023-04-25 11:09:38,813 INFO spawned: 'intent_recognition' with pid 2555
+2023-04-25 11:09:38,817 INFO spawned: 'intent_handling' with pid 2560
+2023-04-25 11:09:38,820 INFO spawned: 'text_to_speech' with pid 2562
+2023-04-25 11:09:39,933 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:09:39,933 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:09:39,933 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:09:39,933 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:09:39,933 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:09:39,934 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:13,188 WARN received SIGHUP indicating restart request
+2023-04-25 11:10:13,188 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:10:13,189 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:10:13,189 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:10:13,190 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:10:13,191 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:10:13,191 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:10:13,193 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:10:13,201 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:10:13,201 INFO supervisord started with pid 173
+2023-04-25 11:10:14,204 INFO spawned: 'dialogue' with pid 3358
+2023-04-25 11:10:14,207 INFO spawned: 'speech_to_text' with pid 3359
+2023-04-25 11:10:14,210 INFO spawned: 'wake_word' with pid 3360
+2023-04-25 11:10:14,212 INFO spawned: 'intent_recognition' with pid 3363
+2023-04-25 11:10:14,215 INFO spawned: 'intent_handling' with pid 3367
+2023-04-25 11:10:14,223 INFO spawned: 'text_to_speech' with pid 3377
+2023-04-25 11:10:16,026 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:16,026 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:16,026 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:16,026 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:16,027 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:16,027 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:40,591 WARN received SIGHUP indicating restart request
+2023-04-25 11:10:40,592 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:10:40,592 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:10:40,594 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:10:40,594 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:10:40,595 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:10:40,596 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:10:40,596 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:10:40,607 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:10:40,608 INFO supervisord started with pid 173
+2023-04-25 11:10:41,613 INFO spawned: 'dialogue' with pid 3951
+2023-04-25 11:10:41,617 INFO spawned: 'speech_to_text' with pid 3952
+2023-04-25 11:10:41,619 INFO spawned: 'wake_word' with pid 3953
+2023-04-25 11:10:41,621 INFO spawned: 'intent_recognition' with pid 3956
+2023-04-25 11:10:41,627 INFO spawned: 'intent_handling' with pid 3965
+2023-04-25 11:10:41,633 INFO spawned: 'text_to_speech' with pid 3971
+2023-04-25 11:10:43,430 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:43,430 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:43,430 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:43,430 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:43,430 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:10:43,430 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:12:37,258 WARN received SIGHUP indicating restart request
+2023-04-25 11:12:37,259 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:12:37,260 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:12:37,261 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:12:37,262 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:12:37,263 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:12:37,263 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:12:37,264 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:12:37,273 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:12:37,274 INFO supervisord started with pid 173
+2023-04-25 11:12:38,278 INFO spawned: 'dialogue' with pid 4030
+2023-04-25 11:12:38,281 INFO spawned: 'speech_to_text' with pid 4031
+2023-04-25 11:12:38,284 INFO spawned: 'wake_word' with pid 4032
+2023-04-25 11:12:38,290 INFO spawned: 'intent_recognition' with pid 4039
+2023-04-25 11:12:38,293 INFO spawned: 'intent_handling' with pid 4045
+2023-04-25 11:12:38,296 INFO spawned: 'text_to_speech' with pid 4046
+2023-04-25 11:12:40,236 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:12:40,236 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:12:40,236 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:12:40,236 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:12:40,236 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:12:40,236 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:13,980 WARN received SIGHUP indicating restart request
+2023-04-25 11:13:13,981 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:13:13,981 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:13:13,982 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:13:13,983 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:13:13,984 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:13:13,984 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:13:13,992 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:13:14,006 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:13:14,007 INFO supervisord started with pid 173
+2023-04-25 11:13:15,010 INFO spawned: 'dialogue' with pid 4623
+2023-04-25 11:13:15,014 INFO spawned: 'speech_to_text' with pid 4624
+2023-04-25 11:13:15,016 INFO spawned: 'wake_word' with pid 4625
+2023-04-25 11:13:15,021 INFO spawned: 'intent_recognition' with pid 4630
+2023-04-25 11:13:15,025 INFO spawned: 'intent_handling' with pid 4638
+2023-04-25 11:13:15,027 INFO spawned: 'text_to_speech' with pid 4642
+2023-04-25 11:13:16,743 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:16,744 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:16,744 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:16,744 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:16,744 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:16,744 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:41,397 WARN received SIGHUP indicating restart request
+2023-04-25 11:13:41,397 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:13:41,398 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:13:41,399 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:13:41,399 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:13:41,400 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:13:41,406 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:13:41,410 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:13:41,419 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:13:41,421 INFO supervisord started with pid 173
+2023-04-25 11:13:42,424 INFO spawned: 'dialogue' with pid 5216
+2023-04-25 11:13:42,427 INFO spawned: 'speech_to_text' with pid 5217
+2023-04-25 11:13:42,430 INFO spawned: 'wake_word' with pid 5218
+2023-04-25 11:13:42,438 INFO spawned: 'intent_recognition' with pid 5224
+2023-04-25 11:13:42,441 INFO spawned: 'intent_handling' with pid 5228
+2023-04-25 11:13:42,444 INFO spawned: 'text_to_speech' with pid 5230
+2023-04-25 11:13:43,430 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:43,430 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:43,430 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:44,431 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:44,432 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:13:44,432 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:08,680 WARN received SIGHUP indicating restart request
+2023-04-25 11:14:08,680 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:14:08,680 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:14:08,681 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:14:08,683 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:14:08,683 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:14:08,684 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:14:08,685 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:14:08,696 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:14:08,697 INFO supervisord started with pid 173
+2023-04-25 11:14:09,700 INFO spawned: 'dialogue' with pid 5815
+2023-04-25 11:14:09,703 INFO spawned: 'speech_to_text' with pid 5816
+2023-04-25 11:14:09,705 INFO spawned: 'wake_word' with pid 5817
+2023-04-25 11:14:09,707 INFO spawned: 'intent_recognition' with pid 5819
+2023-04-25 11:14:09,710 INFO spawned: 'intent_handling' with pid 5822
+2023-04-25 11:14:09,712 INFO spawned: 'text_to_speech' with pid 5828
+2023-04-25 11:14:11,496 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:11,496 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:11,496 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:11,496 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:11,496 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:11,496 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:25,461 WARN received SIGHUP indicating restart request
+2023-04-25 11:14:25,461 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:14:25,462 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:14:25,463 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:14:25,464 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:14:25,465 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:14:25,465 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:14:25,466 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:14:25,472 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:14:25,473 INFO supervisord started with pid 173
+2023-04-25 11:14:26,476 INFO spawned: 'dialogue' with pid 6414
+2023-04-25 11:14:26,481 INFO spawned: 'speech_to_text' with pid 6415
+2023-04-25 11:14:26,483 INFO spawned: 'wake_word' with pid 6416
+2023-04-25 11:14:26,488 INFO spawned: 'intent_recognition' with pid 6421
+2023-04-25 11:14:26,492 INFO spawned: 'intent_handling' with pid 6427
+2023-04-25 11:14:26,494 INFO spawned: 'text_to_speech' with pid 6429
+2023-04-25 11:14:27,452 INFO exited: speech_to_text (exit status 2; not expected)
+2023-04-25 11:14:28,454 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:28,457 INFO spawned: 'speech_to_text' with pid 6491
+2023-04-25 11:14:28,457 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:28,457 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:28,457 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:28,457 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:14:28,969 INFO exited: speech_to_text (exit status 2; not expected)
+2023-04-25 11:14:30,973 INFO spawned: 'speech_to_text' with pid 6512
+2023-04-25 11:14:31,489 INFO exited: speech_to_text (exit status 2; not expected)
+2023-04-25 11:14:34,495 INFO spawned: 'speech_to_text' with pid 6533
+2023-04-25 11:14:35,004 INFO exited: speech_to_text (exit status 2; not expected)
+2023-04-25 11:14:36,006 INFO gave up: speech_to_text entered FATAL state, too many start retries too quickly
+2023-04-25 11:16:02,260 WARN received SIGHUP indicating restart request
+2023-04-25 11:16:02,260 INFO waiting for dialogue, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:16:02,261 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:16:02,268 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:16:02,271 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:16:02,277 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:16:03,279 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:16:03,284 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:16:03,285 INFO supervisord started with pid 173
+2023-04-25 11:16:04,288 INFO spawned: 'dialogue' with pid 6555
+2023-04-25 11:16:04,291 INFO spawned: 'speech_to_text' with pid 6556
+2023-04-25 11:16:04,294 INFO spawned: 'wake_word' with pid 6557
+2023-04-25 11:16:04,296 INFO spawned: 'intent_recognition' with pid 6558
+2023-04-25 11:16:04,299 INFO spawned: 'intent_handling' with pid 6563
+2023-04-25 11:16:04,310 INFO spawned: 'text_to_speech' with pid 6576
+2023-04-25 11:16:05,116 INFO exited: speech_to_text (exit status 2; not expected)
+2023-04-25 11:16:06,118 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:06,121 INFO spawned: 'speech_to_text' with pid 6632
+2023-04-25 11:16:06,121 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:06,121 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:06,121 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:06,121 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:06,657 INFO exited: speech_to_text (exit status 2; not expected)
+2023-04-25 11:16:08,731 INFO spawned: 'speech_to_text' with pid 6653
+2023-04-25 11:16:09,309 INFO exited: speech_to_text (exit status 2; not expected)
+2023-04-25 11:16:12,315 INFO spawned: 'speech_to_text' with pid 6674
+2023-04-25 11:16:12,917 INFO exited: speech_to_text (exit status 2; not expected)
+2023-04-25 11:16:13,919 INFO gave up: speech_to_text entered FATAL state, too many start retries too quickly
+2023-04-25 11:16:21,750 WARN received SIGHUP indicating restart request
+2023-04-25 11:16:21,751 INFO waiting for dialogue, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:16:21,751 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:16:21,752 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:16:21,754 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:16:21,754 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:16:21,755 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:16:21,761 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:16:21,764 INFO supervisord started with pid 173
+2023-04-25 11:16:22,767 INFO spawned: 'dialogue' with pid 6696
+2023-04-25 11:16:22,770 INFO spawned: 'speech_to_text' with pid 6697
+2023-04-25 11:16:22,772 INFO spawned: 'wake_word' with pid 6698
+2023-04-25 11:16:22,775 INFO spawned: 'intent_recognition' with pid 6701
+2023-04-25 11:16:22,785 INFO spawned: 'intent_handling' with pid 6715
+2023-04-25 11:16:22,788 INFO spawned: 'text_to_speech' with pid 6717
+2023-04-25 11:16:24,705 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:24,705 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:24,705 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:24,705 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:24,705 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:16:24,705 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:13,471 WARN received SIGHUP indicating restart request
+2023-04-25 11:17:13,472 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:17:13,473 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:17:13,482 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:17:13,484 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:17:13,484 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:17:13,486 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:17:13,488 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:17:13,494 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:17:13,495 INFO supervisord started with pid 173
+2023-04-25 11:17:14,497 INFO spawned: 'dialogue' with pid 7508
+2023-04-25 11:17:14,501 INFO spawned: 'speech_to_text' with pid 7509
+2023-04-25 11:17:14,503 INFO spawned: 'wake_word' with pid 7510
+2023-04-25 11:17:14,506 INFO spawned: 'intent_recognition' with pid 7513
+2023-04-25 11:17:14,511 INFO spawned: 'intent_handling' with pid 7519
+2023-04-25 11:17:14,515 INFO spawned: 'text_to_speech' with pid 7526
+2023-04-25 11:17:16,350 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:16,350 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:16,350 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:16,350 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:16,350 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:16,350 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:24,983 WARN received SIGHUP indicating restart request
+2023-04-25 11:17:24,983 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:17:24,986 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:17:24,987 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:17:24,988 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:17:24,993 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:17:24,994 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:17:24,998 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:17:25,005 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:17:25,005 INFO supervisord started with pid 173
+2023-04-25 11:17:26,009 INFO spawned: 'dialogue' with pid 7587
+2023-04-25 11:17:26,012 INFO spawned: 'speech_to_text' with pid 7588
+2023-04-25 11:17:26,014 INFO spawned: 'wake_word' with pid 7589
+2023-04-25 11:17:26,021 INFO spawned: 'intent_recognition' with pid 7595
+2023-04-25 11:17:26,026 INFO spawned: 'intent_handling' with pid 7602
+2023-04-25 11:17:26,028 INFO spawned: 'text_to_speech' with pid 7604
+2023-04-25 11:17:27,822 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:27,822 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:27,822 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:27,823 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:27,823 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:27,823 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:43,739 WARN received SIGHUP indicating restart request
+2023-04-25 11:17:43,739 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:17:43,740 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:17:43,741 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:17:43,756 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:17:43,759 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:17:43,763 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:17:43,766 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:17:43,772 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:17:43,773 INFO supervisord started with pid 173
+2023-04-25 11:17:44,775 INFO spawned: 'dialogue' with pid 8186
+2023-04-25 11:17:44,779 INFO spawned: 'speech_to_text' with pid 8187
+2023-04-25 11:17:44,781 INFO spawned: 'wake_word' with pid 8188
+2023-04-25 11:17:44,783 INFO spawned: 'intent_recognition' with pid 8191
+2023-04-25 11:17:44,791 INFO spawned: 'intent_handling' with pid 8200
+2023-04-25 11:17:44,793 INFO spawned: 'text_to_speech' with pid 8206
+2023-04-25 11:17:46,543 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:46,544 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:46,544 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:46,544 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:46,544 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:17:46,544 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:11,543 WARN received SIGHUP indicating restart request
+2023-04-25 11:20:11,544 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:20:11,544 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:20:11,545 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:20:11,546 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:20:11,547 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:20:11,547 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:20:11,548 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:20:11,554 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:20:11,554 INFO supervisord started with pid 173
+2023-04-25 11:20:12,558 INFO spawned: 'dialogue' with pid 9304
+2023-04-25 11:20:12,561 INFO spawned: 'speech_to_text' with pid 9305
+2023-04-25 11:20:12,563 INFO spawned: 'wake_word' with pid 9306
+2023-04-25 11:20:12,569 INFO spawned: 'intent_recognition' with pid 9312
+2023-04-25 11:20:12,572 INFO spawned: 'intent_handling' with pid 9317
+2023-04-25 11:20:12,575 INFO spawned: 'text_to_speech' with pid 9321
+2023-04-25 11:20:14,484 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:14,484 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:14,484 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:14,484 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:14,484 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:14,484 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:49,744 WARN received SIGHUP indicating restart request
+2023-04-25 11:20:49,744 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:20:49,745 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:20:49,745 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:20:49,746 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:20:49,747 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:20:49,747 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:20:49,749 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:20:49,755 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:20:49,756 INFO supervisord started with pid 173
+2023-04-25 11:20:50,759 INFO spawned: 'dialogue' with pid 9903
+2023-04-25 11:20:50,763 INFO spawned: 'speech_to_text' with pid 9904
+2023-04-25 11:20:50,766 INFO spawned: 'wake_word' with pid 9905
+2023-04-25 11:20:50,769 INFO spawned: 'intent_recognition' with pid 9908
+2023-04-25 11:20:50,780 INFO spawned: 'intent_handling' with pid 9916
+2023-04-25 11:20:50,783 INFO spawned: 'text_to_speech' with pid 9918
+2023-04-25 11:20:52,594 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:52,594 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:52,594 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:52,594 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:52,594 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:20:52,594 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:47:46,992 WARN received SIGHUP indicating restart request
+2023-04-25 11:47:46,992 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:47:46,993 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:47:46,994 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:47:46,996 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:47:46,997 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:47:46,998 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:47:47,003 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:47:47,019 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:47:47,020 INFO supervisord started with pid 173
+2023-04-25 11:47:48,024 INFO spawned: 'dialogue' with pid 4036
+2023-04-25 11:47:48,029 INFO spawned: 'speech_to_text' with pid 4037
+2023-04-25 11:47:48,040 INFO spawned: 'wake_word' with pid 4038
+2023-04-25 11:47:48,043 INFO spawned: 'intent_recognition' with pid 4043
+2023-04-25 11:47:48,054 INFO spawned: 'intent_handling' with pid 4046
+2023-04-25 11:47:48,061 INFO spawned: 'text_to_speech' with pid 4054
+2023-04-25 11:47:49,064 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:47:49,064 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:47:49,064 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:47:49,064 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:47:49,064 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:47:49,065 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:10,501 WARN received SIGHUP indicating restart request
+2023-04-25 11:48:10,502 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:48:10,502 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:48:10,504 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:48:10,504 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:48:10,507 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:48:10,508 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:48:10,509 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:48:10,521 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:48:10,522 INFO supervisord started with pid 173
+2023-04-25 11:48:11,525 INFO spawned: 'dialogue' with pid 4115
+2023-04-25 11:48:11,530 INFO spawned: 'speech_to_text' with pid 4116
+2023-04-25 11:48:11,537 INFO spawned: 'wake_word' with pid 4117
+2023-04-25 11:48:11,540 INFO spawned: 'intent_recognition' with pid 4124
+2023-04-25 11:48:11,543 INFO spawned: 'intent_handling' with pid 4128
+2023-04-25 11:48:11,546 INFO spawned: 'text_to_speech' with pid 4130
+2023-04-25 11:48:12,580 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:12,580 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:12,580 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:12,580 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:12,581 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:12,581 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:37,463 WARN received SIGHUP indicating restart request
+2023-04-25 11:48:37,463 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 11:48:37,463 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 11:48:37,464 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 11:48:37,466 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 11:48:37,466 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 11:48:37,467 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 11:48:37,468 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 11:48:37,486 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 11:48:37,487 INFO supervisord started with pid 173
+2023-04-25 11:48:38,490 INFO spawned: 'dialogue' with pid 4714
+2023-04-25 11:48:38,495 INFO spawned: 'speech_to_text' with pid 4715
+2023-04-25 11:48:38,497 INFO spawned: 'wake_word' with pid 4716
+2023-04-25 11:48:38,507 INFO spawned: 'intent_recognition' with pid 4717
+2023-04-25 11:48:38,510 INFO spawned: 'intent_handling' with pid 4730
+2023-04-25 11:48:38,514 INFO spawned: 'text_to_speech' with pid 4732
+2023-04-25 11:48:39,498 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:39,498 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:39,498 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:39,498 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:40,500 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 11:48:40,500 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:05:57,503 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 13:05:57,509 INFO supervisord started with pid 174
+2023-04-25 13:05:58,513 INFO spawned: 'dialogue' with pid 202
+2023-04-25 13:05:58,523 INFO spawned: 'speech_to_text' with pid 203
+2023-04-25 13:05:58,526 INFO spawned: 'wake_word' with pid 207
+2023-04-25 13:05:58,529 INFO spawned: 'intent_recognition' with pid 211
+2023-04-25 13:05:58,535 INFO spawned: 'intent_handling' with pid 217
+2023-04-25 13:05:58,541 INFO spawned: 'text_to_speech' with pid 219
+2023-04-25 13:05:59,533 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:05:59,533 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:05:59,533 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:05:59,533 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:05:59,533 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:05:59,545 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:09:26,006 WARN received SIGHUP indicating restart request
+2023-04-25 13:09:26,006 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 13:09:26,007 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 13:09:26,008 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 13:09:26,008 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 13:09:26,009 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 13:09:26,009 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 13:09:26,014 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 13:09:26,025 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 13:09:26,025 INFO supervisord started with pid 174
+2023-04-25 13:09:27,030 INFO spawned: 'dialogue' with pid 1361
+2023-04-25 13:09:27,035 INFO spawned: 'speech_to_text' with pid 1362
+2023-04-25 13:09:27,038 INFO spawned: 'wake_word' with pid 1363
+2023-04-25 13:09:27,040 INFO spawned: 'intent_recognition' with pid 1365
+2023-04-25 13:09:27,044 INFO spawned: 'intent_handling' with pid 1374
+2023-04-25 13:09:27,046 INFO spawned: 'text_to_speech' with pid 1379
+2023-04-25 13:09:28,711 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:09:28,711 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:09:28,711 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:09:28,711 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:09:28,711 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:09:28,711 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:10:54,115 WARN received SIGHUP indicating restart request
+2023-04-25 13:10:54,115 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 13:10:54,118 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 13:10:54,122 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 13:10:54,123 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 13:10:54,123 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 13:10:54,124 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 13:10:54,130 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 13:10:54,135 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 13:10:54,136 INFO supervisord started with pid 174
+2023-04-25 13:10:55,140 INFO spawned: 'dialogue' with pid 2988
+2023-04-25 13:10:55,143 INFO spawned: 'speech_to_text' with pid 2989
+2023-04-25 13:10:55,145 INFO spawned: 'wake_word' with pid 2990
+2023-04-25 13:10:55,147 INFO spawned: 'intent_recognition' with pid 2993
+2023-04-25 13:10:55,150 INFO spawned: 'intent_handling' with pid 2998
+2023-04-25 13:10:55,155 INFO spawned: 'text_to_speech' with pid 3006
+2023-04-25 13:10:56,142 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:10:56,142 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:10:56,144 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:10:56,145 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:10:56,204 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:10:56,204 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:11:59,794 WARN received SIGHUP indicating restart request
+2023-04-25 13:11:59,797 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 13:11:59,797 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 13:11:59,798 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 13:11:59,798 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 13:11:59,799 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 13:11:59,799 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 13:11:59,807 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 13:11:59,813 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 13:11:59,814 INFO supervisord started with pid 174
+2023-04-25 13:12:00,816 INFO spawned: 'dialogue' with pid 4124
+2023-04-25 13:12:00,818 INFO spawned: 'speech_to_text' with pid 4125
+2023-04-25 13:12:00,820 INFO spawned: 'wake_word' with pid 4126
+2023-04-25 13:12:00,822 INFO spawned: 'intent_recognition' with pid 4129
+2023-04-25 13:12:00,824 INFO spawned: 'intent_handling' with pid 4134
+2023-04-25 13:12:00,826 INFO spawned: 'text_to_speech' with pid 4138
+2023-04-25 13:12:02,506 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:12:02,507 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:12:02,507 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:12:02,507 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:12:02,507 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:12:02,507 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:14:36,710 WARN received SIGHUP indicating restart request
+2023-04-25 13:14:36,711 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 13:14:36,711 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 13:14:36,714 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 13:14:36,718 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 13:14:36,722 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 13:14:36,724 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 13:14:36,725 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 13:14:36,731 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 13:14:36,732 INFO supervisord started with pid 174
+2023-04-25 13:14:37,735 INFO spawned: 'dialogue' with pid 7295
+2023-04-25 13:14:37,738 INFO spawned: 'speech_to_text' with pid 7296
+2023-04-25 13:14:37,740 INFO spawned: 'wake_word' with pid 7297
+2023-04-25 13:14:37,759 INFO spawned: 'intent_recognition' with pid 7306
+2023-04-25 13:14:37,761 INFO spawned: 'intent_handling' with pid 7308
+2023-04-25 13:14:37,769 INFO spawned: 'text_to_speech' with pid 7309
+2023-04-25 13:14:39,723 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:14:39,723 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:14:39,723 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:14:39,723 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:14:39,723 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:14:39,723 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:16:15,261 WARN received SIGHUP indicating restart request
+2023-04-25 13:16:15,262 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 13:16:15,264 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 13:16:15,265 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 13:16:15,266 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 13:16:15,266 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 13:16:15,266 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 13:16:15,268 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 13:16:15,273 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 13:16:15,274 INFO supervisord started with pid 174
+2023-04-25 13:16:16,277 INFO spawned: 'dialogue' with pid 10471
+2023-04-25 13:16:16,280 INFO spawned: 'speech_to_text' with pid 10472
+2023-04-25 13:16:16,282 INFO spawned: 'wake_word' with pid 10473
+2023-04-25 13:16:16,283 INFO spawned: 'intent_recognition' with pid 10476
+2023-04-25 13:16:16,285 INFO spawned: 'intent_handling' with pid 10478
+2023-04-25 13:16:16,287 INFO spawned: 'text_to_speech' with pid 10482
+2023-04-25 13:16:17,977 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:16:17,977 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:16:17,977 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:16:17,977 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:16:17,977 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 13:16:17,977 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:29:59,939 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 14:29:59,941 INFO supervisord started with pid 173
+2023-04-25 14:30:00,943 INFO spawned: 'dialogue' with pid 201
+2023-04-25 14:30:00,946 INFO spawned: 'speech_to_text' with pid 202
+2023-04-25 14:30:00,949 INFO spawned: 'wake_word' with pid 203
+2023-04-25 14:30:00,951 INFO spawned: 'intent_recognition' with pid 206
+2023-04-25 14:30:00,954 INFO spawned: 'intent_handling' with pid 209
+2023-04-25 14:30:00,958 INFO spawned: 'text_to_speech' with pid 218
+2023-04-25 14:30:02,774 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:30:02,775 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:30:02,775 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:30:02,775 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:30:02,775 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:30:02,775 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:35:14,751 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 14:35:14,753 INFO supervisord started with pid 173
+2023-04-25 14:35:15,757 INFO spawned: 'dialogue' with pid 201
+2023-04-25 14:35:15,761 INFO spawned: 'speech_to_text' with pid 202
+2023-04-25 14:35:15,762 INFO spawned: 'wake_word' with pid 203
+2023-04-25 14:35:15,764 INFO spawned: 'intent_recognition' with pid 206
+2023-04-25 14:35:15,768 INFO spawned: 'intent_handling' with pid 213
+2023-04-25 14:35:15,772 INFO spawned: 'text_to_speech' with pid 220
+2023-04-25 14:35:17,615 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:35:17,615 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:35:17,615 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:35:17,615 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:35:17,615 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:35:17,615 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:39:22,449 WARN received SIGHUP indicating restart request
+2023-04-25 14:39:22,449 INFO waiting for dialogue, speech_to_text, wake_word, intent_recognition, intent_handling, text_to_speech to die
+2023-04-25 14:39:22,450 INFO stopped: text_to_speech (terminated by SIGTERM)
+2023-04-25 14:39:22,451 INFO stopped: intent_handling (terminated by SIGTERM)
+2023-04-25 14:39:22,452 INFO stopped: intent_recognition (terminated by SIGTERM)
+2023-04-25 14:39:22,452 INFO stopped: wake_word (terminated by SIGTERM)
+2023-04-25 14:39:22,453 INFO stopped: speech_to_text (terminated by SIGTERM)
+2023-04-25 14:39:22,454 INFO stopped: dialogue (terminated by SIGTERM)
+2023-04-25 14:39:22,462 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-25 14:39:22,463 INFO supervisord started with pid 173
+2023-04-25 14:39:23,467 INFO spawned: 'dialogue' with pid 3943
+2023-04-25 14:39:23,471 INFO spawned: 'speech_to_text' with pid 3944
+2023-04-25 14:39:23,472 INFO spawned: 'wake_word' with pid 3945
+2023-04-25 14:39:23,476 INFO spawned: 'intent_recognition' with pid 3946
+2023-04-25 14:39:23,480 INFO spawned: 'intent_handling' with pid 3950
+2023-04-25 14:39:23,486 INFO spawned: 'text_to_speech' with pid 3954
+2023-04-25 14:39:25,294 INFO success: dialogue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:39:25,294 INFO success: speech_to_text entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:39:25,294 INFO success: wake_word entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:39:25,294 INFO success: intent_recognition entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:39:25,294 INFO success: intent_handling entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-25 14:39:25,294 INFO success: text_to_speech entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

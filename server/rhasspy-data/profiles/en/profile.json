@@ -1,4 +1,11 @@
 {
+    "command": {
+        "webrtcvad": {
+            "max_sec": "10",
+            "silence_sec": "0.4",
+            "vad_mode": "3"
+        }
+    },
     "dialogue": {
         "system": "rhasspy"
     },
@@ -20,22 +27,25 @@
         "pyaudio": {
             "device": "pulse"
         },
-        "system": "arecord"
+        "system": "hermes"
     },
     "mqtt": {
         "enabled": "true",
-        "host": "host.docker.internal"
+        "host": "host.docker.internal",
+        "site_id": "satellite"
     },
     "sounds": {
         "aplay": {
             "device": "pulse"
         },
-        "system": "aplay"
+        "system": "hermes"
     },
     "speech_to_text": {
         "kaldi": {
+            "cancel_probability": "0.01",
             "min_confidence": "0.1",
-            "open_transcription": true
+            "open_transcription": true,
+            "silence_probability": "0.5"
         },
         "system": "kaldi"
     },
