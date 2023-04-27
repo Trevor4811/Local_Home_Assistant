@@ -1,15 +1,69 @@
-# voice-home-automation
+# Alexa 2.0
 
 ## Description
-Our initial concept is to develop a smart home voice assistant system that is local to protect the privacy of individuals in their home. Our first concept is to use the Matrix Voice microphone array that will transfer audio data to a raspberry pi running Rhasspy. The raspberry pi will then detect a set hot word to initiate a command, convert the audio following the hot word to text, and detect the intent of the instruction from the text. The raspberry pi will then send commands to the local home assistant server for device control. This smart home voice control is privacy focused by keeping all of the audio local, not storing any of it, and only sending the necessary commands for system control. Also, commands that relate only to the control of local network devices like smart outlets never have their data transferred beyond the local wifi network.
 
-Other products like [Amazon Echo's](https://www.amazon.com/gp/help/customer/display.html?nodeId=GVP69FUJ48X9DK8V), state that they have hot word detection but then transfer the actual audio to Amazon Servers for analysis and smart home control. This opens the door for data collection and breaches of privacy as the systems are not open-source either.
-
-After this first concept we will have a better idea of which direction to take of optimizing the system. We potentially do not need a raspberry pi and instead could use the on-board Matrix Voice's ESP32 to convert the audio to text and send the text over the wifi to a server. This server would then handle command parsing and smart home control. We may also add more smart home devices and add custom voice control commands for specific devices. We may also explore various options within the pipeline from audio to smart home control to reduce the latency as much as possible, to make the system more responsive.
+The Alexa 2.0 system is a voice assistant solution which uses an open-source software
+stack to perform voice processing. It integrates the Matrix Voice for audio capture
+along with a server software package which performs the voice processing and automation
+processing entirely locally. The goal of this system is to provide users seeking an
+alternative to commerical voice assistants with a software ecosystem that they are in
+control of. This allow Alexa 2.0 to be inspectable and extendable. It protects the
+privacy of the user by performing processing locally and can function without an
+Internet connection.
 
 ## System Diagram
 
-![System Diagram](./docs/system_diagram.jpg)
+![System Diagram](./docs/system_diagram.png)
+
+## Setup
+
+It is recommended to set up the system in the following manner:
+
+1. Set up the WLED module
+    1. Assign the WLED module a static IP
+        1. Connect the WLED to the network
+        2. Open the web UI
+        3. Navigate to the Settings and Wi-Fi Setup
+        4. Assign the IP to `192.168.15.101`
+        5. Assign the subnet mask as `255.255.255.0`
+        6. Assign the gateway to 192.168.15.2
+        7. Save settings and reboot the WLED module
+2. Set up the server
+    1. See the [server README](https://github.com/neu-ece-4534-sp23/sp23-prj-voice-home-automation/blob/main/server/README.md#usage)
+    for details
+    2. Download the Rhasspy files
+        1. Navigate to the web UI at `localhost:12101`
+        2. Click on the "Download external files" button
+        3. Wait for the download to finish
+3. Set up the Matrix Voice
+    1. Connect the Matrix Voice to the network
+        1. See the [Rhasspy Satellite README](https://github.com/Romkabouter/ESP32-Rhasspy-Satellite/blob/master/matrixvoice.md)
+        for details
+    2. Configure the Matrix Voice
+        1. Open the web UI
+        2. Configure the address/port of the MQTT server to that of the server computer
+        3. Save settings
+
+## Structure
+
+* docs/
+    * The system diagram
+* server/
+    * Docker files for starting the server side audio processing
+    * hass/
+        * Home assistant Dockerfile
+    * hass-data/
+        * Home assistant configuration files
+    * mqtt/
+        * Mosquitto MQTT Dockerfile
+    * mqtt-data/
+        * MQTT configuration files
+    * rhasspy/
+        * Rhasspy Dockerfile
+    * rhasspy-data/
+        * Rhasspy configuration files
+* voice_matrix/
+    * Files used for operating the Matrix Voice
 
 ## Team Members/Work Breakdown
 
