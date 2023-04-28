@@ -72,3 +72,13 @@ The current automations which are supported are:
     1. Requires [Open transcription mode to be enabled in Rhasspy](https://github.com/neu-ece-4534-sp23/sp23-prj-voice-home-automation/blob/main/server/rhasspy-data/profiles/en/profile.json#L38)
     2. "play 'song name'"
 
+## Setting up Spotify
+
+The current version of the project is linked specifically to my (Iris's) Spotify account. In order to link it to your personal account, it is necessary to fix credentials in three places.
+
+1. Remove the Spotify integration from Home Assistant and re-add it following the instructions [here](https://www.home-assistant.io/integrations/spotify/). This will involve creating an app in the Spotify Developer portal.
+
+2. After following the steps above, the Client ID and Client secret (which the above tutorial will show you how to find) will need to be added to the docker-compose.yml file in lines 19 and 20. Then, the callback URI from line 21 (http://localhost:5173/callback) will need to be added to the app's list of redirect URIs in the Spotify Developer portal.
+
+3. It will be necessary to run the hass-data/search_and_play.py script one time with `python search_and_play.py "play example"` from the hass-data directory in order to authenticate, but after this, the credentials should be cached so that no more authentication is needed. Overall these steps should update the files hass-data/config/.cache and hass-data/config/.storage/application_credentials and hass-data/config/.storage/core.entity_registry.
+
